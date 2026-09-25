@@ -1,0 +1,10 @@
+{
+  "goldengate":       { "at": 0.375, "side": 0,  "back": 16, "up": 5,  "look": 80 },
+  "bayshore-101":     { "at": 0.79,  "side": 0,  "back": 14, "up": 6,  "look": 60 },
+  "twin-peaks":       { "at": 0.458, "side": 0,  "back": 14, "up": 6,  "look": 60 },
+  "lombard":          { "at": 0.54,  "side": 0,  "back": 12, "up": 7,  "look": 30 },
+  "fishermans-wharf": { "at": 0.958, "side": 0,  "back": 12, "up": 5,  "look": 80 },
+  "shoreline":        { "at": 0.958, "side": 0,  "back": 12, "up": 5,  "look": 60 },
+  "wolfe-pruneridge": { "at": 0.21,  "side": 0,  "back": 30, "up": 22, "look": 60 },
+  "moffett-field":    { "at": 0.375, "side": 0,  "back": 14, "up": 5,  "look": 60 }
+}

@@ -1,0 +1,480 @@
+{
+  "id": "shanghai",
+  "name": {
+    "zh": "陆家嘴夜景",
+    "en": "Lujiazui by Night"
+  },
+  "blurb": {
+    "zh": "沿浦城路向北，三座摩天楼迎面而来；穿过陆家嘴，沿世纪大道直奔东方明珠。",
+    "en": "North up Pucheng Road at three supertowers, through Lujiazui, then down Century Avenue at the Pearl."
+  },
+  "category": "scenic",
+  "mode": "p2p",
+  "laps": 1,
+  "car": "sedan",
+  "timeOfDay": "night",
+  "editions": [
+    "web",
+    "full"
+  ],
+  "origin": {
+    "lat": 31.2345,
+    "lon": 121.502
+  },
+  "padM": 450,
+  "backdropM": 4000,
+  "waypoints": [
+    {
+      "way": 1202688181,
+      "pick": "southmost"
+    },
+    {
+      "way": 168899776,
+      "pick": "nearest:31.2325,121.5066"
+    },
+    {
+      "way": 1255166896,
+      "pick": "nearest:31.2337,121.5044"
+    },
+    {
+      "way": 1192417731,
+      "pick": "nearest:31.2340,121.5029"
+    },
+    {
+      "way": 1192417722,
+      "pick": "nearest:31.2356,121.5024"
+    },
+    {
+      "way": 8792644,
+      "pick": "nearest:31.2371,121.5025"
+    },
+    {
+      "way": 964451993,
+      "pick": "nearest:31.2375,121.5037"
+    },
+    {
+      "way": 40784445,
+      "pick": "nearest:31.2382,121.5046"
+    },
+    {
+      "way": 40779706,
+      "pick": "nearest:31.2385,121.5022"
+    },
+    {
+      "way": 165591945,
+      "pick": "nearest:31.2396,121.4986"
+    },
+    {
+      "way": 165591945,
+      "pick": "westmost"
+    }
+  ],
+  "centreLine": "yellow",
+  "traffic": "right",
+  "flatCity": {
+    "windowM": 300,
+    "why": "the city centre is flat; the elevation data carries metres of noise, trees and roofs"
+  },
+  "bboxPoints": [
+    [
+      31.224,
+      121.511
+    ],
+    [
+      31.233,
+      121.506
+    ],
+    [
+      31.2345,
+      121.499
+    ],
+    [
+      31.2392,
+      121.505
+    ],
+    [
+      31.2425,
+      121.495
+    ],
+    [
+      31.238,
+      121.494
+    ]
+  ],
+  "groundCover": "terrain_grass",
+  "landmarks": [
+    "oriental-pearl-tower",
+    "shanghai-tower",
+    "shanghai-world-financial-center",
+    "jin-mao-tower",
+    "bund-peace-hotel"
+  ],
+  "architecture": {
+    "facades": {
+      "building_glass": 0.45,
+      "building_concrete": 0.45,
+      "building_stucco": 0.1
+    },
+    "tint": {
+      "building_concrete": "#bcb9b1",
+      "building_stucco": "#d8d2c6"
+    },
+    "why": "陆家嘴：写字楼是玻璃幕墙和浅灰石材，浦城路、东昌路一带是九十年代的浅色混凝土住宅楼（街景照片估计）；外滩那套米黄花岗岩不再适用",
+    "local": {
+      "types": [
+        {
+          "share": 0.85,
+          "when": {
+            "tags": [
+              "apartments",
+              "residential",
+              "yes"
+            ],
+            "minArea": 140,
+            "maxArea": 1300,
+            "maxStoreys": 7,
+            "within": [
+              {
+                "lat": 31.2272,
+                "lon": 121.5095,
+                "radiusM": 160
+              },
+              {
+                "lat": 31.2331,
+                "lon": 121.5068,
+                "radiusM": 200
+              },
+              {
+                "lat": 31.223,
+                "lon": 121.538,
+                "radiusM": 3000
+              }
+            ],
+            "outside": [
+              {
+                "lat": 31.2246,
+                "lon": 121.51,
+                "radiusM": 120
+              },
+              {
+                "lat": 31.2303,
+                "lon": 121.5082,
+                "radiusM": 200
+              },
+              {
+                "lat": 31.238,
+                "lon": 121.5015,
+                "radiusM": 450
+              }
+            ]
+          },
+          "storeyM": 2.8,
+          "groundM": 2.8,
+          "storeys": [
+            6,
+            6
+          ],
+          "tileBays": 4,
+          "wall": {
+            "kind": "render",
+            "colour": "#e4d4c0",
+            "stain": 0.55,
+            "palette": [
+              "#e4d4c0",
+              "#e8cfc4",
+              "#dbd5c9"
+            ]
+          },
+          "window": {
+            "shape": "rect",
+            "w": 1.5,
+            "h": 1.5,
+            "bay": 3.3,
+            "sill": 0.9,
+            "frame": "#4a504e",
+            "frameW": 0.06,
+            "glass": "#2f3a3c",
+            "grille": true,
+            "grilleColour": "#cfcfc9",
+            "ac": true
+          },
+          "band": {
+            "colour": "#d4c3ae",
+            "h": 0.05
+          },
+          "ground": {
+            "kind": "door",
+            "door": "#3f5249",
+            "doorFrame": "#82786a",
+            "base": "#7a7066"
+          },
+          "roof": {
+            "kind": "hip",
+            "material": "tile",
+            "colour": "#b43f3f",
+            "pitchDeg": 30,
+            "eaveM": 0.4
+          }
+        },
+        {
+          "share": 0.15,
+          "when": {
+            "tags": [
+              "apartments",
+              "residential",
+              "yes"
+            ],
+            "minArea": 380,
+            "within": [
+              {
+                "lat": 31.2255,
+                "lon": 121.51,
+                "radiusM": 260
+              },
+              {
+                "lat": 31.2285,
+                "lon": 121.5088,
+                "radiusM": 260
+              },
+              {
+                "lat": 31.2312,
+                "lon": 121.5075,
+                "radiusM": 260
+              },
+              {
+                "lat": 31.2334,
+                "lon": 121.5066,
+                "radiusM": 240
+              },
+              {
+                "lat": 31.2325,
+                "lon": 121.5035,
+                "radiusM": 200
+              },
+              {
+                "lat": 31.223,
+                "lon": 121.538,
+                "radiusM": 3000
+              }
+            ],
+            "outside": [
+              {
+                "lat": 31.2245,
+                "lon": 121.51014,
+                "radiusM": 30
+              },
+              {
+                "lat": 31.22557,
+                "lon": 121.51061,
+                "radiusM": 35
+              },
+              {
+                "lat": 31.22818,
+                "lon": 121.51062,
+                "radiusM": 35
+              },
+              {
+                "lat": 31.22928,
+                "lon": 121.50792,
+                "radiusM": 30
+              },
+              {
+                "lat": 31.2315,
+                "lon": 121.50759,
+                "radiusM": 35
+              },
+              {
+                "lat": 31.2329,
+                "lon": 121.50709,
+                "radiusM": 30
+              },
+              {
+                "lat": 31.238,
+                "lon": 121.5015,
+                "radiusM": 450
+              }
+            ]
+          },
+          "storeyM": 2.9,
+          "groundM": 3.6,
+          "storeys": [
+            18,
+            33
+          ],
+          "tileBays": 2,
+          "wall": {
+            "kind": "tile",
+            "colour": "#e6c4b2",
+            "colours": [
+              "#ecdccd",
+              "#e0b8a5"
+            ],
+            "unit": [
+              0.24,
+              0.06
+            ],
+            "joint": "#d9cfc4",
+            "stain": 0.25,
+            "palette": [
+              "#e6c4b2",
+              "#ece6da",
+              "#c9b8a0"
+            ]
+          },
+          "window": {
+            "shape": "rect",
+            "w": 1.8,
+            "h": 1.6,
+            "bay": 3.3,
+            "sill": 0.8,
+            "frame": "#e9e9e4",
+            "frameW": 0.05,
+            "glass": "#34424a",
+            "balcony": {
+              "kind": "slab",
+              "slab": "#e8e0d6",
+              "colour": "#efe6da"
+            },
+            "ac": true
+          },
+          "ground": {
+            "kind": "door",
+            "door": "#3a3634",
+            "doorFrame": "#4b4a4e",
+            "wall": {
+              "colour": "#c47f80"
+            },
+            "base": "#4b4a4e"
+          },
+          "roof": {
+            "kind": "hip",
+            "material": "tile",
+            "colour": "#6f6660",
+            "pitchDeg": 38,
+            "eaveM": 0.6
+          }
+        },
+        {
+          "share": 0.1,
+          "when": {
+            "tags": [
+              "commercial",
+              "retail",
+              "school",
+              "kindergarten",
+              "hotel",
+              "office",
+              "college",
+              "public",
+              "civic",
+              "community_centre",
+              "yes"
+            ],
+            "minArea": 300,
+            "maxStoreys": 7,
+            "within": [
+              {
+                "lat": 31.2255,
+                "lon": 121.51,
+                "radiusM": 260
+              },
+              {
+                "lat": 31.2285,
+                "lon": 121.5088,
+                "radiusM": 260
+              },
+              {
+                "lat": 31.2312,
+                "lon": 121.5075,
+                "radiusM": 260
+              },
+              {
+                "lat": 31.2334,
+                "lon": 121.5066,
+                "radiusM": 240
+              },
+              {
+                "lat": 31.2325,
+                "lon": 121.5035,
+                "radiusM": 200
+              }
+            ]
+          },
+          "storeyM": 3.6,
+          "groundM": 4.0,
+          "storeys": [
+            2,
+            4
+          ],
+          "tileBays": 2,
+          "wall": {
+            "kind": "render",
+            "colour": "#f0eee8",
+            "stain": 0.15
+          },
+          "window": {
+            "shape": "rect",
+            "w": 2.4,
+            "h": 1.8,
+            "bay": 3.6,
+            "sill": 0.9,
+            "frame": "#6e7072",
+            "frameW": 0.06,
+            "glass": "#2e3940"
+          },
+          "band": {
+            "colour": "#e2ded5",
+            "h": 0.3
+          },
+          "ground": {
+            "kind": "shops",
+            "glass": "#35414a",
+            "signs": [
+              "#2d4f6c",
+              "#1f6b45",
+              "#6b5a2a",
+              "#8c2f27"
+            ],
+            "shutter": false,
+            "base": "#6f6a63"
+          },
+          "roof": {
+            "kind": "flat"
+          },
+          "details": {
+            "waterTanks": 0.3
+          }
+        }
+      ],
+      "rail": {
+        "style": "iron",
+        "colour": "#6d6f6c"
+      },
+      "detailColours": {
+        "local_detail_dark": "#3a3d3f",
+        "local_detail_light": "#d9d6cf",
+        "local_detail_accent": "#2f6f9a"
+      },
+      "why": "house-cards/shanghai.md：浦城路一带三类——八十年代六层老公房（东园四村 1987、东园一村 1982，照片 sh13/sh14/sh16/sh19：米色抹灰、防盗窗、空调外机、平改坡的红瓦坡顶）、九十年代到两千年的十八到三十三层面砖高层（菊园 sh21 粉红面砖、江临天下 sh24、sh07 的坡顶帽子）、两到四层的学校幼儿园会所派出所图书馆（sh01 白墙）。圈圈按卫星图（sh25）分：s 240–420 和 s 920–1200 是老公房区，世茂滨江、菊园、江临天下是高层区；浦东腹地一个大圈给远处的楼用同样的两类。陆家嘴 CBD 不在任何圈里，照旧用玻璃和石材写字楼。"
+    }
+  },
+  "lampStyle": "cobra",
+  "vista": {
+    "spacingM": 100,
+    "density": 0.75,
+    "nearM": 250,
+    "farM": 1700,
+    "heightM": [
+      15,
+      19
+    ],
+    "farRoofs": {
+      "flat": 0.45,
+      "hip": 0.55
+    },
+    "nearRoofs": {
+      "flat": 0.45,
+      "hip": 0.55
+    }
+  }
+}

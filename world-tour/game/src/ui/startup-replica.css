@@ -1,0 +1,293 @@
+.startup-replica.sm { position:absolute; inset:0; display:block; padding:0; background:color-mix(in srgb, var(--night), var(--mist) 10%); --accent:color-mix(in srgb, var(--accent-deep), var(--accent-light) 50%); --ink:color-mix(in srgb, var(--night), var(--mist) 10%); }
+.startup-replica .startup-frame { display:grid; grid-template-rows:73px minmax(0,1fr) 86px; background:linear-gradient(130deg,color-mix(in srgb, var(--night), var(--mist) 18%),color-mix(in srgb, var(--night), var(--mist) 10%)); isolation:isolate; overflow:clip; }
+.startup-replica.sm[data-home="true"]>.startup-frame { display:grid; }
+.startup-frame::before { content:""; position:absolute; inset:120px -15% 0; z-index:-1; background:linear-gradient(125deg,color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 26%) 20%, transparent),color-mix(in srgb, var(--night), var(--mist) 9%)); clip-path:polygon(0 60%,20% 22%,43% 57%,64% 0,100% 40%,100% 100%,0 100%); }
+.startup-frame::after { content:""; position:absolute; z-index:-1; top:65px; right:-200px; width:380px; height:380px; border:1px solid color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 63%) 13%, transparent); border-radius:50%; box-shadow:0 0 0 36px color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 63%) 2%, transparent),0 0 0 72px color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 63%) 2%, transparent); }
+.startup-replica .sm-stage { display:flex; justify-content:space-between; align-items:center; padding:14px 38px; background:none; border:0; min-height:0; }
+.startup-replica .sm-brand { display:block; padding:0; }
+.startup-replica .sm-name { font:11px Arial,sans-serif; letter-spacing:2px; margin:0; }
+.startup-replica .sm-name .brand-mark,.startup-replica .home-title .brand-mark { width:38px; height:38px; }
+.startup-replica .sm-viewport { display:block; padding:0; overflow:hidden; min-width:0; min-height:0; }
+.startup-replica .sm-steps { display:block; width:100%; height:100%; transition:none; }
+.startup-replica .sm-pane { width:100%; height:100%; min-width:0; min-height:0; padding:20px 42px; overflow:hidden; }
+.startup-replica .sm-side { display:block; padding:0; border:0; background:none; }
+.startup-replica .sm-foot { height:86px; display:grid; grid-template-columns:150px minmax(0,1fr) 220px; align-items:center; gap:16px; padding:15px 38px; background:color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 8%) 91%, transparent); border-top:1px solid color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 36%) 40%, transparent); }
+.startup-replica .sm-foot button { min-height:54px; padding:0 18px; border:0; border-radius:0; background:none; box-shadow:none; font-size:16px; letter-spacing:0; white-space:nowrap; }
+.startup-replica .sm-foot .sm-back { color:color-mix(in srgb, var(--night), var(--mist) 96%); }
+.startup-replica .sm-foot .sm-back:hover { --chevron-fill:color-mix(in srgb, var(--night), var(--mist) 21%); }
+.startup-replica .sm-foot .sm-go { --chevron-fill:var(--accent); --chevron-stroke:var(--accent); --chevron-stroke-width:4px; color:var(--ink); font-size:17px; }
+.startup-replica .sm-foot .sm-go:hover:not(:disabled) { --chevron-fill:color-mix(in srgb, var(--accent-deep), var(--accent-light) 67%); --chevron-stroke:color-mix(in srgb, var(--accent-deep), var(--accent-light) 67%); }
+.startup-replica .sm-foot .sm-go:focus-visible { --chevron-stroke:#fff; --chevron-stroke-width:3px; }
+.startup-replica .startup-recap { display:flex; min-width:0; height:54px; }
+.startup-replica .startup-recap-step { flex:1 1 0; min-width:0; display:flex; flex-direction:column; justify-content:center; padding:0 14px; line-height:1.25; border-left:1px solid color-mix(in srgb, var(--night), var(--mist) 28%); }
+.startup-replica .startup-recap-step:first-child { border-left:0; }
+.startup-replica .startup-recap-step small { font-size:10px; color:color-mix(in srgb, var(--night), var(--mist) 58%); letter-spacing:.5px; white-space:nowrap; }
+/* Two lines before the ellipsis: the World entry carries three choices and the slime level must not be the part cut off. */
+.startup-replica .startup-recap-step strong { font-size:13px; font-weight:400; color:color-mix(in srgb, var(--night), var(--mist) 96%); display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2; overflow:hidden; word-break:keep-all; overflow-wrap:break-word; }
+.startup-replica .startup-recap-step[data-state="done"] strong { color:color-mix(in srgb, var(--accent-deep), var(--accent-light) 60%); }
+.startup-replica .startup-recap-step[data-state="on"] small { color:var(--accent); }
+.startup-replica .startup-recap-step[data-state="todo"] strong { color:color-mix(in srgb, var(--night), var(--mist) 44%); }
+/* Clear of the two-sided language switch plus the stage's 38px edge. */
+.startup-replica .sm-extras { position:absolute; top:25px; right:152px; padding:0; border:0; gap:12px; }
+.startup-replica .sm-extras button { font-size:10px; min-height:28px; padding:0; color:color-mix(in srgb, var(--night), var(--mist) 79%); }
+.startup-replica .sm-pane:first-child { display:grid; grid-template-columns:auto minmax(0,1fr); grid-template-rows:minmax(0,1fr); padding:15px 32px 18px; gap:20px; container-type:inline-size; }
+/* The map card takes the whole height of the
+   pane and is as wide as the Bay drawing wants at that height, instead of a fixed 300 px (240 px on a
+   phone) column. The route gallery keeps at least half the width. */
+.startup-replica .sm-pane:first-child>.sm-act { height:100%; aspect-ratio:1.2; width:auto; min-width:300px; max-width:46cqw; }
+.startup-replica .sm-pane:first-child>.sm-act { border:1px solid color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 42%) 33%, transparent); border-radius:6px; background:var(--sea-deep); overflow:hidden; }
+.startup-replica .sm-pane:first-child>.sm-act::after { display:none; }
+.startup-replica .sm-maps { inset:68px 0 80px; }   /* The map ends above the always-shown route details strip */
+.startup-replica .sm-locbox { overflow:visible; }
+.startup-replica .sm-loc { width:100%; height:100%; }
+.startup-replica .sm-loclabel { position:absolute; top:-55px; left:13px; right:8px; text-align:left; width:auto; }
+.startup-replica .sm-loclabel .eyebrow { display:block; font-size:9px; margin:0 0 6px; }
+.startup-replica .sm-loclabel strong { display:block; font-size:18px; letter-spacing:0; text-transform:none; line-height:1.3; }
+/* The route's own drawing at twice its old 78px diameter. */
+.startup-replica .sm-circuitbox { width:156px; height:156px; top:14px; right:10px; }
+.startup-replica .sm-circuitbox.low { top:auto; bottom:86px; }
+.startup-replica[data-device="mobile"] .sm-circuitbox { width:156px; height:156px; top:8px; right:8px; }
+.startup-replica[data-device="mobile"] .sm-circuitbox.low { top:auto; bottom:92px; }
+.startup-replica .sm-circuitbox.left { right:auto; left:10px; }
+.startup-replica[data-device="mobile"] .sm-circuitbox.left { right:auto; left:8px; }
+.startup-replica .sm-circuit { width:100%; height:100%; }
+.startup-replica .sm-callout { display:block; position:absolute; inset:0; width:100%; height:100%; z-index:5; pointer-events:none; }   /* The dashed link from the Bay dot to the enlarged route is back */
+.startup-replica .sm-pane:first-child .sm-stats,.startup-replica .sm-pane:first-child .sm-blurb { display:none; }
+.startup-replica .sm-pane:first-child .sm-headline { left:15px; right:auto; bottom:88px; font-size:12px; line-height:1.4; padding:8px 10px; border-left:2px solid var(--accent); background:color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 12%) 69%, transparent); }
+.startup-replica .startup-route-panel { display:flex; flex-direction:column; min-width:0; min-height:0; gap:10px; }
+.startup-replica .startup-route-count { display:flex; justify-content:space-between; font-size:11px; letter-spacing:2px; }
+.startup-replica .sm-list { flex:1; height:auto; display:grid; grid-template-columns:none; grid-template-rows:repeat(2,minmax(0,1fr)); grid-auto-flow:column; grid-auto-columns:calc((100% - 30px)/3.5); gap:10px; }
+/* Route cards are boarding passes: cream paper, the picture on top, a torn-off stub with the airport
+   code, and the half-moon notches where the stub tears. The notches are cut by a mask, so the card
+   behind them shows the panel, not a painted circle. */
+.startup-replica .sm-item { --notch:calc(100% - 44px); display:grid; grid-template-columns:minmax(0,1fr); grid-template-rows:minmax(0,1fr) auto auto; padding:5px 5px 7px; border:0; border-radius:8px; background:var(--mist); color:var(--night); gap:2px; position:relative;
+  -webkit-mask:radial-gradient(circle 6px at 0 var(--notch),transparent 97%,#000) left/51% 100% no-repeat, radial-gradient(circle 6px at 100% var(--notch),transparent 97%,#000) right/51% 100% no-repeat;
+          mask:radial-gradient(circle 6px at 0 var(--notch),transparent 97%,#000) left/51% 100% no-repeat, radial-gradient(circle 6px at 100% var(--notch),transparent 97%,#000) right/51% 100% no-repeat; }
+.startup-replica .sm-item::before { content:""; position:absolute; left:9px; right:9px; top:var(--notch); border-top:1.5px dashed color-mix(in srgb, var(--night), var(--mist) 62%); }
+.startup-replica .sm-code { font-family:var(--font-ticket); font-weight:700; font-size:19px; letter-spacing:3px; line-height:1; text-align:center; margin-top:9px; color:var(--night); }
+.startup-replica .sm-route-thumb { width:100%; height:100%; min-height:0; object-fit:cover; border-radius:5px 5px 2px 2px; }
+.startup-replica .sm-nm { text-align:center; font-size:11.5px; font-weight:500; padding:0 2px; color:color-mix(in srgb, var(--night), var(--mist) 35%); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.startup-replica .sm-km { display:none; }
+.startup-replica .sm-item.sel { background:var(--accent-light); color:var(--night); box-shadow:inset 0 0 0 2px var(--stamp-deep); }
+.startup-replica .sm-item.sel .sm-code { color:var(--stamp-deep); }
+.startup-replica .sm-world { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); grid-template-rows:1fr; align-items:start; padding:28px 38px; gap:25px; }
+.startup-replica .sm-world-preview { position:absolute; inset:0; z-index:-1; border:0; border-radius:0; overflow:hidden; }
+.startup-replica .sm-world-preview::after { display:none; }
+.startup-replica .sm-world-state { display:none; }
+.startup-replica .startup-world-intro { align-self:start; }
+.startup-replica .startup-world-intro>h1 { background:linear-gradient(90deg,color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 13%) 60%, transparent),transparent); margin:0; padding:9px 13px; border-left:2px solid color-mix(in srgb, var(--accent-deep), var(--accent-light) 50%); text-shadow:0 2px 15px color-mix(in srgb, var(--night), var(--mist) 10%); }
+.startup-replica .startup-world-intro>h1 { font-size:32px; line-height:1.2; font-weight:500; }
+.startup-replica .sm-conditions { display:flex; flex-direction:column; gap:8px; align-self:center; }
+.startup-replica .sm-condition { display:grid; grid-template-columns:82px minmax(0,1fr); gap:7px; align-items:center; padding:9px 12px; background:color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 12%) 93%, transparent); border:1px solid color-mix(in srgb, var(--night), var(--mist) 55%); border-radius:5px; box-shadow:0 6px 24px #0002; }
+.startup-replica .sm-condition .sm-eyebrow { font-size:14px; margin:0; color:color-mix(in srgb, var(--night), var(--mist) 99%); letter-spacing:0; line-height:1.4; }
+.startup-replica .sm-seg { display:flex; align-items:stretch; gap:7px; padding:0; border:0; }
+.startup-replica .sm-seg button { display:flex; align-items:center; justify-content:center; gap:7px; flex:1; min-height:48px; padding:8px 5px; font-size:13px; background:color-mix(in srgb, var(--night), var(--mist) 21%); border:1px solid color-mix(in srgb, var(--night), var(--mist) 44%); border-radius:4px; }
+.startup-replica .sm-seg button.on { background:var(--accent); color:var(--ink); border-color:var(--accent); box-shadow:none; }
+/* The four World rows split the column's whole height instead of sitting at a fixed pixel height, so the
+   buttons grow with the pane; time and direction share the first row either side of a divider. */
+.startup-replica .sm-world .sm-conditions { align-self:stretch; justify-content:center; gap:6px; }
+.startup-replica .sm-world .sm-condition { flex:1 1 0; min-height:0; max-height:76px; align-items:stretch; padding:6px 10px; }
+.startup-replica .sm-world .sm-condition .sm-eyebrow { align-self:center; }
+.startup-replica .sm-world .sm-seg button { min-height:0; padding:4px; white-space:nowrap; flex-wrap:nowrap; gap:5px; }
+.startup-replica .sm-seg-pair { display:flex; gap:7px; min-width:0; }
+.startup-replica .sm-seg-pair > .sm-seg { flex:1; min-width:0; }
+.startup-replica .sm-seg-divider { flex:none; width:1px; margin:3px 0; background:color-mix(in srgb, var(--night), var(--mist) 55%); }
+.startup-replica .sm-world .sm-seg svg:not(.sm-condition-scene) { width:16px; height:16px; flex:none; }
+/* The scenery is behind a genuinely centered label; it never changes the hit target or focus order. */
+.startup-replica .sm-world .sm-seg button { position:relative; isolation:isolate; min-width:0; flex:1 1 0; overflow:hidden; background:color-mix(in srgb, var(--night), var(--mist) 21%); border-color:color-mix(in srgb, var(--night), var(--mist) 45%); }
+.startup-replica .sm-world .sm-seg button[data-time=night],
+.startup-replica .sm-world .sm-seg button[data-direction=reverse] { background:color-mix(in srgb, var(--night), var(--mist) 19%); }
+.startup-replica .sm-world .sm-seg button[data-weather=fog] { background:color-mix(in srgb, var(--night), var(--mist) 24%); }
+.startup-replica .sm-world .sm-seg button[data-weather=rain] { background:color-mix(in srgb, var(--night), var(--mist) 19%); }
+.startup-replica .sm-world .sm-seg button[data-weather=snow] { background:color-mix(in srgb, var(--night), var(--mist) 25%); }
+.startup-replica .sm-world .sm-seg button.on { background:color-mix(in srgb, var(--night), var(--mist) 75%); border:1px solid color-mix(in srgb, var(--night), var(--mist) 75%); color:color-mix(in srgb, var(--night), var(--mist) 15%); box-shadow:inset 0 0 0 1px color-mix(in srgb, var(--accent-deep), var(--accent-light) 70%); }
+.startup-replica .sm-world .sm-seg .sm-condition-scene { position:absolute; inset:0; z-index:0; width:100%; height:100%; pointer-events:none; opacity:.86; filter:saturate(.55); }
+.startup-replica .sm-world .sm-slimes .sm-condition-scene { opacity:1; filter:saturate(.8); }
+.startup-replica .sm-world .sm-seg .sm-condition-label { position:absolute; inset:0; z-index:1; display:flex; align-items:center; justify-content:center; padding:3px; line-height:1.1; text-align:center; text-shadow:0 1px 3px color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 11%) 40%, transparent); }
+.startup-replica .sm-world .sm-seg button.on .sm-condition-label { text-shadow:0 1px 2px color-mix(in srgb, color-mix(in srgb, var(--accent-deep), var(--accent-light) 80%) 52%, transparent); }
+/* Time words are shorter than direction words. Give Reverse room without pushing through the row border. */
+.startup-replica .sm-world .sm-seg-pair>.sm-time { flex:.88 1 0; }
+.startup-replica .sm-world .sm-seg-pair>.sm-direction { flex:1.12 1 0; }
+.startup-replica .sm-ghost-hint { margin-top:8px; font-size:10px; }
+.startup-replica .sm-garage-pane { display:flex; flex-direction:column; justify-content:center; padding:12px 36px; gap:8px; }
+.startup-replica .startup-garage-title { font-size:16px; line-height:1.2; margin:0; font-weight:500; }
+.startup-replica .startup-garage { display:flex; align-items:stretch; gap:26px; min-height:0; }
+.startup-replica .sm-player { flex:1; width:0; min-width:0; display:block; padding:0; border:0; background:none; position:relative; }
+.startup-replica .sm-player+.sm-player { border-left:1px solid color-mix(in srgb, var(--night), var(--mist) 42%); padding-left:13px; }
+.startup-replica .sm-carhero { width:100%; height:222px; min-height:0; aspect-ratio:auto; border-radius:6px; margin:0; background:color-mix(in srgb, var(--night), var(--mist) 10%); }
+.startup-replica .startup-car-stage { position:relative; margin-bottom:8px; }
+.startup-replica .startup-driver-row { position:absolute; left:8px; top:8px; max-width:55%; z-index:2; display:flex; align-items:center; margin:0; padding:5px 8px; border-radius:4px; background:color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 10%) 80%, transparent); pointer-events:none; }
+.startup-replica .startup-driver-row>div { display:flex; gap:8px; align-items:center; }
+.startup-replica .startup-driver-row h2,.startup-replica .startup-driver-row h3 { font-size:12px; line-height:1.3; margin:0; font-weight:400; letter-spacing:0; }
+.startup-replica .startup-driver-row h3 { color:var(--accent); }
+/* A card is as wide as its 3:2 garage photo, so no dark bars sit beside the car; long names wrap under it. */
+.startup-replica .sm-cars { display:grid; grid-auto-flow:column; grid-auto-columns:min-content; grid-template-columns:none; grid-template-rows:1fr; gap:12px; padding:0; overflow-x:auto; overflow-y:hidden; scrollbar-width:none; }
+/* .sm is on the same node: game.css's own two-player column width ties with this selector and loads later. */
+.sm.startup-replica[data-players="2"] .sm-cars { grid-auto-columns:min-content; gap:10px; }
+.startup-replica .sm-car { display:flex; flex-direction:column; min-width:0; min-height:0; padding:4px 4px 6px; border:1px solid color-mix(in srgb, var(--night), var(--mist) 44%); border-radius:5px; font-size:12px; gap:4px; background:color-mix(in srgb, var(--night), var(--mist) 21%); }
+.startup-replica .sm-car .sm-carthumb { width:auto; height:66px; aspect-ratio:3/2; min-height:0; margin:0; object-fit:contain; }
+.startup-replica .sm-carnm { font-size:12px; line-height:1.4; text-align:center; font-weight:400; }
+.startup-replica .sm-cardesc { display:none; }
+.startup-replica .sm-car.sel { transform:none; border-color:var(--accent); color:var(--accent); box-shadow:inset 0 -3px var(--accent); }
+/* Always shown (389): a compact card in the preview's top-right corner that never blocks dragging the car. */
+.startup-replica .startup-car-details { position:absolute; right:8px; top:8px; z-index:2; width:min(236px,46%); box-sizing:border-box; font-size:9px; line-height:1.3; background:color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 10%) 85%, transparent); padding:6px 8px; border-radius:4px; pointer-events:none; }
+.startup-replica .startup-details-title { margin:0; font-size:9px; font-weight:400; letter-spacing:.04em; color:var(--accent); }
+.startup-replica .startup-car-details .sm-stats { display:flex; margin:2px 0 0; }
+.startup-replica .startup-car-details .sm-stat { flex-direction:row; align-items:baseline; gap:4px; }
+.startup-replica .startup-car-details .sm-stat b { font-size:11px; }
+.startup-replica .startup-car-details :is(.sm-stat span,.sm-drive,.sm-blurb) { font-size:9px; margin:2px 0; }
+.startup-replica .startup-car-details .sm-blurb { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+.startup-replica .startup-car-details .sm-bars { display:flex; gap:3px; margin:3px 0; }
+.startup-replica .startup-car-details .sm-bar { grid-template-columns:46px 1fr 54px; gap:5px; font-size:9px; white-space:nowrap; }
+.startup-replica .startup-car-details .sm-bartrack { height:4px; }
+/* Half-width 2P previews keep only the numbers so the card stays clear of the car. */
+.startup-replica[data-players="2"] .startup-car-details { width:min(210px,42%); }
+.startup-replica[data-players="2"] .startup-car-details :is(.sm-drive,.sm-blurb) { display:none; }
+.startup-replica .home { position:absolute; inset:0; padding:0; display:flex; flex-direction:column; background:color-mix(in srgb, var(--night), var(--mist) 5%); }
+/* With the live scene running, the page's own ground and its picture step aside for it. */
+[data-showcase=live] .startup-replica .home { background:color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 5%) 0%, transparent); }
+/* The menu's own ground and its frame gradient also have to step aside, or they cover the canvas. */
+[data-showcase=live] .startup-replica { background:color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 10%) 0%, transparent); }
+[data-showcase=live] .startup-replica .replica-frame { background:none; }
+/* The three steps sit behind the landing page; with the page transparent they must not show through. */
+[data-showcase=live] .startup-replica[data-step=home] .sm-viewport,
+[data-showcase=live] .startup-replica[data-step=home] .sm-side,
+[data-showcase=live] .startup-replica[data-step=home] .sm-stage { opacity:0; }
+[data-showcase=live] .startup-replica .home-scene { opacity:0; }
+/* The frame's own painted scenery -- the ridge silhouette and the ring -- belongs to the
+   still page. Over the live scene they read as a huge translucent triangle across the bay and a
+   stray arc on the hills, because they sit above the canvas. They fade out with the picture. */
+[data-showcase=live] .startup-frame::before,
+[data-showcase=live] .startup-frame::after { opacity:0; }
+.startup-frame::before,.startup-frame::after { transition:opacity .9s ease; }
+.startup-replica .home-scene { transition:opacity .9s ease; }
+/* Coming back to the page, the scene's last frame stands in for it -- whole, not dimmed like the
+   shipped picture, which is an older render and stays out of sight -- until the orbit draws over it
+   from the same angle and this frame fades away. */
+.startup-replica .home-still { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; pointer-events:none; transition:opacity .9s ease; }
+[data-showcase=still] .startup-replica .home-still { opacity:1; transition:none; }
+[data-showcase=still] .startup-replica .home-scene { opacity:0; transition:none; }
+:is([data-showcase=live],[data-showcase=still]) .startup-replica .home-copy { background:linear-gradient(90deg,color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 5%) 0%, transparent),color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 5%) 80%, transparent) 35%); border-radius:16px; padding:18px 16px; }
+.startup-replica .home:after { background:linear-gradient(90deg,transparent 0%,color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 10%) 0%, transparent) 40%,color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 10%) 85%, transparent) 62%,color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 10%) 92%, transparent) 100%); }
+.startup-replica .home-header { height:73px; padding:14px 38px; background:linear-gradient(color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 11%) 47%, transparent),color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 11%) 20%, transparent)); }
+.startup-replica .home-title { font:11px Arial,sans-serif; letter-spacing:2px; margin:0; }
+.startup-replica .home-language { min-height:0; font-size:11px; background:color-mix(in srgb, var(--night), var(--mist) 16%); border:1px solid color-mix(in srgb, var(--night), var(--mist) 40%); border-radius:5px; padding:9px 13px; }
+.startup-replica .home-copy { width:410px; max-width:48%; padding:0; margin:auto 55px auto auto; display:flex; flex-direction:column; gap:12px; }
+.startup-replica .home-place { font-size:11px; letter-spacing:2px; margin:0; color:color-mix(in srgb, var(--accent-deep), var(--accent-light) 67%); text-transform:uppercase; }
+.startup-replica .home-name { font-size:30px; line-height:1.2; font-weight:500; letter-spacing:3px; margin:0; color:var(--mist); }
+/* The remix's name is two words longer: at 53px "SLIME RUSH WORLD TOUR" broke into three lines and pushed the story and
+   the start button below a 1080-high screen. Two lines at most, and smaller still on a short window. */
+.startup-replica .home-name > span { display:block; font-size:clamp(30px, 4.4vh, 42px); color:color-mix(in srgb, var(--accent-deep), var(--accent-light) 60%); letter-spacing:5px; margin-top:2px; }
+.startup-replica .home-slogan { font-size:22px; line-height:1.45; margin:0; color:#fff; max-width:none; }
+.startup-replica .home-story { font-size:14px; line-height:1.6; color:color-mix(in srgb, var(--night), var(--mist) 88%); margin:0; max-width:none; }
+.startup-replica .home-go { display:flex; align-items:center; justify-content:center; align-self:stretch; min-height:56px; padding:14px 23px; font-size:19px; border-radius:0; background:none; color:var(--ink); border:0; box-shadow:none; margin:-6px 0 0; --chevron-fill:var(--accent); --chevron-stroke:var(--accent); --chevron-stroke-width:4px; }
+.startup-replica .home-go:hover { background:none; --chevron-fill:color-mix(in srgb, var(--accent-deep), var(--accent-light) 67%); --chevron-stroke:color-mix(in srgb, var(--accent-deep), var(--accent-light) 67%); }
+.startup-replica .home-go:focus-visible { --chevron-stroke:#fff; --chevron-stroke-width:3px; }
+.startup-replica .home-promise { font-size:11px; color:color-mix(in srgb, var(--night), var(--mist) 79%); text-align:center; margin:-5px 0 0; }
+.startup-replica .home-quick { display:flex; flex-direction:column; align-items:center; gap:2px; align-self:stretch; min-height:44px; padding:7px 14px;
+  border:1px solid color-mix(in srgb, color-mix(in srgb, var(--accent-deep), var(--accent-light) 42%) 53%, transparent); border-radius:10px; background:color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 10%) 80%, transparent); color:var(--mist); font:inherit; cursor:pointer; }
+.startup-replica .home-quick[hidden] { display:none; }
+.startup-replica .home-quick:hover:not(:disabled) { border-color:color-mix(in srgb, var(--accent-deep), var(--accent-light) 42%); background:color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 15%) 90%, transparent); }
+.startup-replica .home-quick:disabled { opacity:.55; cursor:default; }
+.startup-replica .home-quick:focus-visible { outline:2px solid #fff; outline-offset:2px; }
+.startup-replica .home-quick-title { font-size:15px; font-weight:800; }
+.startup-replica .home-quick-detail { font-size:11px; color:color-mix(in srgb, var(--night), var(--mist) 79%); max-width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.startup-replica .home-footer { position:absolute; bottom:10px; left:38px; padding:0; gap:14px; }
+.startup-replica .home-footer button { padding:0; min-height:22px; font-size:10px; color:color-mix(in srgb, var(--night), var(--mist) 79%); }
+.startup-replica[data-device="mobile"] .startup-frame { grid-template-rows:49px minmax(0,1fr) 73px; }
+.startup-replica[data-device="mobile"] .sm-stage,.startup-replica[data-device="mobile"] .home-header { padding:7px 26px; }
+.startup-replica[data-device="mobile"] .sm-name .brand-mark,.startup-replica[data-device="mobile"] .home-title .brand-mark { width:29px; height:29px; }
+.startup-replica[data-device="mobile"] .brand-wordmark { font-size:24.3px; }
+.startup-replica[data-device="mobile"] .home-header { height:49px; }
+.startup-replica[data-device="mobile"] .sm-foot { height:73px; padding:10px 26px; }
+.startup-replica[data-device="mobile"] .sm-foot button { min-height:52px; }
+.startup-replica[data-device="mobile"] .sm-extras { top:10px; }
+.startup-replica[data-device="mobile"] .sm-pane:first-child { grid-template-columns:auto minmax(0,1fr); padding:12px 26px; gap:16px; }
+.startup-replica[data-device="mobile"] .sm-pane:first-child>.sm-act { min-width:280px; }
+.startup-replica[data-device="mobile"] .sm-maps { inset:52px 0 88px; }
+.startup-replica[data-device="mobile"] .sm-loclabel { top:-43px; }
+.startup-replica[data-device="mobile"] .sm-loclabel strong { font-size:15px; }
+.startup-replica[data-device="mobile"] .sm-list { gap:8px; grid-auto-columns:calc((100% - 24px)/3.5); }
+.startup-replica[data-device="mobile"] .sm-nm { font-size:12px; }
+.startup-replica[data-device="mobile"] .sm-world { grid-template-columns:minmax(0,1fr) minmax(0,1.12fr); gap:16px; padding:12px 26px; }
+.startup-replica[data-device="mobile"] .startup-world-intro>h1 { font-size:27px; }
+.startup-replica[data-device="mobile"] .sm-conditions { gap:10px; }
+.startup-replica[data-device="mobile"] .sm-condition { grid-template-columns:65px 1fr; padding:10px 8px; gap:5px; }
+.startup-replica[data-device="mobile"] .sm-condition .sm-eyebrow { font-size:12px; }
+.startup-replica[data-device="mobile"] .sm-seg button { font-size:12px; gap:4px; }
+.startup-replica[data-device="mobile"] .sm-seg svg:not(.sm-condition-scene) { width:16px; height:16px; }
+.startup-replica[data-device="mobile"] .sm-world .sm-conditions { gap:5px; }
+.startup-replica[data-device="mobile"] .sm-world .sm-condition { padding:5px 8px; }
+.startup-replica[data-device="mobile"] .sm-world .sm-seg button { font-size:11px; }
+.startup-replica[data-device="mobile"] .sm-world .sm-seg svg:not(.sm-condition-scene) { width:14px; height:14px; }
+.startup-replica[data-device="mobile"] .sm-garage-pane { padding:8px 26px; gap:5px; }
+.startup-replica[data-device="mobile"] .sm-carhero { height:178px; }
+.startup-replica[data-device="mobile"] .sm-car .sm-carthumb { height:48px; }
+.startup-replica[data-device="mobile"] .home-copy { max-width:48%; width:360px; gap:12px; margin-right:28px; }
+.startup-replica[data-device="mobile"] .home-place { font-size:10px; }
+.startup-replica[data-device="mobile"] .home-name { font-size:24px; }
+.startup-replica[data-device="mobile"] .home-name > span { font-size:clamp(22px, 6.2vh, 30px); }
+.startup-replica[data-device="mobile"] .home-slogan { font-size:18px; line-height:1.35; }
+.startup-replica[data-device="mobile"] .home-story { font-size:12px; line-height:1.65; }
+.startup-replica[data-device="mobile"] .home-go { min-height:52px; padding:12px 20px; font-size:17px; }
+.startup-replica[data-device="mobile"] .home-promise { font-size:10px; }
+.startup-replica[data-device="mobile"] .home-quick { min-height:40px; padding:5px 12px; }
+.startup-replica .home { z-index:10; }
+.startup-replica .home-slogan { white-space:pre-line; letter-spacing:0; }
+.startup-replica .home-go { font-weight:400; }
+.startup-replica .sm-seg button::before { display:none; }
+.startup-replica .sm-seg.row { outline:none; }
+.startup-replica .sm-seg button { color:color-mix(in srgb, var(--night), var(--mist) 99%); }
+.startup-replica .sm-seg button.on { color:var(--ink); }
+.startup-replica.sm[data-players="2"] .sm-garage-pane { display:flex; flex-direction:column; gap:8px; }
+.startup-replica.sm[data-players="2"] .sm-carhero { height:222px; }
+.startup-replica.sm[data-players="2"] .sm-player .sm-headline { font-size:12px; margin:0; }
+.startup-replica .sm-player .startup-driver-row>div:first-child { min-width:0; gap:4px; white-space:nowrap; }
+.startup-replica .sm-player .startup-driver-row h2 { overflow:hidden; text-overflow:ellipsis; }
+.startup-replica .sm-player .startup-driver-row h3 { flex:none; }
+.startup-replica[data-device="mobile"][data-players="2"] .sm-carhero { height:178px; }
+.startup-replica:not([hidden]) ~ .player-tools { display:none; }
+.startup-replica .home-copy { transform:translateY(-5px); }
+.startup-replica.sm .sm-garage-pane { justify-content:flex-start; padding:2px 36px 0; gap:12px; }
+.startup-replica.sm[data-players="2"] .sm-garage-pane { gap:12px; }
+.startup-replica.sm[data-device="mobile"] .sm-garage-pane { padding:8px 26px; gap:5px; }
+/* Always shown (404): a thin strip along the card's bottom edge, under the map, the headline and the enlarged route. */
+.startup-replica .startup-route-details { position:absolute; left:0; right:0; bottom:0; z-index:6; padding:6px 14px 7px; font-size:9px; line-height:1.3; background:color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 10%) 90%, transparent); border-top:1px solid color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 42%) 33%, transparent); }
+.startup-replica .sm-pane:first-child .startup-route-details .sm-stats { display:flex; position:static; gap:10px; margin:0; white-space:nowrap; min-width:0; }
+.startup-replica .sm-pane:first-child .startup-route-details .sm-stat b { font-size:11px; }
+.startup-replica .sm-pane:first-child .startup-route-details .sm-stat span { font-size:9px; }
+.startup-replica .sm-pane:first-child .startup-route-details .sm-blurb { display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; position:static; font-size:11px; line-height:1.4; height:4.2em; margin:3px 0 0; }
+.startup-replica[data-device="mobile"] .sm-pane:first-child .startup-route-details .sm-stats { gap:6px; }
+.startup-replica[data-device="mobile"] .sm-pane:first-child .startup-route-details .sm-stat { gap:3px; }
+.startup-replica[data-device="mobile"] .sm-pane:first-child .startup-route-details .sm-stat b { font-size:10px; }
+.startup-replica[data-device="mobile"] .sm-pane:first-child .startup-route-details .sm-stat span { font-size:8px; letter-spacing:0; }
+.startup-replica[data-device="mobile"] .sm-pane:first-child .startup-route-details .sm-blurb { font-size:10px; line-height:1.35; -webkit-line-clamp:4; height:5.4em; }
+.startup-replica[data-device="mobile"] .sm-pane:first-child .sm-headline { bottom:96px; }
+.startup-replica .sm-steps { position:relative; }
+.startup-replica .sm-pane[data-leaving] { position:absolute; inset:0; pointer-events:none; }
+.startup-replica .sm-cars { position:relative; }
+
+.startup-replica .sm-ai-options { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:5px; }
+
+/* The header stays one short line in both 1P and 2P so the car previews keep the height it frees. */
+.startup-replica .startup-garage-header { display:flex; align-items:center; justify-content:space-between; gap:16px; min-height:30px; }
+.startup-replica .startup-add-player { min-height:30px; padding:4px 16px; border:1px solid var(--accent); border-radius:4px; background:var(--accent); color:var(--ink); font-size:13px; white-space:nowrap; }
+.startup-replica .startup-remove-player { min-height:30px; padding:4px 12px; border:1px solid color-mix(in srgb, var(--night), var(--mist) 66%); border-radius:4px; font-size:12px; white-space:nowrap; }
+
+.startup-replica[data-device="mobile"] .startup-garage-header { min-height:0; }
+
+/* A friend's run to beat, above the steps. */
+.startup-replica .sm-challenge { position:absolute; z-index:8; left:0; right:0; top:0; min-height:68px; box-sizing:border-box; display:flex; align-items:center; gap:12px;
+  padding:8px 10px 8px 14px; border:1px solid color-mix(in srgb, var(--accent-deep), var(--accent-light) 42%); border-radius:inherit; background:color-mix(in srgb, var(--night), var(--mist) 10%); color:var(--mist);
+  font-size:14px; font-weight:700; line-height:1.3; }
+.startup-replica[data-device="mobile"] .sm-challenge { min-height:52px; gap:8px; padding:4px 6px 4px 10px; font-size:12px; }
+.startup-replica .sm-challenge[hidden] { display:none; }
+.startup-replica .sm-challenge { flex-wrap:wrap; justify-content:flex-end; row-gap:6px; }
+.startup-replica .sm-challenge-body { flex:1 1 100%; display:flex; align-items:center; gap:12px; min-width:0; }
+.startup-replica .sm-challenge-text { min-width:0; flex:1 1 auto; }
+.startup-replica .sm-challenge-car { flex:none; width:96px; aspect-ratio:3/2; border-radius:8px; overflow:hidden; background:color-mix(in srgb, var(--night), var(--mist) 15%); }
+.startup-replica .sm-challenge-car[hidden] { display:none; }
+.startup-replica .sm-challenge-thumb { display:block; width:100%; height:100%; object-fit:cover; }
+.startup-replica[data-device="mobile"] .sm-challenge-car { width:64px; }
+.startup-replica .sm-challenge-accept { flex:none; min-height:34px; padding:4px 14px; border:0; border-radius:8px; background:color-mix(in srgb, var(--accent-deep), var(--accent-light) 42%); color:color-mix(in srgb, var(--night), var(--mist) 10%); font:inherit; font-size:14px; font-weight:800; cursor:pointer; }
+.startup-replica .sm-challenge-dismiss { flex:none; min-height:32px; padding:4px 12px; border:1px solid color-mix(in srgb, var(--night), var(--mist) 42%); border-radius:8px; background:color-mix(in srgb, var(--night), var(--mist) 8%); color:color-mix(in srgb, var(--night), var(--mist) 91%); font:inherit; font-size:13px; font-weight:600; cursor:pointer; }

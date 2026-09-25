@@ -1,0 +1,6 @@
+/* Chevron buttons (chevron.ts). The button itself paints nothing; the SVG behind the label is the shape. */
+.chevron { position:relative; isolation:isolate; --chevron-fill:#1b3040; --chevron-stroke:#6f8e9c; --chevron-stroke-width:1.5px; }
+.chevron > svg.chevron-shape { position:absolute; inset:0; width:100%; height:100%; z-index:-1; overflow:visible; pointer-events:none; }
+.chevron-shape path { fill:var(--chevron-fill); stroke:var(--chevron-stroke); stroke-width:var(--chevron-stroke-width); stroke-linejoin:round; transition:fill .12s, stroke .12s; }
+/* Doubled class: beats the replica screens' rectangular focus ring, so focus follows the chevron outline instead. */
+.chevron.chevron:focus-visible { outline:none; --chevron-stroke:#ffffff; --chevron-stroke-width:3px; }

@@ -1,0 +1,292 @@
+{
+  "id": "fuji",
+  "name": {
+    "zh": "富士山河口湖",
+    "en": "Lake Kawaguchi & Fuji"
+  },
+  "blurb": {
+    "zh": "沿河口湖开，富士山在湖对面的左前方，过河口湖大桥后顺着南岸收尾。",
+    "en": "Along Lake Kawaguchi with Mount Fuji ahead across the water, over the lake bridge and along the south shore to finish."
+  },
+  "category": "scenic",
+  "mode": "p2p",
+  "laps": 1,
+  "car": "hatch",
+  "timeOfDay": "day",
+  "editions": [
+    "web",
+    "full"
+  ],
+  "origin": {
+    "lat": 35.514303,
+    "lon": 138.766856
+  },
+  "padM": 450,
+  "backdropM": 4000,
+  "waypoints": [
+    [
+      35.514303,
+      138.766856
+    ],
+    [
+      35.51386,
+      138.766441
+    ],
+    [
+      35.511746,
+      138.764572
+    ],
+    [
+      35.509631,
+      138.762702
+    ],
+    [
+      35.50696,
+      138.760437
+    ],
+    [
+      35.505087,
+      138.759036
+    ],
+    [
+      35.503191,
+      138.757604
+    ],
+    [
+      35.504867,
+      138.754335
+    ],
+    [
+      35.505744,
+      138.752529
+    ],
+    [
+      35.506751,
+      138.748935
+    ],
+    [
+      35.506236,
+      138.744078
+    ],
+    [
+      35.50617,
+      138.742258
+    ]
+  ],
+  "centreLine": "white",
+  "traffic": "left",
+  "distantPeaks": [
+    {
+      "name": "Mount Fuji",
+      "lat": 35.3606,
+      "lon": 138.7274,
+      "heightM": 3776,
+      "snowlineM": 3000
+    }
+  ],
+  "treeFill": {
+    "perTreeM2": 160,
+    "mix": {
+      "broadleaf": 0.6,
+      "conifer": 0.4
+    }
+  },
+  "groundCover": "terrain_grass",
+  "sky": {
+    "zenithColor": "#3f7dc0",
+    "skyColor": "#adc8e2",
+    "fogColor": "#a6bdd2"
+  },
+  "architecture": {
+    "facades": {
+      "building_stucco": 1.0
+    },
+    "tint": {
+      "building_stucco": "#e8e5dc"
+    },
+    "why": "富士河口湖：浅色墙、深灰瓦的两层坡顶房（街景照片估计）",
+    "local": {
+      "types": [
+        {
+          "share": 1.0,
+          "when": {
+            "maxArea": 60
+          },
+          "storeys": [
+            1,
+            1
+          ],
+          "storeyM": 2.7,
+          "groundM": 2.7,
+          "tileBays": 1,
+          "wall": {
+            "kind": "timber",
+            "colour": "#d8d8d4",
+            "board": 0.12,
+            "stain": 0.3
+          },
+          "window": {
+            "shape": "none",
+            "bay": 5.0
+          },
+          "ground": {
+            "kind": "door",
+            "door": "#b3b4b0",
+            "base": "#8f8c87"
+          },
+          "roof": {
+            "kind": "gable",
+            "material": "metal",
+            "colour": "#4b6b8a",
+            "pitchDeg": 12,
+            "eaveM": 0.2
+          },
+          "details": {}
+        },
+        {
+          "share": 0.7,
+          "when": {
+            "minArea": 60,
+            "maxArea": 300
+          },
+          "storeys": [
+            2,
+            2
+          ],
+          "storeyM": 2.9,
+          "groundM": 3.0,
+          "tileBays": 2,
+          "wall": {
+            "kind": "timber",
+            "colour": "#e3ddd2",
+            "board": 0.455,
+            "stain": 0.25,
+            "palette": [
+              "#e3ddd2",
+              "#d5d6d3",
+              "#d9ccb6",
+              "#c9c1b2"
+            ]
+          },
+          "window": {
+            "shape": "rect",
+            "w": 1.65,
+            "h": 1.1,
+            "bay": 3.6,
+            "sill": 0.9,
+            "frame": "#b8bcbf",
+            "frameW": 0.04,
+            "glass": "#3a4248",
+            "surround": {
+              "lintel": "#a9aaa6",
+              "lintelH": 0.3
+            }
+          },
+          "ground": {
+            "kind": "plinth",
+            "plinth": "#9a9690",
+            "plinthH": 0.45,
+            "door": "#6b5a48",
+            "base": "#8f8c87"
+          },
+          "roof": {
+            "kind": "gable",
+            "material": "metal",
+            "colour": "#3e4044",
+            "pitchDeg": 20,
+            "eaveM": 0.5
+          },
+          "details": {
+            "balconyFloors": [
+              0
+            ],
+            "balconyShare": 0.35,
+            "balconyDepth": 0.9
+          }
+        },
+        {
+          "share": 0.3,
+          "when": {
+            "minArea": 150
+          },
+          "storeys": [
+            2,
+            3
+          ],
+          "storeyM": 3.2,
+          "groundM": 3.8,
+          "tileBays": 2,
+          "wall": {
+            "kind": "render",
+            "colour": "#e8e5dc",
+            "stain": 0.2
+          },
+          "window": {
+            "shape": "rect",
+            "w": 1.8,
+            "h": 1.2,
+            "bay": 3.6,
+            "sill": 0.9,
+            "frame": "#b8bcbf",
+            "frameW": 0.04,
+            "glass": "#384046"
+          },
+          "ground": {
+            "kind": "shops",
+            "signs": [
+              "#f2f0ea",
+              "#2d5a9a",
+              "#b8302a"
+            ],
+            "shutterColour": "#c7c7c2",
+            "glass": "#3a4246"
+          },
+          "roof": {
+            "kind": "hip",
+            "material": "metal",
+            "colour": "#7a2f33",
+            "pitchDeg": 18,
+            "eaveM": 0.6
+          },
+          "details": {
+            "balconyFloors": [
+              0,
+              1
+            ],
+            "balconyShare": 0.3,
+            "balconyDepth": 1.0
+          }
+        }
+      ],
+      "rail": {
+        "style": "glass",
+        "colour": "#d9d6cf"
+      },
+      "detailColours": {
+        "local_detail_dark": "#4a4c4f",
+        "local_detail_light": "#d6d6d2",
+        "local_detail_accent": "#7a2f33"
+      },
+      "why": "house-cards/fuji.md (Commons street photos of Funatsu and Kodachi: fn-55, fn-79, fn-81, fn-20, fn-48): prefab storehouses under blue coloured-steel roofs, two-storey lap-siding houses with aluminium sashes and shutter boxes under charcoal metal gables with 0.5 m eaves, white shops and ryokan under low wine-red hip roofs"
+    }
+  },
+  "vista": {
+    "spacingM": 45,
+    "density": 0.55,
+    "heightM": [
+      5,
+      9
+    ],
+    "farRoofs": {
+      "gable": 0.5,
+      "hip": 0.4,
+      "flat": 0.1
+    },
+    "nearRoofs": {
+      "gable": 0.5,
+      "hip": 0.4,
+      "flat": 0.1
+    },
+    "why": "house-cards/fuji.md 4: a carpet of small pitched metal roofs 6-8 m high between trees, a few white hotels, no towers; spacing 45 m keeps the far footprints house-sized (70-170 m2) so they take the house type, not the shop type"
+  }
+}

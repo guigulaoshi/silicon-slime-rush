@@ -1,0 +1,69 @@
+{
+  "id": "twin-peaks",
+  "name": {
+    "zh": "双峰",
+    "en": "Twin Peaks"
+  },
+  "category": "scenic",
+  "slimeDensity": 0.5,
+  "slimeCount": 42,
+  "mode": "p2p",
+  "laps": 1,
+  "car": "convertible",
+  "timeOfDay": "night",
+  "editions": [
+    "web",
+    "full"
+  ],
+  "origin": {
+    "lat": 37.752,
+    "lon": -122.447
+  },
+  "padM": 300,
+  "backdropM": 6000,
+  "landmarks": [
+    "twin-peaks-overlook",
+    "sutro-tower"
+  ],
+  "halfWidthDefault": 6.0,
+  "waypoints": [
+    [
+      37.74395,
+      -122.4599
+    ],
+    {
+      "junction": [
+        "Twin Peaks Boulevard",
+        "Portola Drive"
+      ]
+    },
+    {
+      "road": "Twin Peaks Boulevard",
+      "pick": "highest"
+    }
+  ],
+  "bboxPoints": [
+    [
+      37.74395,
+      -122.4599
+    ],
+    [
+      37.7452,
+      -122.4527
+    ],
+    [
+      37.7544,
+      -122.4477
+    ],
+    [
+      37.7565,
+      -122.445
+    ]
+  ],
+  "bridgeDeckM": 0,
+  "bridgeMinLengthM": 200,
+  "blurb": {
+    "zh": "盘山上到顶，整个旧金山铺在脚下。",
+    "en": "Up the hill until the whole city is under you."
+  }
+}

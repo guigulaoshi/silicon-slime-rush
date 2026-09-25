@@ -1,0 +1,291 @@
+.replica { font-family:Arial,"PingFang SC",sans-serif; color:color-mix(in srgb, var(--night), var(--mist) 99%); }
+.replica [hidden] { display:none!important; }
+.replica button { font:inherit; cursor:pointer; color:inherit; }
+.replica button:focus-visible { outline:3px solid #fff; outline-offset:4px; }
+.replica svg { width:20px; height:20px; flex:none; vertical-align:middle; }
+.replica-frame { position:absolute; left:50%; top:50%; transform-origin:center; overflow:hidden; }
+/* The dimming reaches every screen edge. #ui gives way to the phone's safe area (camera
+   cutout, gesture bar), so a dimming painted on this box left a strip of clear road along that side;
+   a fixed layer behind the frame covers the whole viewport while the buttons stay in the safe area. */
+.replica-screen { isolation:isolate; }
+.replica-screen::before { content:""; position:fixed; top:0; right:0; bottom:0; left:0; z-index:-1; pointer-events:none;
+  background:color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 8%) 33%, transparent); backdrop-filter:brightness(.42) blur(3px); }
+.replica-screen .replica-frame { display:grid; grid-template-rows:73px minmax(0,1fr); }
+.replica-screen:not([hidden]) ~ .player-tools { display:none; }
+/* The drive replays in a window beside the pause menu, with a scrub bar. */
+.replica .pause-replay { width:80%; align-self:center; margin:0; border:1px solid color-mix(in srgb, var(--night), var(--mist) 40%); border-radius:7px; background:color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 8%) 80%, transparent); overflow:hidden; }
+.replica .pause-replay-screen { position:relative; aspect-ratio:16/9; background:color-mix(in srgb, var(--night), var(--mist) 4%); }
+.replica .pause-replay-still { position:absolute; inset:0; width:100%; height:100%; display:block; }
+.replica .pause-replay-video { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; opacity:0; transition:opacity .3s ease; }
+.replica .pause-replay.live .pause-replay-video { opacity:1; }
+.replica .pause-replay-controls { display:flex; align-items:center; gap:10px; padding:8px 12px; }
+.replica .pause-replay-toggle { display:grid; place-items:center; width:32px; height:32px; flex:none; padding:0; border-radius:50%;
+  border:1px solid color-mix(in srgb, var(--accent-deep), var(--accent-light) 50%); background:color-mix(in srgb, var(--accent-deep), var(--accent-light) 50%); color:color-mix(in srgb, var(--night), var(--mist) 10%); }
+.replica .pause-replay-toggle svg { width:14px; height:14px; fill:currentColor; }
+.replica .pause-replay-scrub { flex:1; min-width:0; height:24px; margin:0; background:transparent; cursor:pointer; -webkit-appearance:none; appearance:none; --filled:0%; }
+.replica .pause-replay-scrub::-webkit-slider-runnable-track { height:5px; border-radius:3px;
+  background:linear-gradient(90deg,color-mix(in srgb, var(--accent-deep), var(--accent-light) 50%) var(--filled),color-mix(in srgb, var(--night), var(--mist) 30%) var(--filled)); }
+.replica .pause-replay-scrub::-moz-range-track { height:5px; border-radius:3px; background:color-mix(in srgb, var(--night), var(--mist) 30%); }
+.replica .pause-replay-scrub::-moz-range-progress { height:5px; border-radius:3px; background:color-mix(in srgb, var(--accent-deep), var(--accent-light) 50%); }
+.replica .pause-replay-scrub::-webkit-slider-thumb { -webkit-appearance:none; width:15px; height:15px; margin-top:-5px; border-radius:50%; background:color-mix(in srgb, var(--night), var(--mist) 99%); border:0; }
+.replica .pause-replay-scrub::-moz-range-thumb { width:15px; height:15px; border-radius:50%; background:color-mix(in srgb, var(--night), var(--mist) 99%); border:0; }
+.replica .pause-replay-time { flex:none; font-size:12px; color:color-mix(in srgb, var(--night), var(--mist) 76%); font-variant-numeric:tabular-nums; }
+@media (prefers-reduced-motion: reduce) { .replica .pause-replay-video { transition:none; } }
+.replica header { display:flex; justify-content:space-between; align-items:center; padding:18px 38px; font-size:11px; letter-spacing:2px; }
+.replica header>.brand-signature .brand-mark { width:38px; height:38px; }
+.replica .language { background:color-mix(in srgb, var(--night), var(--mist) 16%); border:1px solid color-mix(in srgb, var(--night), var(--mist) 40%); border-radius:5px; padding:9px 13px; }
+/* The header language control is a two-sided switch. `html` and the doubled class outrank the
+   per-screen .language / .home-language button styles, whichever stylesheet loads last. */
+html .lang-toggle.lang-toggle { display:inline-flex; align-items:stretch; gap:0; padding:3px; min-height:0; border-radius:999px;
+  background:color-mix(in srgb, var(--night), var(--mist) 12%); border:1px solid color-mix(in srgb, var(--night), var(--mist) 40%); font-size:12px; line-height:1; cursor:pointer; }
+html .lang-toggle.lang-toggle .lang-option { padding:7px 12px; border-radius:999px; color:color-mix(in srgb, var(--night), var(--mist) 70%); letter-spacing:.5px; }
+html .lang-toggle.lang-toggle .lang-option.on { background:color-mix(in srgb, var(--accent-deep), var(--accent-light) 50%); color:color-mix(in srgb, var(--night), var(--mist) 12%); font-weight:600; }
+.replica main { display:flex; flex-direction:column; justify-content:center; align-items:stretch; padding:20px 40px 27px; min-height:0; }
+.replica .pause-layout { display:grid; grid-template-columns:1fr 1.1fr; gap:38px; max-width:920px; width:100%; align-self:center; align-items:center; }
+.replica .eyebrow { color:color-mix(in srgb, var(--accent-deep), var(--accent-light) 50%); font-size:11px; letter-spacing:3px; margin:0 0 8px; }
+.replica .pause-menu h1 { font-size:36px; line-height:1.17; font-weight:500; letter-spacing:0; margin:0; }
+.replica .pause-location { line-height:normal; max-width:none; font-size:12px; color:color-mix(in srgb, var(--night), var(--mist) 76%); margin:9px 0 17px; }
+.replica .extra-primary { display:flex; width:100%; justify-content:center; align-items:center; gap:10px; min-height:50px; background:color-mix(in srgb, var(--accent-deep), var(--accent-light) 50%); color:color-mix(in srgb, var(--night), var(--mist) 10%); border:1px solid color-mix(in srgb, var(--accent-deep), var(--accent-light) 50%); border-radius:5px; padding:12px 18px; font-size:16px; }
+.replica .resume { min-height:57px; font-size:19px; justify-content:flex-start; }
+.replica .pause-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:10px 0 13px; }
+.replica .pause-grid button,.replica .modal-secondary { display:flex; align-items:center; gap:11px; border:1px solid color-mix(in srgb, var(--night), var(--mist) 47%); border-radius:4px; background:color-mix(in srgb, var(--night), var(--mist) 17%); min-height:45px; padding:10px 14px; font-size:14px; }
+.replica .pause-grid button { min-height:52px; }
+.replica .pause-aside { display:flex; flex-direction:column; gap:13px; }
+/* The two links sit side by side again; the coffee card gets the wider share and its line may wrap once, at a word. */
+.replica .creator-links { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr); gap:8px; flex:none; min-width:0; }
+.replica .creator-home,.replica .coffee { display:flex; flex-direction:row; align-items:center; justify-content:flex-start; min-width:0; min-height:44px; padding:6px 10px; gap:7px; text-align:left; }
+.replica .creator-home { border:1px solid color-mix(in srgb, var(--sea-deep), var(--sea-light) 79%); border-radius:7px; background:linear-gradient(120deg,color-mix(in srgb, var(--night), var(--mist) 36%),color-mix(in srgb, var(--night), var(--mist) 26%)); color:var(--mist); box-shadow:0 4px 22px color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 13%) 27%, transparent); }
+.replica .creator-home>span,.replica .coffee>span:nth-child(2) { flex:1; min-width:0; }
+.replica .creator-home strong { display:block; font-size:13px; font-weight:500; line-height:1.25; word-break:keep-all; overflow-wrap:normal; }
+.replica .creator-home small { display:none; }
+.replica .coffee { border:1px solid color-mix(in srgb, var(--gold-deep), var(--gold-light) 20%); border-radius:6px; background:color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 21%) 94%, transparent); color:color-mix(in srgb, var(--gold-deep), var(--gold-light) 88%); }
+.replica .coffee strong { display:block; font-size:13px; font-weight:500; line-height:1.25; word-break:keep-all; overflow-wrap:normal; }
+.replica .coffee-cup { font-size:17px; line-height:1; flex:none; }
+dialog.replica-dialog { position:fixed; inset:0; width:100%; height:100%; max-width:none; max-height:none; margin:0; padding:0; border:0; background:transparent; overflow:hidden; }
+dialog.replica-dialog::backdrop { background:transparent; }
+.replica .extra-modal { position:absolute; inset:0; display:flex; justify-content:center; align-items:center; padding:20px; background:color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 4%) 80%, transparent); }
+.replica .modal-shell { width:560px; max-width:100%; max-height:100%; overflow:auto; padding:24px; background:color-mix(in srgb, var(--night), var(--mist) 15%); border:1px solid color-mix(in srgb, var(--night), var(--mist) 58%); border-radius:10px; color:color-mix(in srgb, var(--night), var(--mist) 96%); display:flex; flex-direction:column; gap:15px; }
+.replica .modal-header { display:flex; justify-content:space-between; align-items:center; gap:15px; }
+.replica .modal-header h2 { font-size:23px; font-weight:500; margin:0; }
+.replica .modal-header button { font-size:25px; width:44px; min-height:44px; flex:none; padding:0; justify-content:center; background:color-mix(in srgb, var(--night), var(--mist) 23%); border:1px solid color-mix(in srgb, var(--night), var(--mist) 53%); border-radius:5px; }
+.replica .modal-shell p { max-width:none; color:color-mix(in srgb, var(--night), var(--mist) 96%); font-size:14px; line-height:1.6; margin:0; }
+.replica .modal-shell .modal-note,.replica .modal-shell .media-status { font-size:11px; color:color-mix(in srgb, var(--night), var(--mist) 81%); line-height:1.5; }
+.replica .confirm-actions { display:flex; gap:12px; justify-content:flex-end; }
+.replica .confirm-actions>button { flex:1; justify-content:center; }
+.replica .media-modal .modal-shell { width:720px; }
+.replica .media-preview { display:block; width:100%; height:auto; max-height:290px; object-fit:contain; background:color-mix(in srgb, var(--night), var(--mist) 10%); border-radius:5px; }
+.replica .media-actions { display:flex; gap:10px; align-items:stretch; }
+.replica .share-kinds { display:flex; gap:6px; margin:0 12px 0 auto; }
+.replica .share-kinds[hidden] { display:none; }
+.replica .modal-header .share-kind { flex:none; width:auto; min-width:0; min-height:34px; padding:4px 14px; font-size:13px; white-space:nowrap; background:color-mix(in srgb, var(--night), var(--mist) 17%); border-color:color-mix(in srgb, var(--night), var(--mist) 47%); }
+.replica .modal-header .share-kind[aria-pressed="true"] { border-color:color-mix(in srgb, var(--accent-deep), var(--accent-light) 42%); color:color-mix(in srgb, var(--accent-deep), var(--accent-light) 42%); background:color-mix(in srgb, var(--night), var(--mist) 16%); }
+.replica .share-names { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:0 0 8px; }
+.replica .share-names[hidden], .replica .share-name-fields[hidden], .replica .share-name-toggle[hidden] { display:none; }
+.replica .share-name-toggle { min-height:36px; font-size:13px; }
+.replica .share-name-fields { display:flex; flex:1; gap:8px; }
+.replica .share-name-fields input { flex:1; min-width:0; min-height:36px; box-sizing:border-box; background:color-mix(in srgb, var(--night), var(--mist) 23%); color:color-mix(in srgb, var(--night), var(--mist) 98%); border:1px solid color-mix(in srgb, var(--night), var(--mist) 58%); border-radius:5px; padding:6px 12px; font:inherit; }
+.replica .media-actions>* { flex:1; display:flex; gap:8px; align-items:center; justify-content:center; font-size:13px; min-height:46px; }
+.replica .media-save { color:color-mix(in srgb, var(--night), var(--mist) 93%); border:1px solid color-mix(in srgb, var(--night), var(--mist) 53%); background:color-mix(in srgb, var(--night), var(--mist) 22%); border-radius:4px; text-decoration:none; padding:8px; }
+.replica .modal-shell textarea { width:100%; min-height:135px; padding:14px; resize:vertical; background:color-mix(in srgb, var(--night), var(--mist) 10%); color:color-mix(in srgb, var(--night), var(--mist) 96%); border:1px solid color-mix(in srgb, var(--night), var(--mist) 51%); border-radius:5px; font:14px/1.6 Arial,"PingFang SC",sans-serif; }
+.replica .modal-shell textarea::selection { background:color-mix(in srgb, var(--night), var(--mist) 30%); color:#fff; }
+.replica[data-device=mobile] .replica-frame { grid-template-rows:49px minmax(0,1fr); }
+.replica[data-device=mobile] header { padding:10px 26px; }
+.replica[data-device=mobile] main { padding:12px 26px 17px; }
+.replica[data-device=mobile] .pause-layout { grid-template-columns:1fr 1.05fr; gap:25px; }
+.replica[data-device=mobile] .pause-menu h1 { font-size:27px; }
+.replica[data-device=mobile] .pause-menu .eyebrow { display:none; }
+.replica[data-device=mobile] .pause-location { margin:7px 0 10px; }
+.replica[data-device=mobile] .pause-grid { gap:6px; margin:8px 0; }
+.replica[data-device=mobile] .pause-grid button { min-height:44px; padding:8px 11px; font-size:13px; }
+.replica[data-device=mobile] .extra-primary { min-height:48px; font-size:15px; }
+.replica[data-device=mobile] .pause-aside { gap:11px; }
+.replica[data-device=mobile] .creator-links { gap:8px; }
+.replica[data-device=mobile] .creator-home,.replica[data-device=mobile] .coffee { min-height:40px; padding:5px 8px; gap:6px; }
+.replica[data-device=mobile] .creator-home strong { font-size:13px; }
+.replica[data-device=mobile] .modal-shell { padding:17px; gap:12px; }
+.replica[data-device=mobile] .media-preview { max-height:225px; }
+
+.replica .media-status:empty { display:none; }
+.replica .media-preview { margin:0; }
+/* The clip preview hugs the video: its shape is read from the file (ShareDialog sets aspect-ratio on loadedmetadata),
+   so a box of another shape never puts dark bands beside the picture. */
+.replica .share-clip.media-preview { width:auto; max-width:100%; max-height:290px; margin:0 auto; background:color-mix(in srgb, var(--night), var(--mist) 4%); }
+.replica[data-device=mobile] .share-clip.media-preview { max-height:225px; }
+.results-replica main { padding:10px 38px 19px; gap:11px; }
+.replica .results-heading { display:flex; align-items:center; justify-content:space-between; flex:none; }
+.replica .results-heading>span { font-size:24px; color:color-mix(in srgb, var(--accent-deep), var(--accent-light) 69%); }
+.replica .results-heading small { font-size:11px; color:color-mix(in srgb, var(--night), var(--mist) 81%); }
+.replica .results-layout { display:grid; grid-template-columns:1.4fr 1fr; gap:26px; min-height:0; flex:1; }
+.replica .result-summary { display:flex; flex-direction:column; min-height:0; gap:6px; }
+.replica .result-record { margin:0; padding:7px 14px; border:1px solid color-mix(in srgb, var(--accent-deep), var(--accent-light) 42%); border-radius:8px; background:color-mix(in srgb, var(--night), var(--mist) 16%);
+  color:color-mix(in srgb, var(--accent-deep), var(--accent-light) 67%); font-size:16px; font-weight:800; letter-spacing:.04em; text-align:center; }
+.replica .result-record[hidden] { display:none; }
+.replica .result-record[data-record=first] { border-color:color-mix(in srgb, var(--sea-deep), var(--sea-light) 67%); color:color-mix(in srgb, var(--sea-deep), var(--sea-light) 93%); }
+.replica .result-record.pop { animation:result-record-pop .5s cubic-bezier(.2,.8,.2,1); }
+@keyframes result-record-pop { 0%{transform:scale(.82);opacity:0} 60%{transform:scale(1.06);opacity:1} 100%{transform:none;opacity:1} }
+.replica .result-cards { display:grid; grid-template-columns:1fr; min-height:0; flex:1; gap:8px; }
+.replica .result-cards[data-players="2"] { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.replica .share-card { position:relative; min-width:0; padding:22px; background:color-mix(in srgb, var(--night), var(--mist) 20%) center/cover; border:1px solid color-mix(in srgb, var(--night), var(--mist) 56%); border-radius:8px; display:flex; flex-direction:column; justify-content:space-between; gap:7px; overflow:hidden; }
+.replica .card-brand { display:flex; align-items:center; gap:10px; font-size:20px; font-weight:700; letter-spacing:3px; line-height:1.15; color:color-mix(in srgb, var(--night), var(--mist) 98%); }
+.replica .card-brand>.brand-mark { width:46px; height:46px; flex:none; }
+.replica .card-brand-wordmark>span { display:block; font-size:10px; letter-spacing:1px; color:color-mix(in srgb, var(--night), var(--mist) 83%); margin-top:5px; }
+/* The stars hold the slot the two-line slogan used, so the card keeps its height. */
+.replica .earned-stars.card-rating { font-size:48px; gap:10px; min-height:65px; }
+.replica .card-route { font-size:11px; letter-spacing:1px; color:color-mix(in srgb, var(--night), var(--mist) 89%); }
+.replica .score-number { font-size:48px; line-height:1; color:color-mix(in srgb, var(--accent-deep), var(--accent-light) 68%); font-weight:500; letter-spacing:-1px; }
+.replica .score-number>span { font-size:11px; letter-spacing:1px; display:inline-block; margin-left:14px; color:color-mix(in srgb, var(--night), var(--mist) 89%); }
+.replica .card-stats { display:flex; gap:28px; padding:9px 0; border-top:1px solid color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 82%) 33%, transparent); }
+.replica .card-stats>span { font-size:10px; color:color-mix(in srgb, var(--night), var(--mist) 84%); display:flex; flex-direction:column; gap:5px; }
+.replica .card-stats b { font-size:19px; font-weight:500; color:var(--mist); }
+.replica .card-bottom { display:flex; justify-content:space-between; font-size:9px; color:color-mix(in srgb, var(--night), var(--mist) 86%); gap:10px; }
+.replica .earned-stars { display:flex; gap:9px; font-size:28px; line-height:1.1; align-items:center; min-height:32px; letter-spacing:0; }
+.replica .earned-stars .earned { display:inline-block; color:color-mix(in srgb, var(--gold-deep), var(--gold-light) 68%); text-shadow:0 0 13px color-mix(in srgb, color-mix(in srgb, var(--gold-deep), var(--gold-light) 26%) 40%, transparent); }
+.replica .earned-stars .empty { color:color-mix(in srgb, var(--night), var(--mist) 55%); }
+.replica .result-actions { display:flex; flex-direction:column; gap:9px; min-height:0; }
+.replica .share-prompt h2 { font-size:24px; font-weight:500; margin:0 0 11px; }
+.replica .action-arrow { margin-left:auto; }
+.replica .result-footer { display:flex; gap:10px; align-items:center; flex:none; }
+.replica .result-footer>span { flex:1; color:color-mix(in srgb, var(--night), var(--mist) 79%); font-size:12px; }
+.replica .result-footer button { display:flex; align-items:center; gap:8px; padding:10px 20px; min-height:42px; font-size:14px; }
+.replica .result-footer button:last-child { border-color:color-mix(in srgb, var(--accent-deep), var(--accent-light) 23%); color:color-mix(in srgb, var(--accent-deep), var(--accent-light) 71%); }
+.replica .result-footer [data-action=text] { padding:8px; font-size:11px; }
+.replica .result-details { flex:none; max-height:105px; overflow:auto; color:color-mix(in srgb, var(--night), var(--mist) 84%); font-size:11px; }
+.replica .result-details summary { cursor:pointer; color:color-mix(in srgb, var(--accent-deep), var(--accent-light) 50%); }
+.replica .result-details p { max-width:none; font-size:10px; }
+.replica .result-rating-meta { font-size:9px; color:color-mix(in srgb, var(--night), var(--mist) 83%); line-height:1.3; max-width:none; }
+.replica .result-standing { grid-template-columns:35px minmax(0,1fr) 48px 64px; padding:4px 7px; font-size:10px; gap:5px; }
+.replica .result-standing.human { background:color-mix(in srgb, color-mix(in srgb, var(--accent-deep), var(--accent-light) 50%) 9%, transparent); box-shadow:inset 3px 0 color-mix(in srgb, var(--accent-deep), var(--accent-light) 50%); }
+.replica .result-standing-list { max-height:none; }
+.replica .result-standings h3 { font-size:11px; color:color-mix(in srgb, var(--accent-deep), var(--accent-light) 69%); margin:4px 0; }
+/* The entry stamp (results screen): double-ruled, tilted, the ink a little uneven, like a real one. */
+.replica .visa-stamp { position:absolute; top:18px; right:20px; transform:rotate(-9deg); display:flex; flex-direction:column; align-items:center; gap:1px;
+  padding:7px 13px 6px; border:3px double color-mix(in srgb, var(--stamp-deep), var(--stamp-light) 30%); border-radius:10px;
+  color:color-mix(in srgb, var(--stamp-deep), var(--stamp-light) 30%); opacity:.82; pointer-events:none; mix-blend-mode:screen;
+  -webkit-mask-image:radial-gradient(circle at 30% 40%, #000 55%, rgba(0,0,0,.72) 75%, #000 92%); mask-image:radial-gradient(circle at 30% 40%, #000 55%, rgba(0,0,0,.72) 75%, #000 92%); }
+.replica .visa-stamp-word { font-size:10px; font-weight:800; letter-spacing:.22em; }
+.replica .visa-stamp-code { font-size:26px; line-height:1; font-weight:900; letter-spacing:.08em; }
+.replica .visa-stamp-date { font-size:9px; font-weight:700; letter-spacing:.14em; border-top:1px solid currentColor; padding-top:2px; }
+.replica .result-cards[data-players="2"] .visa-stamp { top:10px; right:10px; transform:rotate(-9deg) scale(.78); transform-origin:top right; }
+.replica[data-device=mobile] .visa-stamp { top:10px; right:10px; transform:rotate(-9deg) scale(.72); transform-origin:top right; }
+.replica .result-cards[data-players="2"] .share-card { padding:12px; gap:5px; }
+.replica .result-cards[data-players="2"] .card-brand { gap:6px; font-size:13px; letter-spacing:1px; }
+.replica .result-cards[data-players="2"] .card-brand>.brand-mark { width:32px; height:32px; }
+.replica .result-cards[data-players="2"] .earned-stars.card-rating { font-size:32px; gap:6px; min-height:43px; }
+.replica .result-cards[data-players="2"] .score-number { font-size:30px; }
+.replica .result-cards[data-players="2"] .score-number>span { font-size:8px; margin-left:7px; }
+.replica .result-cards[data-players="2"] .earned-stars { font-size:21px; gap:4px; min-height:23px; }
+.replica .result-cards[data-players="2"] .card-stats { gap:10px; padding:5px 0; }
+.replica .result-cards[data-players="2"] .card-stats b { font-size:13px; }
+.replica .result-cards[data-players="2"] .card-stats>span,.replica .result-cards[data-players="2"] .card-bottom { font-size:8px; }
+.replica .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+.replica[data-device=mobile].results-replica main { padding:12px 26px 17px; }
+.replica[data-device=mobile] .results-heading>span { font-size:20px; }
+.replica[data-device=mobile] .results-layout { gap:17px; grid-template-columns:1.4fr 1fr; }
+.replica[data-device=mobile] .share-card { padding:15px; gap:5px; }
+.replica[data-device=mobile] .earned-stars.card-rating { font-size:40px; min-height:55px; }
+.replica[data-device=mobile] .score-number { font-size:39px; }
+.replica[data-device=mobile] .card-stats { gap:21px; padding:6px 0; }
+.replica[data-device=mobile] .card-bottom { font-size:8px; }
+.replica[data-device=mobile] .earned-stars { font-size:24px; min-height:27px; }
+.replica[data-device=mobile] .share-prompt h2 { font-size:20px; margin:0 0 6px; }
+.replica[data-device=mobile] .result-footer { gap:8px; }
+.replica[data-device=mobile] .result-footer button { min-height:44px; padding:9px 15px; }
+.replica[data-device=mobile] .result-footer>span { font-size:11px; }
+.replica[data-device=mobile] .result-footer [data-action=text] { padding:8px; font-size:10px; }
+.replica[data-device=mobile] .result-cards[data-players="2"] .earned-stars.card-rating { font-size:28px; min-height:38px; }
+.replica[data-device=mobile] .result-cards[data-players="2"] .card-stats { gap:7px; }
+.replica canvas.media-preview { margin:0; max-height:290px; }
+.replica[data-device=mobile] canvas.media-preview { max-height:225px; }
+/* The home card is only picture: the preview hugs it, so a preview box of another shape (a phone's) leaves no dark band beside it. */
+.replica canvas.media-preview.share-home-card { width:auto; max-width:100%; margin:0 auto; background:none; }
+.replica .earned-stars .earned[data-revealed=false] { color:color-mix(in srgb, var(--night), var(--mist) 55%); text-shadow:none; }
+.results-replica .result-details { position:absolute; left:38px; bottom:1px; width:calc((100% - 102px)*.583333); max-height:220px; }
+.results-replica .result-details[open] { padding:8px; background:color-mix(in srgb, var(--night), var(--mist) 15%); border:1px solid color-mix(in srgb, var(--night), var(--mist) 58%); border-radius:5px; z-index:2; }
+/* Open, the panel rises from above the footer row instead of from the frame's bottom edge, so it never
+   covers the footer buttons. 72px = main's bottom padding + the footer buttons' min-height + main's gap
+   (desktop 19+42+11, mobile 17+44+11). */
+.results-replica .result-details[open] { bottom:72px; }
+/* After "Copy text card" the status line shows between the cards and the footer; the open panel rises above it too
+   (its pinned 26px line + main's 11px gap), so the copied / failed message is never hidden under the panel. */
+.results-replica main > p[role=status] { line-height:26px; }
+.results-replica main:has(> p[role=status]:not([hidden])) .result-details[open] { bottom:109px; }
+.results-replica[data-players="2"] .result-details { position:static; width:auto; max-height:100px; padding:0; border:0; background:transparent; }
+.replica[data-device=mobile].results-replica .result-details { left:26px; width:calc((100% - 69px)*.583333); }
+.replica[data-device=mobile].results-replica[data-players="2"] .result-details { width:auto; }
+.replica[data-device=mobile] .result-cards[data-players="2"] .share-card { padding:8px; gap:3px; }
+.replica[data-device=mobile] .result-cards[data-players="2"] .card-brand { font-size:11px; line-height:1.2; }
+.replica[data-device=mobile] .result-cards[data-players="2"] .card-brand-wordmark>span { font-size:8px; margin-top:2px; }
+.replica[data-device=mobile] .result-cards[data-players="2"] .earned-stars.card-rating { font-size:20px; min-height:27px; }
+.replica[data-device=mobile] .result-cards[data-players="2"] .earned-stars { font-size:18px; min-height:20px; }
+.replica[data-device=mobile] .result-cards[data-players="2"] .card-route { font-size:8px; }
+.replica[data-device=mobile] .result-cards[data-players="2"] .score-number { font-size:26px; }
+.replica[data-device=mobile] .result-cards[data-players="2"] .card-stats { padding:3px 0; }
+.replica[data-device=mobile] .result-cards[data-players="2"] .card-stats>span { font-size:7px; gap:2px; }
+.replica[data-device=mobile] .result-cards[data-players="2"] .card-stats b { font-size:11px; }
+.replica[data-device=mobile] .result-cards[data-players="2"] .card-bottom { display:none; }
+.replica[data-device=mobile] .result-cards[data-players="2"] .result-rating-meta { font-size:7px; line-height:1.3; margin:0; }
+.settings-replica { z-index:100; }
+/* Settings dims the whole viewport the same way, rather than only the frame inside #ui. */
+.settings-replica::before { content:""; position:fixed; top:0; right:0; bottom:0; left:0; z-index:-1; pointer-events:none; background:color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 4%) 80%, transparent); }
+.settings-replica .extra-modal[data-menu=settings] { background:transparent; }
+.replica .extra-modal[data-menu=settings] .modal-shell { width:610px; }
+.replica .preferences { flex:1 1 auto; min-height:0; max-height:265px; overflow:auto; scrollbar-width:thin; }
+.settings-replica .modal-header { flex:none; }
+.replica .pref-row { display:flex; align-items:center; gap:17px; min-height:53px; padding:6px 0; border-bottom:1px solid color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 56%) 20%, transparent); font-size:14px; }
+.replica .pref-row>span { display:flex; gap:11px; align-items:center; width:175px; flex:none; }
+.replica .pref-row input { flex:1; min-width:0; accent-color:color-mix(in srgb, var(--accent-deep), var(--accent-light) 50%); }
+.replica .pref-row input.pref-name { flex:none; margin-left:auto; width:190px; min-height:40px; box-sizing:border-box; background:color-mix(in srgb, var(--night), var(--mist) 23%); color:color-mix(in srgb, var(--night), var(--mist) 98%); border:1px solid color-mix(in srgb, var(--night), var(--mist) 58%); border-radius:5px; padding:6px 12px; font:inherit; }
+.replica .pref-row input.pref-name::placeholder { color:color-mix(in srgb, var(--night), var(--mist) 69%); font-size:12px; }
+.replica[data-device=mobile] .pref-row input.pref-name { min-height:36px; }
+.replica .pref-row output { width:42px; text-align:right; color:color-mix(in srgb, var(--accent-deep), var(--accent-light) 63%); }
+.replica .pref-row select { margin-left:auto; width:190px; min-height:40px; background:color-mix(in srgb, var(--night), var(--mist) 23%); color:color-mix(in srgb, var(--night), var(--mist) 98%); border:1px solid color-mix(in srgb, var(--night), var(--mist) 58%); border-radius:5px; padding:6px 12px; font-size:14px; }
+.replica .settings-help { width:100%; flex:none; }
+.replica .settings-shortcut { margin-top:8px; width:100%; }
+.replica .settings-bottom { display:flex; align-items:center; gap:20px; flex:none; }
+.replica .settings-bottom>span { font-size:11px; color:color-mix(in srgb, var(--night), var(--mist) 75%); flex:1; }
+.replica .settings-bottom .extra-primary { width:135px; }
+.replica .help-intro { display:flex; align-items:center; gap:12px; font-size:15px; color:color-mix(in srgb, var(--accent-deep), var(--accent-light) 66%); }
+.replica .control-list { margin:0; }
+.replica .control-list>div { display:grid; grid-template-columns:100px 1fr; gap:15px; padding:15px 0; border-bottom:1px solid color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 58%) 27%, transparent); }
+.replica .control-list dt { font-size:13px; color:color-mix(in srgb, var(--night), var(--mist) 81%); }
+.replica .control-list dd { margin:0; font-size:15px; }
+.replica .help-more { font-size:11px; color:color-mix(in srgb, var(--night), var(--mist) 75%); }
+.replica .help-more p { margin-top:8px; font-size:12px; }
+.replica[data-device=mobile] .pref-row>span { width:166px; }
+.replica[data-device=mobile] .pref-row { min-height:45px; padding:2px 0; }
+.replica[data-device=mobile] .pref-row select { min-height:36px; }
+body:has(.driving-help[open]) .settings-replica { visibility:hidden; }
+.photo-controls.replica { position:fixed; z-index:100; inset:0; display:block; width:auto; padding:0; border:0; border-radius:0; background:transparent; pointer-events:none; }
+.replica .photo-top { position:absolute; top:0; left:0; right:110px; padding:20px 25px; display:flex; align-items:center; justify-content:space-between; background:linear-gradient(color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 6%) 70%, transparent),transparent); pointer-events:none; }
+.replica .photo-top>* { pointer-events:auto; }
+.replica .photo-top button { display:flex; gap:9px; align-items:center; background:color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 9%) 60%, transparent); border:1px solid color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 81%) 33%, transparent); border-radius:24px; min-height:44px; padding:9px 15px; font-size:13px; }
+.replica .photo-top>span { display:flex; gap:8px; align-items:center; font-size:11px; letter-spacing:1px; }
+.replica .viewfinder { position:absolute; inset:100px 170px 75px 90px; pointer-events:none; display:block; }
+.replica .viewfinder i { position:absolute; width:25px; height:25px; border:2px solid color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 98%) 85%, transparent); }
+.replica .viewfinder i:nth-child(1) { top:0; left:0; border-width:2px 0 0 2px; }
+.replica .viewfinder i:nth-child(2) { top:0; right:0; border-width:2px 2px 0 0; }
+.replica .viewfinder i:nth-child(3) { bottom:0; left:0; border-width:0 0 2px 2px; }
+.replica .viewfinder i:nth-child(4) { bottom:0; right:0; border-width:0 2px 2px 0; }
+.replica .photo-bottom { position:absolute; inset:0 0 0 auto; width:110px; padding:23px 12px; display:flex; flex-direction:column; align-items:center; justify-content:center; pointer-events:none; }
+/* The 16:9 frame is letterboxed on screens of any other shape; the rail's backdrop bleeds past it so the
+   dark column reaches the real right, top and bottom edges while the controls stay where the frame puts them. */
+.photo-controls.replica .replica-frame { overflow:visible; }
+.replica .photo-bottom::before { content:""; position:absolute; top:-100vmax; bottom:-100vmax; left:0; right:-100vmax; z-index:-1; background:color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 7%) 79%, transparent); }
+.replica .photo-bottom>* { pointer-events:auto; }
+.replica .photo-bottom .shutter { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:77px; height:77px; border:3px solid color-mix(in srgb, var(--night), var(--mist) 97%); background:color-mix(in srgb, color-mix(in srgb, var(--stamp-deep), var(--stamp-light) 45%) 13%, transparent); padding:7px; border-radius:50%; display:flex; justify-content:center; align-items:center; }
+.replica .shutter span { display:block; width:100%; height:100%; background:color-mix(in srgb, var(--stamp-deep), var(--stamp-light) 39%); border-radius:50%; box-shadow:inset 0 0 0 1px color-mix(in srgb, color-mix(in srgb, var(--stamp-deep), var(--stamp-light) 77%) 33%, transparent); }
+.replica .photo-bottom .shutter:active { transform:translate(-50%,-50%) scale(.93); }
+.replica .photo-bottom>span { position:absolute; bottom:28px; left:0; right:0; text-align:center; font-size:11px; letter-spacing:2px; }
+.replica .photo-bottom label { position:absolute; bottom:100px; width:85px; display:flex; flex-direction:column; align-items:center; gap:9px; }
+.replica .photo-bottom input { width:80px; accent-color:color-mix(in srgb, var(--night), var(--mist) 98%); }
+.replica .photo-bottom [data-photo=player] { position:absolute; top:80px; left:8px; right:8px; padding:6px; font-size:11px; border:1px solid color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 81%) 33%, transparent); background:color-mix(in srgb, color-mix(in srgb, var(--night), var(--mist) 9%) 60%, transparent); border-radius:8px; }
+.replica .photo-flash { position:absolute; inset:0; pointer-events:none; background:#fff; opacity:0; }
+.replica[data-device=mobile] .photo-top { right:96px; padding:15px 20px; }
+.replica[data-device=mobile] .photo-bottom { width:96px; padding:0; }
+.replica[data-device=mobile] .photo-bottom .shutter { width:70px; height:70px; }
+.replica[data-device=mobile] .photo-bottom label { bottom:85px; }
+.replica[data-device=mobile] .viewfinder { inset:85px 140px 60px 65px; }
+
+.replica .result-standing-car { display:flex; align-items:center; gap:7px; min-width:0; }
+.replica .result-standing-thumbnail { width:42px; height:28px; object-fit:contain; flex:none; border-radius:3px; }
+.replica .result-standing-name { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }

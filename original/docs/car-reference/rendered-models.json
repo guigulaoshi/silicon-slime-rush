@@ -1,0 +1,66 @@
+{
+  "city-pod": {
+    "imageSha256": "49dcebd7759ad7c92ba2dd1d89412f4b04fc4ea74397b01a57d5395a1adead78",
+    "models": {
+      "city-pod.glb": "65b77037bf03fe2adc0098a4d73eb6bd89ab13276a029c2dda0e4beb125ed5c3"
+    },
+    "thumbnailSha256": "2aac025c277ca67124e3d13874d2ca1cd18978ef2e22dcc53b968a12f50e9013"
+  },
+  "jeep": {
+    "imageSha256": "d35744376beab811f070440eb64fa7243477d4239b1c7eac42090123a7409d0f",
+    "models": {
+      "jeep.glb": "695f2cf50b95f219a30d5e100412cc78a22e12db0ed51ef05bbb64d30761c974"
+    },
+    "thumbnailSha256": "e26032cbb09dde9888579c74985afdad6a09211a9e774df8b9e8e74de9b7d6f3"
+  },
+  "lightweight-sports": {
+    "imageSha256": "a9a68692b5a405d61b63afd2564ef2d9a1328f208f43fb1ce837079cec02b21b",
+    "models": {
+      "lightweight-sports.glb": "ce8e4a565a7401d09f772cdced9cb1a140ef0520059aca774da8048c020ecd9e"
+    },
+    "thumbnailSha256": "dac77878a7972833f157953c97a7cd9953181afdb9bba379c186797e095c9c22"
+  },
+  "micro-hatch": {
+    "imageSha256": "3b83850edd9c3927ae789a228633be8d6bd9d3af5c0a964e54d84bb8b4a12d58",
+    "models": {
+      "micro-hatch.glb": "98a4ce97be073c153fb4cba604481595942a71ec539a45b44a7c1c5a7a7f7548"
+    },
+    "thumbnailSha256": "1937e823b261c0c7e7cd4abc3122b7813576b47212daaaf410c538ec5703e41d"
+  },
+  "monster-truck": {
+    "imageSha256": "2f5d33fe88e9a8721f94843c4885bc286010805a530098bd7e43268a5569ef6a",
+    "models": {
+      "monster-truck.glb": "fd17a92c3fa4ddce208abaad167647cd40fe7b647c32e76ffa629fa4764a185a"
+    },
+    "thumbnailSha256": "5832b1601cf63d9505c3576c8c0ea1616c2f1fd160d0bd1bd6bc240c295d395c"
+  },
+  "pickup-travel-trailer": {
+    "imageSha256": "f086f5d56b6143bb440f3f129ec0984b54204e7e64c6aa8e05fdd424e85aaa10",
+    "models": {
+      "pickup-travel-trailer.glb": "2a6887d9dbce03c03b54cdea70f2d248798ed199ec77bd51077f0e896cc00c88",
+      "travel-trailer.glb": "bdac2a9605ebe99ee0352450cf6ada89894691b3555d7e03f88d775553e4977a"
+    },
+    "thumbnailSha256": "de69a59567eb1960cc732444109307ea3ee3005a4ab959c72bcbb57397ed4e64"
+  },
+  "retro-van": {
+    "imageSha256": "f31dd80206a814a7287190bf1ebaebff07718bedf5cc8db2d1ab7505cb525cc2",
+    "models": {
+      "retro-van.glb": "df65f84e53ed80e0dfce7cd733050a48919bae7caa6138035d5f0c215a04228b"
+    },
+    "thumbnailSha256": "967dc0d3dd3ea4ac730d5906915cbed0d8a4d27429b0a4819d36ffc1fbba979e"
+  },
+  "school-bus": {
+    "imageSha256": "932c7050717110aa224691a2c4782f15200d1af91d96b210ca246f1fbedf3a0f",
+    "models": {
+      "school-bus.glb": "a123dc56c3a14691bd21e33cdaf3ebf0b464da59aa3065a82ace4754ac25332d"
+    },
+    "thumbnailSha256": "b762ea183bb86c54ae99f3401092b186f3ba5a901cea96c4f014c5d2f1c7cc30"
+  },
+  "sports-car": {
+    "imageSha256": "32f7275f76df6f0c9b7f5f1a7c009be43af04cce8642552a751f1219c2d45ca3",
+    "models": {
+      "sports-car.glb": "f6647bc13eb48f541cc0df91174bd0a42ddeb2a5b1858beccf293cecbf9a5bb2"
+    },
+    "thumbnailSha256": "2a4ecad9f0132f23c26ed45155d6a6f16098d5bdc094f652661e428f69cfc067"
+  }
+}

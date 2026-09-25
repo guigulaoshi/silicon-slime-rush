@@ -1,0 +1,314 @@
+{
+  "id": "sydney",
+  "name": {
+    "zh": "过海港大桥，绕歌剧院",
+    "en": "Over the Bridge, Round the Opera House"
+  },
+  "blurb": {
+    "zh": "过海港大桥，沿麦考瑞街直奔歌剧院，再沿海滨步道绕它半圈。",
+    "en": "Over the Harbour Bridge, up Macquarie Street at the Opera House, then round it on the waterfront."
+  },
+  "category": "scenic",
+  "mode": "p2p",
+  "laps": 1,
+  "car": "convertible",
+  "timeOfDay": "day",
+  "editions": [
+    "web",
+    "full"
+  ],
+  "origin": {
+    "lat": -33.8478682,
+    "lon": 151.2127083
+  },
+  "padM": 450,
+  "backdropM": 4000,
+  "waypoints": [
+    {
+      "way": 388949144,
+      "pick": "nearest:-33.85024,151.21201"
+    },
+    {
+      "way": 388949144,
+      "pick": "nearest:-33.8530,151.2100"
+    },
+    {
+      "road": "York Street Offramp",
+      "pick": "southmost"
+    },
+    {
+      "road": "Bridge Street",
+      "pick": "nearest:-33.8634,151.21"
+    },
+    {
+      "road": "Macquarie Street",
+      "pick": "nearest:-33.86112,151.21356"
+    },
+    [
+      -33.85864,
+      151.21369
+    ],
+    [
+      -33.8579,
+      151.21419
+    ],
+    [
+      -33.857,
+      151.2145
+    ],
+    [
+      -33.85645,
+      151.21545
+    ],
+    [
+      -33.85672,
+      151.21597
+    ]
+  ],
+  "centreLine": "white",
+  "traffic": "left",
+  "groundCover": "terrain_grass",
+  "landmarks": [
+    "opera-house",
+    "harbour-bridge"
+  ],
+  "architecture": {
+    "facades": {
+      "building_concrete": 0.4,
+      "building_glass": 0.4,
+      "building_stucco": 0.2
+    },
+    "tint": {
+      "building_stucco": "#e0cda9"
+    },
+    "why": "悉尼岩石区和环形码头：砂岩楼和玻璃楼（街景照片估计）",
+    "local": {
+      "types": [
+        {
+          "share": 1,
+          "when": {
+            "maxStoreys": 3.5,
+            "maxArea": 900
+          },
+          "storeyM": 3.3,
+          "groundM": 3.6,
+          "storeys": [
+            2,
+            3
+          ],
+          "tileBays": 2,
+          "wall": {
+            "kind": "render",
+            "colour": "#dcd2bc",
+            "stain": 0.1,
+            "palette": [
+              "#dcd2bc",
+              "#d9c8a8",
+              "#e8e4da",
+              "#b5977a"
+            ]
+          },
+          "window": {
+            "shape": "tall",
+            "w": 0.9,
+            "h": 1.7,
+            "bay": 2.6,
+            "sill": 0.8,
+            "frame": "#ece6d8",
+            "frameW": 0.06,
+            "glass": "#2b3238",
+            "surround": {
+              "kind": "architrave",
+              "colour": "#9a9084",
+              "w": 0.1
+            }
+          },
+          "band": {
+            "colour": "#9a9084",
+            "h": 0.22
+          },
+          "ground": {
+            "kind": "plinth",
+            "plinth": "#bfa88a",
+            "plinthH": 0.8,
+            "door": "#2f3b33"
+          },
+          "roof": {
+            "kind": "gable",
+            "material": "slate",
+            "colour": "#6a6d70",
+            "pitchDeg": 32,
+            "eaveM": 0.3,
+            "corniceM": 0.25,
+            "corniceH": 0.35
+          },
+          "details": {
+            "chimneys": 0.8,
+            "chimneyPots": 4,
+            "veranda": 0.65,
+            "balconyFloors": [
+              0
+            ],
+            "balconyDepth": 1.5,
+            "balconyShare": 0.7
+          },
+          "residential": true
+        },
+        {
+          "share": 0.03,
+          "when": {
+            "maxStoreys": 13.5
+          },
+          "storeyM": 4.0,
+          "groundM": 5.0,
+          "storeys": [
+            4,
+            6
+          ],
+          "tileBays": 2,
+          "wall": {
+            "kind": "stone",
+            "colour": "#c4a47c",
+            "colours": [
+              "#bd9d75",
+              "#caab83"
+            ],
+            "unit": [
+              1.0,
+              0.4
+            ],
+            "joint": "#b09470",
+            "stain": 0.25
+          },
+          "window": {
+            "shape": "tall",
+            "w": 1.2,
+            "h": 2.2,
+            "bay": 3.0,
+            "sill": 0.9,
+            "frame": "#3a3530",
+            "frameW": 0.07,
+            "glass": "#2b3238",
+            "surround": {
+              "kind": "architrave",
+              "colour": "#b8966c",
+              "w": 0.15,
+              "lintel": "#a88a66",
+              "lintelH": 0.3
+            }
+          },
+          "band": {
+            "colour": "#b8966c",
+            "h": 0.3
+          },
+          "ground": {
+            "kind": "arcade",
+            "shadow": "#3a3028",
+            "wall": {
+              "colour": "#b89a72",
+              "unit": [
+                1.2,
+                0.5
+              ]
+            }
+          },
+          "roof": {
+            "kind": "flat",
+            "material": "concrete",
+            "colour": "#7a746c",
+            "corniceM": 1.0,
+            "corniceH": 1.2
+          },
+          "residential": false
+        },
+        {
+          "share": 0.03,
+          "when": {
+            "minStoreys": 7.5
+          },
+          "storeyM": 3.8,
+          "groundM": 6.0,
+          "storeys": [
+            14,
+            35
+          ],
+          "tileBays": 2,
+          "wall": {
+            "kind": "concrete",
+            "colour": "#cfc6b0"
+          },
+          "window": {
+            "shape": "rect",
+            "w": 1.6,
+            "h": 1.6,
+            "bay": 1.8,
+            "sill": 0.9,
+            "frame": "#9aa0a3",
+            "frameW": 0.06,
+            "glass": "#4a6272"
+          },
+          "ground": {
+            "kind": "shops",
+            "glass": "#3a4246",
+            "shutter": false,
+            "signs": [
+              "#8a8680",
+              "#5d6a72",
+              "#8a8680"
+            ]
+          },
+          "roof": {
+            "kind": "flat",
+            "material": "concrete",
+            "colour": "#8a8680"
+          }
+        }
+      ],
+      "rail": {
+        "style": "lace",
+        "colour": "#2d2b2c"
+      },
+      "detailColours": {
+        "local_detail_dark": "#2d2b2c",
+        "local_detail_light": "#d6cab0",
+        "local_detail_accent": "#8c4a36"
+      },
+      "why": "悉尼三类楼：岩石区和米勒斯角两三层抹灰排屋（两层铸铁花边外廊、带陶烟囱罐的烟囱、石板瓦坡顶、砂岩勒脚）、桥街和麦格理街的蜂蜜色砂岩公署楼（檐口）、战后米白预制板塔楼；照片见 house-cards/sydney.md（Wikimedia Commons：Lower Fort St、Gloucester St、Bridge St、Department of Lands、The Toaster 等）"
+    }
+  },
+  "raceWays": [
+    1426924019,
+    1483134076,
+    1473951284,
+    5026309,
+    230158147,
+    354759948,
+    368576959,
+    207664263
+  ],
+  "raceWayClearM": {
+    "opera-house": 9.0
+  },
+  "mustPass": [
+    {
+      "name": "Opera House western broadwalk",
+      "lat": -33.8572,
+      "lon": 151.2142,
+      "maxDistM": 30
+    },
+    {
+      "name": "Opera House northern tip",
+      "lat": -33.85645,
+      "lon": 151.2155,
+      "maxDistM": 30
+    }
+  ],
+  "vista": {
+    "spacingM": 90,
+    "density": 0.7,
+    "heightM": [
+      6,
+      12
+    ]
+  }
+}

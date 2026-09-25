@@ -1,0 +1,419 @@
+{
+  "id": "beijing",
+  "name": {
+    "zh": "天安门广场",
+    "en": "Tiananmen Square"
+  },
+  "blurb": {
+    "zh": "绕天安门广场一大圈：迎着城楼出发，沿长安街过天安门，最后直冲正阳门。",
+    "en": "A big lap of Tiananmen Square: off at the gate, along Chang'an Avenue, then at Zhengyangmen."
+  },
+  "category": "scenic",
+  "mode": "loop",
+  "laps": 1,
+  "car": "sedan",
+  "timeOfDay": "day",
+  "editions": [
+    "web",
+    "full"
+  ],
+  "origin": {
+    "lat": 39.89875,
+    "lon": 116.389816
+  },
+  "padM": 300,
+  "backdropM": 4000,
+  "waypoints": [
+    [
+      39.89875,
+      116.389816
+    ],
+    [
+      39.902383,
+      116.389631
+    ],
+    [
+      39.906016,
+      116.389446
+    ],
+    [
+      39.9059,
+      116.39125
+    ],
+    {
+      "way": 127843726,
+      "pick": "nearest:39.9062,116.3950"
+    },
+    {
+      "way": 175598131,
+      "pick": "nearest:39.9064,116.3990"
+    },
+    {
+      "way": 127843403,
+      "pick": "nearest:39.9030,116.4003"
+    },
+    {
+      "way": 128490592,
+      "pick": "nearest:39.8991,116.3960"
+    },
+    [
+      39.89875,
+      116.389816
+    ]
+  ],
+  "centreLine": "yellow",
+  "traffic": "right",
+  "flatCity": {
+    "windowM": 300,
+    "why": "the city centre is flat; the elevation data carries metres of noise, trees and roofs"
+  },
+  "landmarks": [
+    "tiananmen-gate",
+    "great-hall",
+    "heroes-monument",
+    "mao-mausoleum",
+    "zhengyangmen-gate",
+    "zhengyangmen-arrow-tower",
+    "national-museum"
+  ],
+  "sky": {
+    "zenithColor": "#6a8fb5",
+    "skyColor": "#c3cfd8",
+    "fogColor": "#b9c3c9"
+  },
+  "lowRise": [
+    {
+      "lat": 39.90738,
+      "lon": 116.39133,
+      "radiusM": 150,
+      "maxStoreys": 2,
+      "why": "天安门两侧的观礼台：地图只标 building=yes 没有高度，按城市楼房猜成十几米高的盒子顶在城楼两边；真实的观礼台是一排六七米高的矮台。半径让开北面 181 米外的端门"
+    },
+    {
+      "lat": 39.89858,
+      "lon": 116.39158,
+      "radiusM": 260,
+      "maxStoreys": 3,
+      "why": "前门一带是两三层的老街区；地图上没标高度的楼按城市楼房猜成了十几米的灰盒子，挡在正阳门和箭楼跟前。标了高度或层数的楼照标的来"
+    }
+  ],
+  "groundCover": "terrain_paved",
+  "architecture": {
+    "walls": "house_wall_red",
+    "byId": {
+      "way:257208025": "house_wall_red",
+      "way:257208026": "house_wall_red"
+    },
+    "facades": {
+      "building_stucco": 0.55,
+      "building_concrete": 0.45
+    },
+    "tint": {
+      "building_stucco": "#e6dccb",
+      "building_concrete": "#d9d2c4",
+      "house_roof_slate": "#5a5f63"
+    },
+    "why": "天安门、前门一带：青灰砖墙、灰瓦坡顶的老房子，政府楼是浅米色石材（街景照片估计）。天安门两侧的宫墙 OSM 标成 building=wall（way 685274596、685275565、685275566，5-6 米）；257208025/257208026 是城楼前的观礼台（building=yes，name=观礼台），红墙矮台。都是实心红墙，不是有窗的楼。",
+    "facadesForAll": true,
+    "local": {
+      "types": [
+        {
+          "share": 0.58,
+          "when": {
+            "tags": [
+              "yes",
+              "house",
+              "residential"
+            ],
+            "maxArea": 1300,
+            "maxStoreys": 3,
+            "outside": [
+              {
+                "lat": 39.9028,
+                "lon": 116.4015,
+                "radiusM": 330
+              },
+              {
+                "lat": 39.9008,
+                "lon": 116.396,
+                "radiusM": 200
+              },
+              {
+                "lat": 39.9009,
+                "lon": 116.3887,
+                "radiusM": 150
+              },
+              {
+                "lat": 39.8985,
+                "lon": 116.397,
+                "radiusM": 90
+              },
+              {
+                "lat": 39.8985,
+                "lon": 116.399,
+                "radiusM": 90
+              }
+            ]
+          },
+          "storeyM": 3.2,
+          "groundM": 3.2,
+          "storeys": [
+            1,
+            1
+          ],
+          "tileBays": 2,
+          "wall": {
+            "kind": "brick",
+            "colour": "#9b9c9c",
+            "colours": [
+              "#9c9fa3",
+              "#8a8c8b"
+            ],
+            "unit": [
+              0.24,
+              0.053
+            ],
+            "joint": "#c4c4be",
+            "stain": 0.35
+          },
+          "window": {
+            "shape": "rect",
+            "w": 0.6,
+            "h": 0.8,
+            "bay": 7.5,
+            "sill": 1.7,
+            "frame": "#7a3a2f",
+            "frameW": 0.08,
+            "glass": "#2b2f33",
+            "grille": true,
+            "grilleColour": "#2a2a2a"
+          },
+          "ground": {
+            "kind": "plinth",
+            "plinth": "#6f7372",
+            "plinthH": 0.8,
+            "door": "#8c2f25",
+            "doorFrame": "#7a2a22",
+            "base": "#4f5352"
+          },
+          "roof": {
+            "kind": "curved",
+            "material": "grey_tile",
+            "colour": "#5e605e",
+            "pitchDeg": 30,
+            "eaveM": 0.45
+          }
+        },
+        {
+          "share": 0.34,
+          "when": {
+            "minArea": 150,
+            "maxArea": 1500,
+            "maxStoreys": 4,
+            "within": [
+              {
+                "lat": 39.9028,
+                "lon": 116.4015,
+                "radiusM": 330
+              },
+              {
+                "lat": 39.9008,
+                "lon": 116.396,
+                "radiusM": 200
+              },
+              {
+                "lat": 39.9009,
+                "lon": 116.3887,
+                "radiusM": 150
+              }
+            ],
+            "outside": [
+              {
+                "lat": 39.90738,
+                "lon": 116.39133,
+                "radiusM": 150
+              }
+            ]
+          },
+          "storeyM": 4.0,
+          "groundM": 4.2,
+          "storeys": [
+            2,
+            3
+          ],
+          "tileBays": 2,
+          "wall": {
+            "kind": "brick",
+            "colour": "#a46d63",
+            "colours": [
+              "#9a6258",
+              "#ad776b"
+            ],
+            "unit": [
+              0.24,
+              0.06
+            ],
+            "joint": "#cbbfb2",
+            "stain": 0.2
+          },
+          "window": {
+            "shape": "rect",
+            "w": 1.1,
+            "h": 2.0,
+            "bay": 3.0,
+            "sill": 0.9,
+            "frame": "#e8e4dc",
+            "frameW": 0.07,
+            "glass": "#2c3438",
+            "surround": {
+              "kind": "architrave",
+              "colour": "#e2dccf",
+              "w": 0.14
+            }
+          },
+          "band": {
+            "colour": "#b0a79e",
+            "h": 0.25
+          },
+          "ground": {
+            "kind": "plinth",
+            "wall": {
+              "colour": "#a8a49c",
+              "colours": [
+                "#b0aca4",
+                "#9c9890"
+              ]
+            },
+            "plinth": "#d5c7ad",
+            "plinthH": 0.9,
+            "door": "#811d10",
+            "doorFrame": "#d5c7ad",
+            "doorArched": true,
+            "base": "#8f8778"
+          },
+          "roof": {
+            "kind": "hip",
+            "material": "tile",
+            "colour": "#b86a58",
+            "pitchDeg": 32,
+            "eaveM": 0.5,
+            "corniceM": 0.3,
+            "corniceH": 0.5
+          }
+        },
+        {
+          "share": 0.08,
+          "when": {
+            "tags": [
+              "yes",
+              "residential",
+              "police",
+              "courthouse",
+              "commercial",
+              "hotel",
+              "office",
+              "government",
+              "apartments",
+              "public",
+              "civic"
+            ],
+            "minStoreys": 3,
+            "minArea": 350,
+            "outside": [
+              {
+                "lat": 39.90738,
+                "lon": 116.39133,
+                "radiusM": 150
+              },
+              {
+                "lat": 39.89858,
+                "lon": 116.39158,
+                "radiusM": 260
+              },
+              {
+                "lat": 39.8962,
+                "lon": 116.3985,
+                "radiusM": 150
+              },
+              {
+                "lat": 39.9095,
+                "lon": 116.3935,
+                "radiusM": 330
+              }
+            ]
+          },
+          "storeyM": 3.3,
+          "groundM": 4.5,
+          "storeys": [
+            5,
+            9
+          ],
+          "tileBays": 2,
+          "wall": {
+            "kind": "tile",
+            "colour": "#f0e2cf",
+            "unit": [
+              0.6,
+              0.3
+            ],
+            "joint": "#d8c9b6",
+            "stain": 0.15
+          },
+          "window": {
+            "shape": "rect",
+            "w": 2.0,
+            "h": 1.7,
+            "bay": 3.3,
+            "sill": 0.9,
+            "frame": "#c8c8c4",
+            "frameW": 0.06,
+            "glass": "#39434a",
+            "ac": true
+          },
+          "band": {
+            "colour": "#e0cfbb",
+            "h": 0.7
+          },
+          "ground": {
+            "kind": "door",
+            "door": "#6b4a36",
+            "doorFrame": "#c9c6bf",
+            "base": "#8a8580"
+          },
+          "roof": {
+            "kind": "flat"
+          }
+        }
+      ],
+      "rail": {
+        "style": "iron",
+        "colour": "#2a2a2a"
+      },
+      "detailColours": {
+        "local_detail_dark": "#3e4044",
+        "local_detail_light": "#c9c6bf",
+        "local_detail_accent": "#8c2f25"
+      },
+      "why": "house-cards/beijing.md：三类——胡同四合院的一层青砖房（南湾子胡同 bj07/bj08、北翔凤 bj09：几乎不开窗，一段墙一个红门，硬山灰瓦）、东交民巷使馆区和民国银行的两三层砖楼（正义路 1 号 bj10：灰砖底层上红砖、石头窗套、红色坡顶；bj03）、五到九层的米色面砖机关楼（北京市公安局 bj04）。使馆区三个圈（正义路、前门东大街北侧、人大会堂南边银行）只放第二类，圈外的小房子都是胡同房；机关楼只给估出来三层以上的楼，而且不进前门那个三层的 lowRise 圈、观礼台圈和前门东区胡同；前门东大街南侧临街一排是九十年代的宾馆写字楼，那两个圈里不放胡同房。所有类型的层数都不超过所在 lowRise 圈的上限：胡同一层，使馆楼二到三层且不进观礼台那个两层的圈。"
+    }
+  },
+  "lampStyle": "huabiao",
+  "vista": {
+    "spacingM": 80,
+    "density": 0.65,
+    "nearM": 250,
+    "farM": 1700,
+    "heightM": [
+      4,
+      7
+    ],
+    "farRoofs": {
+      "gable": 0.8,
+      "flat": 0.2
+    },
+    "nearRoofs": {
+      "gable": 0.8,
+      "flat": 0.2
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "id": "shoreline",
+  "name": {
+    "zh": "大厂园区",
+    "en": "Big Tech Campus"
+  },
+  "category": "campus",
+  "slimeDensity": 1.0,
+  "slimeCount": 104,
+  "mode": "loop",
+  "laps": 2,
+  "car": "convertible",
+  "timeOfDay": "day",
+  "editions": [
+    "web",
+    "full"
+  ],
+  "origin": {
+    "lat": 37.41,
+    "lon": -122.06
+  },
+  "padM": 300,
+  "backdropM": 6000,
+  "landmarks": [
+    "charleston-canopy",
+    "hangar-one"
+  ],
+  "halfWidthDefault": 7.0,
+  "waypoints": [
+    [
+      37.4232,
+      -122.08
+    ],
+    [
+      37.4231,
+      -122.0833
+    ],
+    {
+      "junction": [
+        "Charleston Road",
+        "Huff Avenue"
+      ]
+    },
+    {
+      "junction": [
+        "Huff Avenue",
+        "Plymouth Street"
+      ]
+    },
+    {
+      "junction": [
+        "Plymouth Street",
+        "North Shoreline Boulevard"
+      ]
+    },
+    {
+      "junction": [
+        "North Shoreline Boulevard",
+        "Amphitheatre Parkway"
+      ]
+    }
+  ],
+  "bboxPoints": [
+    [
+      37.4245,
+      -122.0845
+    ],
+    [
+      37.4245,
+      -122.077
+    ],
+    [
+      37.4155,
+      -122.077
+    ],
+    [
+      37.4155,
+      -122.0845
+    ]
+  ],
+  "bridgeDeckM": 0,
+  "bridgeMinLengthM": 200,
+  "blurb": {
+    "zh": "开完那条常听说的路，从两栋方块中间拐进园区，绕内院跑两圈。",
+    "en": "The length of the parkway everyone names, then in between the blocks and round the courtyard."
+  },
+  "mustPass": [
+    {
+      "name": "the two three-storey blocks at the west end of Amphitheatre Pkwy",
+      "lat": 37.422,
+      "lon": -122.0839,
+      "maxDistM": 130
+    },
+    {
+      "name": "the long canopy-roofed building between the parkway and Charleston Rd",
+      "lat": 37.422,
+      "lon": -122.0796,
+      "maxDistM": 200
+    },
+    {
+      "name": "the low blocks on the south side of Charleston Rd",
+      "lat": 37.4201,
+      "lon": -122.0829,
+      "maxDistM": 120
+    },
+    {
+      "name": "the blocks along Huff Ave",
+      "lat": 37.4192,
+      "lon": -122.0821,
+      "maxDistM": 160
+    }
+  ]
+}

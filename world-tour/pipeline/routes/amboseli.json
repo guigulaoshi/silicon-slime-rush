@@ -1,0 +1,139 @@
+{
+  "id": "amboseli",
+  "name": {
+    "zh": "安博塞利草原",
+    "en": "Amboseli Savanna"
+  },
+  "blurb": {
+    "zh": "草原土路一路向南，乞力马扎罗的雪顶就在正前方。",
+    "en": "A dirt track south across the savanna, Kilimanjaro's snowcap dead ahead."
+  },
+  "category": "scenic",
+  "mode": "p2p",
+  "laps": 1,
+  "car": "convertible",
+  "timeOfDay": "day",
+  "editions": [
+    "web",
+    "full"
+  ],
+  "origin": {
+    "lat": -2.66256,
+    "lon": 37.23186
+  },
+  "padM": 450,
+  "backdropM": 4000,
+  "waypoints": [
+    [
+      -2.66256,
+      37.23186
+    ],
+    [
+      -2.66434,
+      37.23416
+    ],
+    [
+      -2.66724,
+      37.23434
+    ],
+    [
+      -2.66914,
+      37.23664
+    ],
+    [
+      -2.67156,
+      37.23731
+    ],
+    [
+      -2.67367,
+      37.23562
+    ],
+    [
+      -2.67529,
+      37.23811
+    ],
+    [
+      -2.67651,
+      37.23922
+    ],
+    [
+      -2.6786208,
+      37.2389599
+    ]
+  ],
+  "centreLine": "none",
+  "traffic": "left",
+  "distantPeaks": [
+    {
+      "name": "Kilimanjaro",
+      "lat": -3.0674,
+      "lon": 37.3556,
+      "heightM": 5895,
+      "snowlineM": 5200
+    }
+  ],
+  "treeFill": {
+    "perTreeM2": 1400,
+    "mix": {
+      "acacia": 0.62,
+      "scrub": 0.38
+    },
+    "why": "安博塞利的稀树草原：平顶金合欢一棵一棵散着长、不成林，底下是灌丛。金合欢那个比树高还宽的平顶才是一眼认出东非的轮廓，圆冠的阔叶树放在这儿像哪儿都有的树。"
+  },
+  "groundCover": "terrain_scrub",
+  "sky": {
+    "zenithColor": "#4a86c4",
+    "skyColor": "#b9cfe0",
+    "fogColor": "#c2cdd0"
+  },
+  "architecture": {
+    "local": {
+      "why": "house-cards/amboseli.md：这条路 2.7 公里内只有一个建筑，瞭望山顶上 71 平方米的遮阳棚（OSM building=roof），四面敞开、几根柱子顶一个草顶，不到 3 米高。画成一层：深色木柱之间是黑洞洞的开口，上面一个低坡草顶",
+      "types": [
+        {
+          "name": "summit-shelter",
+          "share": 1.0,
+          "when": {
+            "tags": [
+              "roof"
+            ]
+          },
+          "storeys": [
+            1,
+            1
+          ],
+          "storeyM": 2.8,
+          "groundM": 2.8,
+          "tileBays": 2,
+          "wall": {
+            "kind": "timber",
+            "colour": "#433b3f",
+            "board": 0.2
+          },
+          "window": {
+            "shape": "none",
+            "bay": 2.4
+          },
+          "ground": {
+            "kind": "arcade",
+            "shadow": "#1e1a17",
+            "glassBehind": false,
+            "base": "#261f1a"
+          },
+          "roof": {
+            "kind": "hip",
+            "material": "thatch",
+            "colour": "#caa17c",
+            "pitchDeg": 22,
+            "eaveM": 0.7
+          },
+          "details": {}
+        }
+      ]
+    }
+  },
+  "vista": {
+    "density": 0,
+    "why": "house-cards/amboseli.md 第 4、6 节：从这条路看出去是平地、沼泽和乞力马扎罗，地平线上一栋房子都没有（a08、a14–a16）；远处的城景一栋都不放"
+  }
+}
