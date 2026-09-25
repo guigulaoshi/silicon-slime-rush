@@ -1,0 +1,56 @@
+{
+  "name": "silicon-rush-world-tour",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "synth": "cd ../pipeline && .venv/bin/python -m sr.cli synth",
+    "e2e": "npm run e2e:version",
+    "e2e:delivery": "npm run e2e:delivery:parallel && npm run e2e:delivery:long && npm run e2e:pixel",
+    "e2e:delivery:parallel": "playwright test --grep-invert '@version|@long|@pixel'",
+    "e2e:pixel": "SR_E2E_SOFTWARE=1 playwright test --grep @pixel --grep-invert @version",
+    "e2e:delivery:long": "playwright test --grep @long --workers=1",
+    "e2e:version": "npm run e2e:delivery && playwright test --grep @version --grep-invert @pixel && npm run baseline",
+    "test:evidence": "SR_EVIDENCE=1 vitest run",
+    "e2e:evidence": "npm run test:evidence && SR_EVIDENCE=1 npm run e2e:version",
+    "baseline": "SR_E2E_SOFTWARE=1 playwright test e2e/baseline.spec.ts",
+    "e2e:quick": "playwright test e2e/start.spec.ts e2e/menu.spec.ts e2e/maps.spec.ts e2e/touch.spec.ts --grep-invert \"scenery loaded\"",
+    "baseline:update": "SR_E2E_SOFTWARE=1 playwright test e2e/baseline.spec.ts --update-snapshots",
+    "performance": "PERF_REAL_GPU=1 playwright test e2e/performance.spec.ts",
+    "performance:phone": "PERF_REAL_GPU=1 PERF_PROFILE=phone playwright test e2e/performance.spec.ts",
+    "look": "sh -c 'LOOK=${1:-${LOOK:-menu}} npx playwright test e2e/look.spec.ts' --",
+    "predev": "python3 ../tools/assets.py ensure $([ -n \"$SR_TRACKS\" ] && echo --tracks \"$SR_TRACKS\" || echo --all)",
+    "prepreview": "python3 ../tools/assets.py ensure $([ -n \"$SR_TRACKS\" ] && echo --tracks \"$SR_TRACKS\" || echo --all)",
+    "prebuild": "python3 ../tools/assets.py ensure $([ -n \"$SR_TRACKS\" ] && echo --tracks \"$SR_TRACKS\" || echo --all)",
+    "assets": "python3 ../tools/assets.py"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "private": "true",
+  "dependencies": {
+    "@dimforge/rapier3d-compat": "^0.20.0",
+    "ajv": "^8.20.0",
+    "three": "^0.185.1"
+  },
+  "devDependencies": {
+    "@gltf-transform/cli": "^4.5.0",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.4.1",
+    "@types/three": "^0.185.4",
+    "javascript-obfuscator": "^5.7.0",
+    "jsdom": "^29.1.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2",
+    "vitest": "^4.1.11"
+  }
+}

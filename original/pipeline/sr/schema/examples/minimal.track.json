@@ -1,0 +1,150 @@
+{
+ "id": "synth-loop",
+ "version": 1,
+ "editions": [
+  "web",
+  "full"
+ ],
+ "category": "race",
+ "mode": "loop",
+ "laps": 3,
+ "name": {
+  "zh": "合成环线",
+  "en": "Synthetic Loop"
+ },
+ "blurb": {
+  "zh": "平地椭圆，测试用。",
+  "en": "Flat ellipse for tests."
+ },
+ "origin": {
+  "lat": 37.8,
+  "lon": -122.45
+ },
+ "timeOfDay": "day",
+ "car": "sedan",
+ "spline": {
+  "points": [
+   [
+    0,
+    0,
+    -150
+   ],
+   [
+    300,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    150
+   ],
+   [
+    -300,
+    0,
+    0
+   ]
+  ],
+  "halfWidth": [
+   4,
+   4,
+   4,
+   4
+  ],
+  "closed": true,
+  "length": 1500
+ },
+ "start": {
+  "pos": [
+   0,
+   0.5,
+   -150
+  ],
+  "yaw": 1.5707963
+ },
+ "checkpoints": [
+  {
+   "s": 0,
+   "pos": [
+    0,
+    0,
+    -150
+   ],
+   "dir": [
+    1,
+    0,
+    0
+   ],
+   "halfWidth": 4
+  },
+  {
+   "s": 750,
+   "pos": [
+    0,
+    0,
+    150
+   ],
+   "dir": [
+    -1,
+    0,
+    0
+   ],
+   "halfWidth": 4
+  }
+ ],
+ "tiles": [
+  {
+   "name": "t_0_0",
+   "offset": 0,
+   "length": 1024,
+   "sRanges": [
+    [
+     0,
+     800
+    ]
+   ],
+   "bounds": [
+    [
+     0,
+     -1,
+     -200
+    ],
+    [
+     400,
+     20,
+     200
+    ]
+   ]
+  },
+  {
+   "name": "t_-1_0",
+   "offset": 1024,
+   "length": 2048,
+   "sRanges": [
+    [
+     700,
+     1500
+    ]
+   ],
+   "bounds": [
+    [
+     -400,
+     -1,
+     -200
+    ],
+    [
+     0,
+     20,
+     200
+    ]
+   ]
+  }
+ ],
+ "attribution": [
+  "synthetic"
+ ],
+ "tilePack": {
+  "file": "tiles.bin",
+  "bytes": 3072
+ }
+}

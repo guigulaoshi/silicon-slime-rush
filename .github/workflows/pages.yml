@@ -1,0 +1,112 @@
+# Optional manual rebuild from source. The live site normally serves ready-made files from gh-pages.
+name: Play on GitHub Pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: |
+            original/game/package-lock.json
+            world-tour/game/package-lock.json
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: |
+            original/pipeline/requirements.txt
+            world-tour/pipeline/requirements.txt
+
+      - name: Install the game's packages
+        working-directory: original/game
+        run: npm ci --no-audit --no-fund
+
+      - name: Install the map pipeline
+        working-directory: original/pipeline
+        run: python -m venv .venv && .venv/bin/pip install -r requirements.txt
+
+      # Map tiles are built from the map data in pipeline/cache (the first build takes a while);
+      # tools/assets.py keeps them in .git/sr-assets keyed by their inputs, so later runs reuse them.
+      - name: Reuse map tiles built by earlier runs
+        id: map-cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .git/sr-assets
+          key: map-tiles-${{ hashFiles('original/pipeline/**', 'original/tools/assets.py', 'world-tour/pipeline/**', 'world-tour/tools/assets.py') }}
+          restore-keys: map-tiles-
+
+      # The game's home is its itch.io page, the address the release build uses too
+      # (PLANNED_GAME_URL in game/src/app/Publication.ts): the creator, support and share links all come
+      # from it, and a build without it hides them.
+      - name: Check original build configuration
+        working-directory: original/game
+        run: node --input-type=module -e "import { loadConfigFromFile } from 'vite'; await loadConfigFromFile({ command:'build', mode:'production' });"
+
+      - name: Build the game
+        working-directory: original/game
+        run: |
+          export VITE_PUBLIC_GAME_URL="$(cd .. && python3 -c "import sys; sys.path.insert(0, 'tools'); import release_package; print(release_package.public_game_url())")"
+          echo "game page: $VITE_PUBLIC_GAME_URL"
+          npm run build
+
+      - name: Leave out the test tracks
+        working-directory: original
+        run: python3 -c "import sys; sys.path.insert(0, 'tools'); import release_package; print('left out', release_package.stage('game/dist', 'game/pages'))"
+
+      - name: Install the World Tour's packages
+        working-directory: world-tour/game
+        run: npm ci --no-audit --no-fund
+
+      - name: Install the World Tour's map pipeline
+        working-directory: world-tour/pipeline
+        run: python -m venv .venv && .venv/bin/pip install -r requirements.txt
+
+      - name: Build the World Tour
+        working-directory: world-tour/game
+        run: |
+          export VITE_PUBLIC_GAME_URL="$(cd .. && python3 -c "import sys; sys.path.insert(0, 'tools'); import release_package; print(release_package.public_game_url())")"
+          npm run build
+
+      - name: Put the World Tour at /world-tour/
+        working-directory: world-tour
+        run: python3 -c "import sys; sys.path.insert(0, 'tools'); import release_package; print('left out', release_package.stage('game/dist', '../original/game/pages/world-tour'))"
+
+      - name: Save generated map tiles
+        if: ${{ always() && steps.map-cache.outputs.cache-hit != 'true' && steps.map-cache.outputs.cache-primary-key != '' }}
+        uses: actions/cache/save@v4
+        with:
+          path: .git/sr-assets
+          key: ${{ steps.map-cache.outputs.cache-primary-key }}
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: original/game/pages
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

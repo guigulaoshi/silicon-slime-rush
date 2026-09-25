@@ -1,0 +1,181 @@
+{
+ "seconds": {
+  "bayshore-101": {
+   "micro-hatch": 352.3,
+   "sports-car": 216.5,
+   "lightweight-sports": 229.7,
+   "jeep": 350.2,
+   "pickup-travel-trailer": 505.2,
+   "monster-truck": 375.9,
+   "school-bus": 509,
+   "retro-van": 572.9,
+   "city-pod": 416.3
+  },
+  "bayshore-101:reverse": {
+   "micro-hatch": 352.7,
+   "sports-car": 217,
+   "lightweight-sports": 230,
+   "jeep": 350.9,
+   "pickup-travel-trailer": 506.7,
+   "monster-truck": 376.6,
+   "school-bus": 509.9,
+   "retro-van": 572.5,
+   "city-pod": 415.5
+  },
+  "fishermans-wharf": {
+   "micro-hatch": 114.1,
+   "sports-car": 87.3,
+   "lightweight-sports": 83.9,
+   "jeep": 111.5,
+   "pickup-travel-trailer": 134.1,
+   "monster-truck": 121.1,
+   "school-bus": 157.5,
+   "retro-van": 154.3,
+   "city-pod": 120.4
+  },
+  "fishermans-wharf:reverse": {
+   "micro-hatch": 115.4,
+   "sports-car": 88,
+   "lightweight-sports": 85.3,
+   "jeep": 113.1,
+   "pickup-travel-trailer": 135.9,
+   "monster-truck": 122.6,
+   "school-bus": 157.9,
+   "retro-van": 158.8,
+   "city-pod": 122
+  },
+  "goldengate": {
+   "micro-hatch": 204.5,
+   "sports-car": 144.6,
+   "lightweight-sports": 142.8,
+   "jeep": 198.9,
+   "pickup-travel-trailer": 242.8,
+   "monster-truck": 210.1,
+   "school-bus": 267.8,
+   "retro-van": 309.6,
+   "city-pod": 224.5
+  },
+  "goldengate:reverse": {
+   "micro-hatch": 194.1,
+   "sports-car": 140.6,
+   "lightweight-sports": 140.1,
+   "jeep": 190.9,
+   "pickup-travel-trailer": 225.3,
+   "monster-truck": 201.3,
+   "school-bus": 247.1,
+   "retro-van": 252.3,
+   "city-pod": 213.3
+  },
+  "lombard": {
+   "micro-hatch": 137.9,
+   "sports-car": 112.6,
+   "lightweight-sports": 105.3,
+   "jeep": 142.3,
+   "pickup-travel-trailer": 170.3,
+   "monster-truck": 166.3,
+   "school-bus": 277.7,
+   "retro-van": 207.5,
+   "city-pod": 159.6
+  },
+  "lombard:reverse": {
+   "micro-hatch": 144.7,
+   "sports-car": 109.6,
+   "lightweight-sports": 107.7,
+   "jeep": 138.9,
+   "pickup-travel-trailer": 167.1,
+   "monster-truck": 147.5,
+   "school-bus": 240.1,
+   "retro-van": 200,
+   "city-pod": 157.3
+  },
+  "moffett-field": {
+   "micro-hatch": 206.4,
+   "sports-car": 158.3,
+   "lightweight-sports": 153,
+   "jeep": 200.4,
+   "pickup-travel-trailer": 241.5,
+   "monster-truck": 220.7,
+   "school-bus": 321.5,
+   "retro-van": 279.6,
+   "city-pod": 215.4
+  },
+  "moffett-field:reverse": {
+   "micro-hatch": 206.9,
+   "sports-car": 158.4,
+   "lightweight-sports": 153,
+   "jeep": 200.9,
+   "pickup-travel-trailer": 241.4,
+   "monster-truck": 220.5,
+   "school-bus": 325,
+   "retro-van": 279.7,
+   "city-pod": 215.6
+  },
+  "shoreline": {
+   "micro-hatch": 201.3,
+   "sports-car": 155,
+   "lightweight-sports": 150.5,
+   "jeep": 196.8,
+   "pickup-travel-trailer": 229.7,
+   "monster-truck": 211.5,
+   "school-bus": 273.5,
+   "retro-van": 271.4,
+   "city-pod": 215.9
+  },
+  "shoreline:reverse": {
+   "micro-hatch": 200.8,
+   "sports-car": 155,
+   "lightweight-sports": 150.1,
+   "jeep": 199.7,
+   "pickup-travel-trailer": 228,
+   "monster-truck": 211,
+   "school-bus": 273.6,
+   "retro-van": 272.3,
+   "city-pod": 210.9
+  },
+  "twin-peaks": {
+   "micro-hatch": 152.4,
+   "sports-car": 117.3,
+   "lightweight-sports": 113.3,
+   "jeep": 145.4,
+   "pickup-travel-trailer": 161.4,
+   "monster-truck": 155.5,
+   "school-bus": 195.5,
+   "retro-van": 185.8,
+   "city-pod": 163.9
+  },
+  "twin-peaks:reverse": {
+   "micro-hatch": 157.4,
+   "sports-car": 119.6,
+   "lightweight-sports": 114.7,
+   "jeep": 151,
+   "pickup-travel-trailer": 170.4,
+   "monster-truck": 161,
+   "school-bus": 205.4,
+   "retro-van": 219.5,
+   "city-pod": 168.9
+  },
+  "wolfe-pruneridge": {
+   "micro-hatch": 217.4,
+   "sports-car": 172.6,
+   "lightweight-sports": 163.3,
+   "jeep": 208.1,
+   "pickup-travel-trailer": 227.9,
+   "monster-truck": 228.8,
+   "school-bus": 271.9,
+   "retro-van": 248.1,
+   "city-pod": 211.5
+  },
+  "wolfe-pruneridge:reverse": {
+   "micro-hatch": 217.5,
+   "sports-car": 172.7,
+   "lightweight-sports": 163.4,
+   "jeep": 208.1,
+   "pickup-travel-trailer": 227.9,
+   "monster-truck": 228.7,
+   "school-bus": 271.8,
+   "retro-van": 247.7,
+   "city-pod": 211.7
+  }
+ },
+ "estimated": []
+}

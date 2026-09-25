@@ -1,0 +1,306 @@
+{
+  "id": "zhangjiajie",
+  "name": {
+    "zh": "张家界石柱林",
+    "en": "Zhangjiajie Pillars"
+  },
+  "blurb": {
+    "zh": "袁家界台地上的山路，砂岩石柱从云雾里一根根冒出来。",
+    "en": "A road across the Yuanjiajie plateau, sandstone pillars rising out of the mist."
+  },
+  "category": "scenic",
+  "mode": "p2p",
+  "laps": 1,
+  "car": "hatch",
+  "timeOfDay": "day",
+  "editions": [
+    "web",
+    "full"
+  ],
+  "origin": {
+    "lat": 29.3469597,
+    "lon": 110.4525101
+  },
+  "padM": 450,
+  "backdropM": 4000,
+  "waypoints": [
+    [
+      29.3486472,
+      110.4504372
+    ],
+    [
+      29.3495592,
+      110.4489283
+    ],
+    [
+      29.3486352,
+      110.4460716
+    ],
+    [
+      29.3479914,
+      110.4438736
+    ],
+    [
+      29.3489937,
+      110.4433068
+    ],
+    [
+      29.3486971,
+      110.4418409
+    ],
+    [
+      29.3476583,
+      110.4402781
+    ],
+    [
+      29.3470797,
+      110.4388927
+    ],
+    [
+      29.3471966,
+      110.4380853
+    ],
+    [
+      29.3475952,
+      110.4360656
+    ],
+    [
+      29.3499051,
+      110.43556
+    ]
+  ],
+  "centreLine": "yellow",
+  "traffic": "right",
+  "treeFill": {
+    "perTreeM2": 110,
+    "mix": {
+      "conifer": 0.6,
+      "broadleaf": 0.4
+    }
+  },
+  "groundCover": "terrain_wood",
+  "pillarField": {
+    "seed": 11,
+    "radiusM": 3200,
+    "clearM": 70,
+    "spacingM": 70,
+    "dropM": 70,
+    "max": 420,
+    "named": [
+      {
+        "id": "qiankun",
+        "lat": 29.3451921,
+        "lon": 110.4372172,
+        "heightM": 150,
+        "radiusM": 16
+      }
+    ],
+    "nearMax": 90,
+    "nearM": 750
+  },
+  "mist": {
+    "layersM": [
+      810,
+      795,
+      825
+    ],
+    "radiusM": 4000,
+    "colour": "#e6eaec",
+    "opacity": 0.65
+  },
+  "sky": {
+    "zenithColor": "#6d8fb4",
+    "skyColor": "#c3cfd6",
+    "fogColor": "#aebbc2"
+  },
+  "architecture": {
+    "facades": {
+      "building_stucco": 0.8,
+      "building_concrete": 0.2
+    },
+    "tint": {
+      "building_stucco": "#e9e5da",
+      "house_roof_slate": "#4a4f55"
+    },
+    "why": "武陵源：白墙青瓦的坡顶小楼（街景照片估计）",
+    "local": {
+      "types": [
+        {
+          "share": 0.25,
+          "when": {
+            "tags": [
+              "yes"
+            ],
+            "maxArea": 250
+          },
+          "storeyM": 2.8,
+          "groundM": 2.8,
+          "storeys": [
+            1,
+            1
+          ],
+          "tileBays": 2,
+          "wall": {
+            "kind": "render",
+            "colour": "#6e7478",
+            "stain": 0.45
+          },
+          "window": {
+            "shape": "rect",
+            "w": 1.0,
+            "h": 1.0,
+            "bay": 3.5,
+            "sill": 0.9,
+            "frame": "#434448",
+            "frameW": 0.06,
+            "glass": "#23282b"
+          },
+          "ground": {
+            "kind": "shops",
+            "glass": "#262a2b",
+            "signs": [
+              "#5f6468",
+              "#6a5f55"
+            ],
+            "shutterColour": "#87887d",
+            "base": "#5a5c5c"
+          },
+          "roof": {
+            "kind": "gable",
+            "material": "grey_tile",
+            "colour": "#727676",
+            "pitchDeg": 25,
+            "eaveM": 0.5
+          },
+          "details": {
+            "awnings": 1.0
+          }
+        },
+        {
+          "share": 0.6,
+          "when": {
+            "minArea": 250,
+            "maxArea": 1500
+          },
+          "storeyM": 3.0,
+          "groundM": 3.0,
+          "storeys": [
+            1,
+            2
+          ],
+          "tileBays": 2,
+          "wall": {
+            "kind": "timber",
+            "colour": "#4a4038",
+            "board": 0.22,
+            "stain": 0.3
+          },
+          "window": {
+            "shape": "rect",
+            "w": 1.2,
+            "h": 1.4,
+            "bay": 3.3,
+            "sill": 0.9,
+            "frame": "#2e241d",
+            "frameW": 0.1,
+            "glass": "#1e2a33",
+            "grille": true,
+            "grilleColour": "#2e241d"
+          },
+          "ground": {
+            "kind": "shops",
+            "glass": "#2a2622",
+            "signs": [
+              "#8c2f27",
+              "#2e241d"
+            ],
+            "shutterColour": "#87887d",
+            "base": "#6b6a64"
+          },
+          "roof": {
+            "kind": "curved",
+            "material": "grey_tile",
+            "colour": "#5e6049",
+            "pitchDeg": 30,
+            "eaveM": 0.9
+          }
+        },
+        {
+          "share": 0.15,
+          "when": {
+            "minArea": 1500
+          },
+          "storeyM": 4.0,
+          "groundM": 4.0,
+          "storeys": [
+            1,
+            2
+          ],
+          "tileBays": 2,
+          "wall": {
+            "kind": "stone",
+            "colour": "#2e3032",
+            "colours": [
+              "#3a3c3e",
+              "#26282a"
+            ],
+            "unit": [
+              0.45,
+              0.35
+            ],
+            "joint": "#55585a"
+          },
+          "window": {
+            "shape": "rect",
+            "w": 2.4,
+            "h": 2.4,
+            "bay": 3.0,
+            "sill": 0.8,
+            "frame": "#c08a3e",
+            "frameW": 0.25,
+            "glass": "#2b3238"
+          },
+          "ground": {
+            "kind": "door",
+            "door": "#8a5a2a",
+            "doorFrame": "#c08a3e",
+            "base": "#3a3c3e"
+          },
+          "roof": {
+            "kind": "gable",
+            "material": "metal",
+            "colour": "#5f654e",
+            "pitchDeg": 18,
+            "eaveM": 1.5
+          }
+        }
+      ],
+      "rail": {
+        "style": "iron",
+        "colour": "#434448"
+      },
+      "detailColours": {
+        "local_detail_dark": "#2e241d",
+        "local_detail_light": "#a8a396",
+        "local_detail_accent": "#acbdc1"
+      },
+      "why": "house-cards/zhangjiajie.md：袁家界台地上几乎没有房子，地图上一共 5 个轮廓（停车场边 77 平米一个、百龙天梯顶 4 个一层小房）。三类：路边一层农家饭馆（zj01，从这条路上的摆渡车里拍的：灰抹灰墙、小青瓦硬山、门前一整排镀锌铁皮棚）、土家风格的深色木板楼（zj06/zj07：小青瓦、屋脊两头翘）、游客中心那种深色毛石墙加原木色胶合木框架（zj02）。后两类现在只给远处零星几栋房子用；终点的游客基地地图上没有轮廓，不在这里造。"
+    }
+  },
+  "vista": {
+    "spacingM": 110,
+    "density": 0.04,
+    "nearM": 250,
+    "farM": 1700,
+    "heightM": [
+      4,
+      7
+    ],
+    "farRoofs": {
+      "gable": 1.0
+    },
+    "nearRoofs": {
+      "gable": 1.0
+    }
+  }
+}

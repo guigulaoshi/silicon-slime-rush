@@ -1,0 +1,540 @@
+{
+  "id": "paris",
+  "name": {
+    "zh": "凯旋门到铁塔",
+    "en": "Arc to Eiffel"
+  },
+  "blurb": {
+    "zh": "开上香榭丽舍大街，绕凯旋门，从特罗卡德罗过耶拿桥到铁塔脚下。",
+    "en": "Up the Champs-Élysées, round the Arc de Triomphe and over the Pont d'Iéna to the foot of the Eiffel Tower."
+  },
+  "category": "scenic",
+  "mode": "p2p",
+  "laps": 1,
+  "car": "hatch",
+  "timeOfDay": "day",
+  "editions": [
+    "web",
+    "full"
+  ],
+  "origin": {
+    "lat": 48.87039,
+    "lon": 2.3061
+  },
+  "padM": 450,
+  "backdropM": 4000,
+  "waypoints": [
+    [
+      48.87039,
+      2.3061
+    ],
+    [
+      48.87198,
+      2.30069
+    ],
+    [
+      48.87322,
+      2.29679
+    ],
+    [
+      48.87367,
+      2.29593
+    ],
+    [
+      48.87338,
+      2.29573
+    ],
+    [
+      48.87321,
+      2.2951
+    ],
+    [
+      48.87334,
+      2.29444
+    ],
+    [
+      48.86536,
+      2.28892
+    ],
+    [
+      48.86381,
+      2.28781
+    ],
+    [
+      48.86334,
+      2.28766
+    ],
+    [
+      48.86261,
+      2.29195
+    ],
+    [
+      48.86065,
+      2.29132
+    ],
+    [
+      48.8604,
+      2.29133
+    ],
+    [
+      48.85987,
+      2.29215
+    ],
+    [
+      48.85843,
+      2.2926
+    ]
+  ],
+  "centreLine": "white",
+  "traffic": "right",
+  "groundCover": "terrain_paved",
+  "landmarks": [
+    "eiffel-tower",
+    "arc-de-triomphe"
+  ],
+  "levelAreas": [
+    {
+      "lat": 48.873746,
+      "lon": 2.295029,
+      "radiusM": 120,
+      "why": "星形广场是一片平地；高程数据在中间的岛上读出 6 米的坡，凯旋门只能站在低的一侧，香榭丽舍那边的铺装只剩一条窄边（凯旋门建模报告）"
+    }
+  ],
+  "architecture": {
+    "facades": {
+      "building_stucco": 0.85,
+      "building_concrete": 0.15
+    },
+    "pitched": {
+      "maxStoreys": 8,
+      "share": 0.85,
+      "kind": "hip",
+      "roofMaterial": "house_roof_slate"
+    },
+    "tint": {
+      "building_stucco": "#e8dec6",
+      "building_concrete": "#d8cfbb",
+      "house_roof_slate": "#6c7681"
+    },
+    "why": "奥斯曼式公寓：奶油色石灰岩立面、灰色锌皮坡顶（街景照片估计）",
+    "facadesForAll": true,
+    "local": {
+      "why": "照片和尺寸来自 house-cards/paris.md（维基共享资源：克莱贝尔大街 33 号、76 号，特罗卡德罗广场，香榭丽舍 124 号，星形广场元帅府）。A 奥斯曼石头公寓：奶油色切石墙、落地窗、2 楼和 5 楼通长铁阳台、锌皮孟莎顶每开间一个老虎窗、烟囱上一排陶罐；B 星形广场一圈十二座一模一样的元帅府（三层加石板孟莎顶）；C 香榭丽舍街面：同样的石墙，底层是两层高的玻璃橱窗",
+      "types": [
+        {
+          "name": "haussmann",
+          "share": 1.0,
+          "when": {
+            "minArea": 40,
+            "tags": [
+              "yes",
+              "apartments",
+              "residential",
+              "hotel",
+              "office",
+              "retail",
+              "commercial",
+              "house",
+              "dormitory"
+            ],
+            "outside": [
+              {
+                "lat": 48.87378,
+                "lon": 2.29503,
+                "radiusM": 165
+              },
+              {
+                "lat": 48.87039,
+                "lon": 2.3061,
+                "radiusM": 130
+              },
+              {
+                "lat": 48.8712,
+                "lon": 2.3034,
+                "radiusM": 130
+              },
+              {
+                "lat": 48.87198,
+                "lon": 2.30069,
+                "radiusM": 130
+              },
+              {
+                "lat": 48.87262,
+                "lon": 2.2984,
+                "radiusM": 110
+              }
+            ]
+          },
+          "storeys": [
+            5,
+            6
+          ],
+          "storeyM": 3.1,
+          "groundM": 4.3,
+          "tileBays": 4,
+          "wall": {
+            "kind": "stone",
+            "colour": "#dad2c6",
+            "unit": [
+              1.0,
+              0.48
+            ],
+            "joint": "#d0c8bb",
+            "stain": 0.35,
+            "palette": [
+              "#dad2c6",
+              "#cfc6ba",
+              "#e2dccf"
+            ]
+          },
+          "window": {
+            "shape": "rect",
+            "w": 1.3,
+            "h": 2.5,
+            "bay": 3.2,
+            "sill": 0.25,
+            "frame": "#e8e3da",
+            "frameW": 0.07,
+            "glass": "#2b3238",
+            "surround": {
+              "kind": "architrave",
+              "colour": "#e3ddd2",
+              "w": 0.15,
+              "lintel": "#d2cabc",
+              "lintelH": 0.18
+            },
+            "balcony": {
+              "kind": "iron",
+              "h": 0.95,
+              "colour": "#1c1c1e"
+            }
+          },
+          "band": {
+            "colour": "#e1dace",
+            "h": 0.18
+          },
+          "ground": {
+            "kind": "door",
+            "wall": {
+              "kind": "stone",
+              "colour": "#d4cbbe",
+              "unit": [
+                1.2,
+                0.45
+              ],
+              "joint": "#a39a8c"
+            },
+            "door": "#9a664d",
+            "doorFrame": "#cfc6b8",
+            "doorArched": true,
+            "base": "#6f6a63",
+            "doorW": 2.8,
+            "doorH": 4.2
+          },
+          "roof": {
+            "kind": "mansard",
+            "material": "zinc",
+            "colour": "#6e7a84",
+            "lowerM": 3.6,
+            "insetM": 1.2,
+            "topM": 0.8,
+            "dormers": true,
+            "corniceM": 0.55,
+            "corniceH": 0.6,
+            "levelsInRoof": [
+              [
+                6,
+                1
+              ],
+              [
+                8,
+                2
+              ]
+            ]
+          },
+          "details": {
+            "chimneys": 0.9,
+            "balconyFloors": [
+              1,
+              4
+            ],
+            "balconyDepth": 0.7,
+            "balconyShare": 0.9,
+            "chimneyPots": 6,
+            "awnings": 0.15
+          }
+        },
+        {
+          "name": "etoile-hotel",
+          "share": 1.0,
+          "when": {
+            "minArea": 300,
+            "minStoreys": 3,
+            "maxStoreys": 5,
+            "tags": [
+              "yes",
+              "apartments",
+              "residential"
+            ],
+            "within": [
+              {
+                "lat": 48.87378,
+                "lon": 2.29503,
+                "radiusM": 165
+              }
+            ]
+          },
+          "storeys": [
+            3,
+            3
+          ],
+          "storeyM": 4.0,
+          "groundM": 5.0,
+          "tileBays": 3,
+          "wall": {
+            "kind": "stone",
+            "colour": "#dcd5ca",
+            "unit": [
+              1.1,
+              0.5
+            ],
+            "joint": "#cfc7ba",
+            "stain": 0.2
+          },
+          "window": {
+            "shape": "rect",
+            "w": 1.4,
+            "h": 2.7,
+            "bay": 3.6,
+            "sill": 0.7,
+            "frame": "#ece8e0",
+            "frameW": 0.07,
+            "glass": "#2d353c",
+            "surround": {
+              "kind": "architrave",
+              "colour": "#e6e0d5",
+              "w": 0.18,
+              "lintel": "#d6cec1",
+              "lintelH": 0.25
+            },
+            "balcony": {
+              "kind": "iron",
+              "h": 0.9,
+              "colour": "#1c1c1e"
+            }
+          },
+          "band": {
+            "colour": "#e4ded3",
+            "h": 0.3
+          },
+          "ground": {
+            "kind": "same",
+            "wall": {
+              "kind": "stone",
+              "colour": "#d8d0c4",
+              "unit": [
+                1.1,
+                0.42
+              ],
+              "joint": "#b3aa9c"
+            },
+            "base": "#8c867c"
+          },
+          "roof": {
+            "kind": "mansard",
+            "material": "slate",
+            "colour": "#8f94a1",
+            "lowerM": 3.2,
+            "insetM": 1.0,
+            "topM": 0.6,
+            "dormers": true,
+            "corniceM": 0.5,
+            "corniceH": 0.7,
+            "levelsInRoof": [
+              [
+                4,
+                1
+              ]
+            ]
+          },
+          "details": {
+            "chimneys": 0.8,
+            "chimneyPots": 4
+          }
+        },
+        {
+          "name": "champs-frontage",
+          "share": 1.0,
+          "when": {
+            "minArea": 40,
+            "tags": [
+              "yes",
+              "apartments",
+              "residential",
+              "hotel",
+              "office",
+              "retail",
+              "commercial"
+            ],
+            "within": [
+              {
+                "lat": 48.87039,
+                "lon": 2.3061,
+                "radiusM": 130
+              },
+              {
+                "lat": 48.8712,
+                "lon": 2.3034,
+                "radiusM": 130
+              },
+              {
+                "lat": 48.87198,
+                "lon": 2.30069,
+                "radiusM": 130
+              },
+              {
+                "lat": 48.87262,
+                "lon": 2.2984,
+                "radiusM": 110
+              }
+            ],
+            "outside": [
+              {
+                "lat": 48.87378,
+                "lon": 2.29503,
+                "radiusM": 165
+              }
+            ]
+          },
+          "storeys": [
+            6,
+            7
+          ],
+          "storeyM": 3.1,
+          "groundM": 6.5,
+          "tileBays": 2,
+          "wall": {
+            "kind": "stone",
+            "colour": "#dad2c6",
+            "unit": [
+              1.0,
+              0.48
+            ],
+            "joint": "#d0c8bb",
+            "stain": 0.25,
+            "palette": [
+              "#dad2c6",
+              "#cfc6ba",
+              "#e2dccf"
+            ]
+          },
+          "window": {
+            "shape": "rect",
+            "w": 1.3,
+            "h": 2.5,
+            "bay": 3.2,
+            "sill": 0.25,
+            "frame": "#e8e3da",
+            "frameW": 0.07,
+            "glass": "#2b3238",
+            "surround": {
+              "kind": "architrave",
+              "colour": "#e3ddd2",
+              "w": 0.15,
+              "lintel": "#d2cabc",
+              "lintelH": 0.18
+            },
+            "balcony": {
+              "kind": "iron",
+              "h": 0.95,
+              "colour": "#1c1c1e"
+            }
+          },
+          "band": {
+            "colour": "#e1dace",
+            "h": 0.18
+          },
+          "ground": {
+            "kind": "shops",
+            "wall": {
+              "kind": "stone",
+              "colour": "#d4cbbe",
+              "unit": [
+                1.2,
+                0.45
+              ],
+              "joint": "#a39a8c"
+            },
+            "glass": "#39434a",
+            "shutter": false,
+            "signs": [
+              "#1d1d1f",
+              "#23372c",
+              "#5a1f24"
+            ],
+            "base": "#5f5a54"
+          },
+          "roof": {
+            "kind": "mansard",
+            "material": "zinc",
+            "colour": "#6e7a84",
+            "lowerM": 3.6,
+            "insetM": 1.2,
+            "topM": 0.8,
+            "dormers": true,
+            "corniceM": 0.55,
+            "corniceH": 0.6,
+            "levelsInRoof": [
+              [
+                6,
+                1
+              ],
+              [
+                8,
+                2
+              ]
+            ]
+          },
+          "details": {
+            "chimneys": 0.6,
+            "balconyFloors": [
+              1,
+              4
+            ],
+            "balconyDepth": 0.7,
+            "balconyShare": 0.8,
+            "chimneyPots": 6,
+            "awnings": 0.05
+          }
+        }
+      ],
+      "rail": {
+        "style": "iron",
+        "colour": "#1c1c1e"
+      },
+      "detailColours": {
+        "local_detail_dark": "#26292d",
+        "local_detail_light": "#d8d0c4",
+        "local_detail_accent": "#b04a3c"
+      }
+    }
+  },
+  "lampStyle": "lantern",
+  "vista": {
+    "spacingM": 80,
+    "density": 0.85,
+    "heightM": [
+      20,
+      25
+    ],
+    "farRoofs": {
+      "hip": 0.85,
+      "flat": 0.15
+    },
+    "nearRoofs": {
+      "hip": 0.7,
+      "flat": 0.3
+    },
+    "why": "house-cards/paris.md 第 4 节：从凯旋门看出去是连成一片的 20–25 米奶油色墙、灰蓝锌皮和石板屋顶，没有红瓦也没有山墙（p11、p12）"
+  }
+}

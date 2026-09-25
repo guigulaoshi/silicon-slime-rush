@@ -1,0 +1,30 @@
+node_modules/
+dist/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+tmp/
+# built map products (python3 tools/assets.py ensure --all makes them)
+game/public/tracks/*/tiles/
+game/public/tracks/*/.build-id
+game/public/.menu-map.build-id
+game/public/tracks/*/tiles.bin
+game/public/tracks/*/backdrop.glb
+# a city's own building textures, written with its tiles (sr/local_style.py)
+game/public/tracks/*/textures/
+game/public/textures/
+pipeline/out/
+# the upload package (tools/release_package.py)
+game/release/
+# the GitHub Pages bundle (.github/workflows/pages.yml)
+game/pages/
+assets-src/**/*.blend1
+# local visual baselines and test output
+/tools/baselines
+game/test-results/
+game/playwright-report/
+test-results/
+game/test-progress.log
+# Poly Haven downloads, pinned by URL and md5 in pipeline/assets/polyhaven.json
+pipeline/cache/polyhaven/

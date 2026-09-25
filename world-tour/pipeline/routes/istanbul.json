@@ -1,0 +1,348 @@
+{
+  "id": "istanbul",
+  "name": {
+    "zh": "苏丹艾哈迈德",
+    "en": "Sultanahmet"
+  },
+  "blurb": {
+    "zh": "从古赛马场开到圣索菲亚，再下到马尔马拉海边的肯尼迪大道。",
+    "en": "From the Hippodrome past Hagia Sophia, then down to the sea road along the Marmara."
+  },
+  "category": "scenic",
+  "mode": "p2p",
+  "laps": 1,
+  "car": "hatch",
+  "timeOfDay": "day",
+  "editions": [
+    "web",
+    "full"
+  ],
+  "origin": {
+    "lat": 41.00495,
+    "lon": 28.97455
+  },
+  "padM": 450,
+  "backdropM": 4000,
+  "waypoints": [
+    {
+      "way": 1426083321,
+      "pick": "southmost"
+    },
+    {
+      "way": 103339333,
+      "pick": "nearest:41.0064,28.9763"
+    },
+    {
+      "way": 484934943,
+      "pick": "northmost"
+    },
+    {
+      "way": 1465114531,
+      "pick": "nearest:41.0074,28.9794"
+    },
+    [
+      41.0069,
+      28.9812
+    ],
+    [
+      41.0057,
+      28.981
+    ],
+    [
+      41.0059,
+      28.9823
+    ],
+    [
+      41.0043,
+      28.9827
+    ],
+    [
+      41.006,
+      28.98536
+    ],
+    [
+      41.00888,
+      28.98684
+    ],
+    [
+      41.01248,
+      28.98782
+    ],
+    [
+      41.01637,
+      28.98556
+    ]
+  ],
+  "centreLine": "white",
+  "traffic": "right",
+  "raceWays": [
+    1426083321,
+    1465114523,
+    1465114522,
+    103339333,
+    484934943,
+    1464536188,
+    4885642,
+    1465114532,
+    1465114531,
+    51984007
+  ],
+  "groundCover": "terrain_paved",
+  "landmarks": [
+    "blue-mosque",
+    "hagia-sophia",
+    "tomb-of-selim-ii",
+    "tomb-of-murad-iii",
+    "tomb-of-mehmed-iii",
+    "tomb-of-the-princes",
+    "hagia-sophia-school",
+    "hagia-sophia-muvakkithane",
+    "hagia-sophia-sadirvan",
+    "hagia-sophia-west-portico",
+    "tomb-of-ahmed-i",
+    "sultan-ahmed-madrasa",
+    "fountain-of-ahmed-iii",
+    "sultanahmet-park-fountain",
+    "german-fountain",
+    "obelisk-of-theodosius",
+    "walled-obelisk",
+    "serpent-column"
+  ],
+  "architecture": {
+    "facades": {
+      "building_stucco": 0.8,
+      "building_concrete": 0.2
+    },
+    "pitched": {
+      "maxStoreys": 5,
+      "share": 0.7,
+      "kind": "hip",
+      "roofMaterial": "house_roof_tile"
+    },
+    "tint": {
+      "building_stucco": "#e5d2b2",
+      "house_roof_tile": "#a9573a"
+    },
+    "why": "苏丹艾哈迈德：暖色抹灰墙、红瓦四坡顶（街景照片估计）",
+    "facadesForAll": true,
+    "local": {
+      "types": [
+        {
+          "share": 0.65,
+          "when": {
+            "minArea": 40
+          },
+          "storeyM": 3.1,
+          "groundM": 3.4,
+          "storeys": [
+            4,
+            6
+          ],
+          "tileBays": 3,
+          "wall": {
+            "kind": "render",
+            "colour": "#f3eee4",
+            "stain": 0.2,
+            "palette": [
+              "#f3eee4",
+              "#c89f73",
+              "#d9b67f",
+              "#e2b7ad"
+            ]
+          },
+          "window": {
+            "shape": "rect",
+            "w": 2.0,
+            "h": 1.45,
+            "bay": 3.4,
+            "sill": 0.9,
+            "frame": "#f2f0ea",
+            "frameW": 0.06,
+            "glass": "#6d777d",
+            "surround": {
+              "kind": "architrave",
+              "colour": "#e2d9c6",
+              "w": 0.14
+            },
+            "ac": true
+          },
+          "ground": {
+            "kind": "door",
+            "door": "#2b221c",
+            "doorFrame": "#d8d0bf",
+            "base": "#8a8680"
+          },
+          "roof": {
+            "kind": "hip",
+            "material": "tile",
+            "colour": "#b0654a",
+            "pitchDeg": 25,
+            "eaveM": 0.4,
+            "corniceM": 0.25,
+            "corniceH": 0.3
+          },
+          "details": {
+            "bayWindow": 0.3,
+            "awnings": 0.3
+          }
+        },
+        {
+          "share": 0.35,
+          "when": {
+            "minArea": 50,
+            "maxArea": 220,
+            "tags": [
+              "yes",
+              "house",
+              "residential"
+            ],
+            "within": [
+              {
+                "lat": 41.0045,
+                "lon": 28.9805,
+                "radiusM": 330
+              },
+              {
+                "lat": 41.003,
+                "lon": 28.9735,
+                "radiusM": 250
+              }
+            ]
+          },
+          "upperOverhangM": 0.7,
+          "storeyM": 3.0,
+          "groundM": 2.8,
+          "storeys": [
+            2,
+            4
+          ],
+          "tileBays": 4,
+          "wall": {
+            "kind": "timber",
+            "colour": "#9a8c80",
+            "board": 0.17,
+            "stain": 0.45,
+            "palette": [
+              "#9a8c80",
+              "#b0675f",
+              "#b37c46",
+              "#f4f1ea"
+            ]
+          },
+          "window": {
+            "shape": "rect",
+            "w": 0.75,
+            "h": 1.5,
+            "bay": 1.5,
+            "sill": 0.8,
+            "frame": "#efece4",
+            "frameW": 0.07,
+            "glass": "#3b4146"
+          },
+          "ground": {
+            "kind": "door",
+            "wall": {
+              "kind": "render",
+              "colour": "#a7a7a3"
+            },
+            "door": "#4a3526",
+            "base": "#6f6a63"
+          },
+          "roof": {
+            "kind": "hip",
+            "material": "tile",
+            "colour": "#b48874",
+            "pitchDeg": 27,
+            "eaveM": 0.8
+          }
+        },
+        {
+          "share": 50,
+          "when": {
+            "tags": [
+              "mosque",
+              "church",
+              "mausoleum",
+              "tomb"
+            ]
+          },
+          "storeyM": 4.0,
+          "groundM": 4.5,
+          "storeys": [
+            2,
+            2
+          ],
+          "tileBays": 2,
+          "wall": {
+            "kind": "stone",
+            "colour": "#d8d0c0",
+            "unit": [
+              0.9,
+              0.4
+            ],
+            "joint": "#c4bcae",
+            "stain": 0.3
+          },
+          "window": {
+            "shape": "arched",
+            "w": 1.0,
+            "h": 1.9,
+            "bay": 3.6,
+            "sill": 1.2,
+            "frame": "#3a3a38",
+            "frameW": 0.05,
+            "glass": "#2e3336",
+            "grille": true,
+            "grilleColour": "#2a2a2a",
+            "surround": {
+              "kind": "architrave",
+              "colour": "#c9c0ae",
+              "w": 0.12
+            }
+          },
+          "ground": {
+            "kind": "same",
+            "base": "#9e9f9d"
+          },
+          "roof": {
+            "kind": "dome",
+            "material": "zinc",
+            "colour": "#999a9c",
+            "drumM": 1.0,
+            "domeShare": 0.6
+          }
+        }
+      ],
+      "rail": {
+        "style": "iron",
+        "colour": "#1c1c1e"
+      },
+      "detailColours": {
+        "local_detail_dark": "#2b2622",
+        "local_detail_light": "#e8e6e0",
+        "local_detail_accent": "#2f5a3c"
+      },
+      "why": "房卡 SCRATCH/house-cards/istanbul.md 与所附 Wikimedia 照片（Sultan Hostel、Hotel Peninsula、Tulip Guesthouse、Old houses in Sultanahmet、Istanbul Holzhaus、Haseki Hürrem 浴场）：A 类 4–6 层白色抹灰客栈，成对窗、窗套、空调外机、红瓦四坡顶、三成有砖石凸窗；B 类 Cankurtaran 和小圣索菲亚一带小地块上三成五是木构奥斯曼老宅，上层整层外挑、灰褐木板墙、深檐；C 类清真寺、教堂和陵墓是石墙加铅皮穹顶（份额设得很大，只为在这些标签上压过 A 类）。"
+    }
+  },
+  "lampStyle": "lantern",
+  "vista": {
+    "spacingM": 80,
+    "density": 0.8,
+    "nearM": 250,
+    "farM": 2400,
+    "heightM": [
+      14,
+      24
+    ],
+    "farRoofs": {
+      "hip": 0.5,
+      "flat": 0.5
+    },
+    "nearRoofs": {
+      "hip": 0.5,
+      "flat": 0.5
+    },
+    "why": "房卡 istanbul.md 第 4 节（boat tour 285/288 照片）：埃米诺努、贝亚济特一带是连续的 5–8 层白色到奶油色、赭色楼，红瓦四坡顶和平顶各半；远处楼墙和屋顶取本城 A 类。"
+  }
+}

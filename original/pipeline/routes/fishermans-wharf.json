@@ -1,0 +1,68 @@
+{
+  "id": "fishermans-wharf",
+  "name": {
+    "zh": "渔人码头",
+    "en": "Fisherman's Wharf"
+  },
+  "category": "scenic",
+  "slimeDensity": 0.5,
+  "slimeCount": 78,
+  "mode": "p2p",
+  "laps": 1,
+  "car": "convertible",
+  "timeOfDay": "day",
+  "editions": [
+    "web",
+    "full"
+  ],
+  "origin": {
+    "lat": 37.808,
+    "lon": -122.413
+  },
+  "padM": 250,
+  "backdropM": 7500,
+  "landmarks": [
+    "alcatraz",
+    "golden-gate-bridge",
+    "bay-bridge-west"
+  ],
+  "halfWidthDefault": 7.0,
+  "waypoints": [
+    [
+      37.80642944,
+      -122.42237444
+    ],
+    {
+      "road": "Jefferson Street",
+      "pick": "eastmost"
+    },
+    {
+      "road": "The Embarcadero",
+      "pick": "southmost"
+    }
+  ],
+  "bboxPoints": [
+    [
+      37.8068,
+      -122.4248
+    ],
+    [
+      37.808,
+      -122.417
+    ],
+    [
+      37.805,
+      -122.406
+    ],
+    [
+      37.798,
+      -122.394
+    ]
+  ],
+  "bridgeDeckM": 0,
+  "bridgeMinLengthM": 200,
+  "blurb": {
+    "zh": "开场回望金门，途经 Alcatraz，沿海滨大道驶向海湾大桥。",
+    "en": "Look back to the Golden Gate, pass Alcatraz, then chase the Bay Bridge down the waterfront."
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "beijing": {
+    "at": 0.17,
+    "side": 0,
+    "back": 14,
+    "up": 6,
+    "look": 60
+  },
+  "shanghai": {
+    "at": 0.03,
+    "side": 0,
+    "back": 14,
+    "up": 6,
+    "look": 60
+  },
+  "lhasa": {
+    "at": 0.375,
+    "side": 0,
+    "back": 14,
+    "up": 6,
+    "look": 60
+  },
+  "zhangjiajie": {
+    "at": 0.269,
+    "side": 0,
+    "back": 14,
+    "up": 6,
+    "look": 60
+  },
+  "fuji": {
+    "at": 0.134,
+    "side": 0,
+    "back": 14,
+    "up": 6,
+    "look": 60
+  },
+  "dubai": {
+    "at": 0.17,
+    "side": 0,
+    "back": 14,
+    "up": 6,
+    "look": 60
+  },
+  "istanbul": {
+    "at": 0.14,
+    "side": 0,
+    "back": 14,
+    "up": 6,
+    "look": 60
+  },
+  "rome": {
+    "at": 0.386,
+    "side": 0,
+    "back": 14,
+    "up": 6,
+    "look": 60
+  },
+  "paris": {
+    "at": 0.927,
+    "side": 0,
+    "back": 14,
+    "up": 6,
+    "look": 60
+  },
+  "giza": {
+    "at": 0.67,
+    "side": 0,
+    "back": 14,
+    "up": 6,
+    "look": 60
+  },
+  "amboseli": {
+    "at": 0.479,
+    "side": 0,
+    "back": 14,
+    "up": 6,
+    "look": 60
+  },
+  "new-york": {
+    "at": 0.916,
+    "side": 0,
+    "back": 14,
+    "up": 6,
+    "look": 60
+  },
+  "sydney": {
+    "at": 0.86,
+    "side": 0,
+    "back": 14,
+    "up": 7,
+    "look": 60
+  }
+}

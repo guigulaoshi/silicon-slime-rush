@@ -1,0 +1,291 @@
+{
+ "seconds": {
+  "amboseli": {
+   "micro-hatch": 137.7,
+   "sports-car": 107.8,
+   "lightweight-sports": 102.8,
+   "amboseli-safari": 139.6,
+   "pickup-travel-trailer": 144,
+   "monster-truck": 140.2,
+   "school-bus": 175.1,
+   "retro-van": 169.1,
+   "city-pod": 144.4
+  },
+  "amboseli:reverse": {
+   "micro-hatch": 137.9,
+   "sports-car": 107.6,
+   "lightweight-sports": 103,
+   "amboseli-safari": 139.8,
+   "pickup-travel-trailer": 144.5,
+   "monster-truck": 140.1,
+   "school-bus": 175.4,
+   "retro-van": 171.1,
+   "city-pod": 143.3
+  },
+  "beijing": {
+   "micro-hatch": 116.1,
+   "sports-car": 87.6,
+   "lightweight-sports": 84.8,
+   "jeep": 114,
+   "pickup-travel-trailer": 137.3,
+   "monster-truck": 121.2,
+   "beijing-sightseeing-bus": 162.8,
+   "retro-van": 164.8,
+   "city-pod": 123.3
+  },
+  "beijing:reverse": {
+   "micro-hatch": 115.1,
+   "sports-car": 86.9,
+   "lightweight-sports": 84,
+   "jeep": 113.2,
+   "pickup-travel-trailer": 136.1,
+   "monster-truck": 120.2,
+   "beijing-sightseeing-bus": 161.8,
+   "retro-van": 162.5,
+   "city-pod": 122.5
+  },
+  "dubai": {
+   "micro-hatch": 122.4,
+   "dubai-supercar": 94.6,
+   "lightweight-sports": 91.1,
+   "jeep": 119.7,
+   "pickup-travel-trailer": 133.7,
+   "monster-truck": 127.1,
+   "school-bus": 161.1,
+   "retro-van": 155.9,
+   "city-pod": 128.6
+  },
+  "dubai:reverse": {
+   "micro-hatch": 120,
+   "dubai-supercar": 93.3,
+   "lightweight-sports": 89.9,
+   "jeep": 118.1,
+   "pickup-travel-trailer": 132.1,
+   "monster-truck": 125.4,
+   "school-bus": 159.8,
+   "retro-van": 154.5,
+   "city-pod": 124.7
+  },
+  "fuji": {
+   "micro-hatch": 105.1,
+   "sports-car": 80.5,
+   "lightweight-sports": 77.7,
+   "jeep": 102.6,
+   "pickup-travel-trailer": 125.6,
+   "monster-truck": 116.3,
+   "school-bus": 165.6,
+   "retro-van": 148.3,
+   "fuji-kei-truck": 115.4
+  },
+  "fuji:reverse": {
+   "micro-hatch": 104.6,
+   "sports-car": 80.5,
+   "lightweight-sports": 77.4,
+   "jeep": 102.3,
+   "pickup-travel-trailer": 125.6,
+   "monster-truck": 115.8,
+   "school-bus": 166.1,
+   "retro-van": 144.7,
+   "fuji-kei-truck": 114.5
+  },
+  "giza": {
+   "micro-hatch": 121.8,
+   "sports-car": 93.9,
+   "lightweight-sports": 88.9,
+   "jeep": 118.2,
+   "pickup-travel-trailer": 138.3,
+   "monster-truck": 135.5,
+   "school-bus": 209.1,
+   "giza-microbus": 170.8,
+   "city-pod": 124.6
+  },
+  "giza:reverse": {
+   "micro-hatch": 122.3,
+   "sports-car": 94.3,
+   "lightweight-sports": 89.3,
+   "jeep": 119.4,
+   "pickup-travel-trailer": 146.5,
+   "monster-truck": 138.9,
+   "school-bus": 217.4,
+   "giza-microbus": 211.8,
+   "city-pod": 129
+  },
+  "istanbul": {
+   "micro-hatch": 127.2,
+   "sports-car": 98.1,
+   "lightweight-sports": 94.5,
+   "jeep": 122.7,
+   "pickup-travel-trailer": 137.1,
+   "monster-truck": 131,
+   "school-bus": 172.5,
+   "istanbul-dolmus": 163.8,
+   "city-pod": 134.3
+  },
+  "istanbul:reverse": {
+   "micro-hatch": 127.7,
+   "sports-car": 99,
+   "lightweight-sports": 94.9,
+   "jeep": 124.8,
+   "pickup-travel-trailer": 137.5,
+   "monster-truck": 131.7,
+   "school-bus": 175.4,
+   "istanbul-dolmus": 170.1,
+   "city-pod": 136.1
+  },
+  "lhasa": {
+   "micro-hatch": 139.8,
+   "sports-car": 108.5,
+   "lightweight-sports": 104.5,
+   "lhasa-plateau-suv": 138.6,
+   "pickup-travel-trailer": 155.4,
+   "monster-truck": 147.1,
+   "school-bus": 213.5,
+   "retro-van": 185.1,
+   "city-pod": 146
+  },
+  "lhasa:reverse": {
+   "micro-hatch": 140.3,
+   "sports-car": 108.7,
+   "lightweight-sports": 104.7,
+   "lhasa-plateau-suv": 139.2,
+   "pickup-travel-trailer": 155.8,
+   "monster-truck": 147.9,
+   "school-bus": 212.8,
+   "retro-van": 184.8,
+   "city-pod": 145.5
+  },
+  "new-york": {
+   "micro-hatch": 126.1,
+   "sports-car": 98.2,
+   "new-york-limo": 137.9,
+   "jeep": 121.5,
+   "pickup-travel-trailer": 135.7,
+   "monster-truck": 131,
+   "school-bus": 175.2,
+   "retro-van": 159.6,
+   "city-pod": 130.4
+  },
+  "new-york:reverse": {
+   "micro-hatch": 125.8,
+   "sports-car": 98,
+   "new-york-limo": 137,
+   "jeep": 121.7,
+   "pickup-travel-trailer": 134.9,
+   "monster-truck": 130.5,
+   "school-bus": 173.6,
+   "retro-van": 158.8,
+   "city-pod": 130.1
+  },
+  "paris": {
+   "micro-hatch": 124.6,
+   "sports-car": 94.3,
+   "lightweight-sports": 90.6,
+   "jeep": 120.9,
+   "pickup-travel-trailer": 145.6,
+   "monster-truck": 132.1,
+   "school-bus": 190.7,
+   "retro-van": 174.6,
+   "paris-tin-snail": 140.3
+  },
+  "paris:reverse": {
+   "micro-hatch": 125.6,
+   "sports-car": 95.1,
+   "lightweight-sports": 91.7,
+   "jeep": 121.7,
+   "pickup-travel-trailer": 145,
+   "monster-truck": 131.4,
+   "school-bus": 193.6,
+   "retro-van": 178.7,
+   "paris-tin-snail": 140.3
+  },
+  "rome": {
+   "micro-hatch": 114.3,
+   "sports-car": 87.8,
+   "rome-roadster": 85.4,
+   "jeep": 110.2,
+   "pickup-travel-trailer": 125.5,
+   "monster-truck": 119.5,
+   "school-bus": 157.2,
+   "retro-van": 152.5,
+   "city-pod": 118.5
+  },
+  "rome:reverse": {
+   "micro-hatch": 112.3,
+   "sports-car": 87.2,
+   "rome-roadster": 85.2,
+   "jeep": 109.5,
+   "pickup-travel-trailer": 124.8,
+   "monster-truck": 119,
+   "school-bus": 155.8,
+   "retro-van": 149.6,
+   "city-pod": 117
+  },
+  "shanghai": {
+   "micro-hatch": 119.5,
+   "sports-car": 92.5,
+   "lightweight-sports": 88.4,
+   "shanghai-classic-sedan": 125.2,
+   "pickup-travel-trailer": 138.3,
+   "monster-truck": 128.7,
+   "school-bus": 177.7,
+   "retro-van": 160.4,
+   "city-pod": 122.8
+  },
+  "shanghai:reverse": {
+   "micro-hatch": 119.1,
+   "sports-car": 92.2,
+   "lightweight-sports": 88,
+   "shanghai-classic-sedan": 125,
+   "pickup-travel-trailer": 139.4,
+   "monster-truck": 128.3,
+   "school-bus": 176.8,
+   "retro-van": 162.3,
+   "city-pod": 123.4
+  },
+  "sydney": {
+   "micro-hatch": 134.8,
+   "sports-car": 103.7,
+   "lightweight-sports": 99.2,
+   "jeep": 132.4,
+   "sydney-ute": 138.6,
+   "monster-truck": 149.6,
+   "school-bus": 219.3,
+   "retro-van": 180.1,
+   "city-pod": 150.2
+  },
+  "sydney:reverse": {
+   "micro-hatch": 134.4,
+   "sports-car": 101.1,
+   "lightweight-sports": 96.4,
+   "jeep": 131.4,
+   "sydney-ute": 136.6,
+   "monster-truck": 148.7,
+   "school-bus": 219.9,
+   "retro-van": 195.5,
+   "city-pod": 142.2
+  },
+  "zhangjiajie": {
+   "micro-hatch": 138,
+   "sports-car": 107.3,
+   "lightweight-sports": 102,
+   "jeep": 131.8,
+   "pickup-travel-trailer": 145.8,
+   "monster-truck": 139.2,
+   "zhangjiajie-shuttle": 170.6,
+   "retro-van": 180.7,
+   "city-pod": 141
+  },
+  "zhangjiajie:reverse": {
+   "micro-hatch": 132.1,
+   "sports-car": 104,
+   "lightweight-sports": 99.4,
+   "jeep": 126.8,
+   "pickup-travel-trailer": 138,
+   "monster-truck": 135.8,
+   "zhangjiajie-shuttle": 160.7,
+   "retro-van": 160,
+   "city-pod": 136.6
+  }
+ },
+ "estimated": []
+}

@@ -1,0 +1,332 @@
+{
+  "id": "giza",
+  "name": {
+    "zh": "吉萨金字塔",
+    "en": "Pyramids of Giza"
+  },
+  "blurb": {
+    "zh": "从沙漠开上高地，先冲哈夫拉、再冲胡夫，顺狮身人面像街冲线。",
+    "en": "Up from the desert onto the plateau, at Khafre then Khufu, and down the Sphinx road to finish."
+  },
+  "category": "scenic",
+  "mode": "p2p",
+  "laps": 1,
+  "car": "hatch",
+  "timeOfDay": "day",
+  "editions": [
+    "web",
+    "full"
+  ],
+  "origin": {
+    "lat": 29.9849,
+    "lon": 31.1354
+  },
+  "padM": 450,
+  "backdropM": 4000,
+  "waypoints": [
+    {
+      "way": 73226912,
+      "pick": "nearest:29.967605,31.114927"
+    },
+    {
+      "way": 538990482,
+      "pick": "nearest:29.970018,31.118194"
+    },
+    {
+      "way": 538990482,
+      "pick": "nearest:29.975879,31.125297"
+    },
+    {
+      "way": 538990482,
+      "pick": "nearest:29.977863,31.130219"
+    },
+    {
+      "way": 24668876,
+      "pick": "nearest:29.97574,31.13876"
+    }
+  ],
+  "centreLine": "white",
+  "traffic": "right",
+  "bareGround": true,
+  "groundCover": "terrain_sand",
+  "snapExclude": [],
+  "sky": {
+    "zenithColor": "#7ea5ca",
+    "skyColor": "#ddd4bf",
+    "fogColor": "#d6c9ad"
+  },
+  "landmarks": [
+    "pyramid-of-khufu",
+    "pyramid-of-khafre",
+    "pyramid-of-menkaure",
+    "great-sphinx"
+  ],
+  "architecture": {
+    "facades": {
+      "building_stucco": 0.7,
+      "building_concrete": 0.3
+    },
+    "tint": {
+      "building_stucco": "#caa97c",
+      "building_concrete": "#b9a17d"
+    },
+    "why": "吉萨纳兹莱特塞曼：土黄色砖和抹灰的平顶楼（街景照片估计）",
+    "local": {
+      "types": [
+        {
+          "share": 1,
+          "when": {
+            "tags": [
+              "yes",
+              "apartments",
+              "residential",
+              "house",
+              "commercial",
+              "retail"
+            ],
+            "within": [
+              {
+                "lat": 29.9755,
+                "lon": 31.1425,
+                "radiusM": 400
+              },
+              {
+                "lat": 29.985,
+                "lon": 31.175,
+                "radiusM": 3000
+              },
+              {
+                "lat": 30.005,
+                "lon": 31.135,
+                "radiusM": 1800
+              }
+            ]
+          },
+          "storeyM": 3.0,
+          "groundM": 3.5,
+          "storeys": [
+            3,
+            6
+          ],
+          "tileBays": 3,
+          "wall": {
+            "kind": "brick",
+            "colour": "#83634f",
+            "colours": [
+              "#8e765c",
+              "#867053"
+            ],
+            "unit": [
+              0.25,
+              0.08
+            ],
+            "joint": "#9a948a",
+            "stain": 0.3
+          },
+          "band": {
+            "colour": "#9c9789",
+            "h": 0.2
+          },
+          "window": {
+            "shape": "rect",
+            "w": 1.0,
+            "h": 1.2,
+            "bay": 3.6,
+            "sill": 0.9,
+            "frame": "#5b3a24",
+            "frameW": 0.06,
+            "glass": "#3a3028",
+            "shutters": {
+              "colour": "#5b3a24"
+            },
+            "surround": {
+              "lintel": "#9c9789",
+              "lintelH": 0.2
+            }
+          },
+          "ground": {
+            "kind": "shops",
+            "wall": {
+              "kind": "render",
+              "colour": "#a8a39a"
+            },
+            "shutterColour": "#8a8d8f",
+            "signs": [
+              "#6d7b5e",
+              "#5a6f86",
+              "#8a8d8f"
+            ],
+            "base": "#6f6a63"
+          },
+          "roof": {
+            "kind": "flat",
+            "material": "concrete",
+            "colour": "#8d877d"
+          },
+          "details": {
+            "columnStubs": 0.6,
+            "waterTanks": 0.5,
+            "dishes": 0.8,
+            "dishCount": 6
+          }
+        },
+        {
+          "share": 2,
+          "when": {
+            "tags": [
+              "yes",
+              "hotel",
+              "commercial",
+              "retail",
+              "apartments"
+            ],
+            "within": [
+              {
+                "lat": 29.975,
+                "lon": 31.141,
+                "radiusM": 220
+              }
+            ]
+          },
+          "storeyM": 3.2,
+          "groundM": 4.0,
+          "storeys": [
+            3,
+            5
+          ],
+          "tileBays": 2,
+          "wall": {
+            "kind": "render",
+            "colour": "#f0d6a9",
+            "stain": 0.1,
+            "palette": [
+              "#f0d6a9",
+              "#e9e2d2",
+              "#d9b86a"
+            ]
+          },
+          "window": {
+            "shape": "rect",
+            "w": 1.2,
+            "h": 1.5,
+            "bay": 3.2,
+            "sill": 0.9,
+            "frame": "#4a3a2c",
+            "frameW": 0.05,
+            "glass": "#3a3028",
+            "ac": true
+          },
+          "ground": {
+            "kind": "shops",
+            "signs": [
+              "#b8322a",
+              "#2d4f6c",
+              "#d9a030"
+            ],
+            "shutterColour": "#5e7a5a",
+            "base": "#8a7a66"
+          },
+          "roof": {
+            "kind": "flat",
+            "material": "concrete",
+            "colour": "#bfb4a2",
+            "corniceM": 0.35,
+            "corniceH": 0.3
+          },
+          "details": {
+            "balconyFloors": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "balconyShare": 0.6,
+            "balconyDepth": 1.2,
+            "awnings": 0.4,
+            "dishes": 0.5,
+            "dishCount": 2,
+            "waterTanks": 0.4
+          }
+        },
+        {
+          "share": 1,
+          "when": {
+            "tags": [
+              "yes"
+            ],
+            "minStoreys": 4,
+            "within": [
+              {
+                "lat": 29.9775,
+                "lon": 31.13,
+                "radiusM": 800
+              }
+            ]
+          },
+          "storeyM": 100,
+          "groundM": 0.6,
+          "storeys": [
+            1,
+            1
+          ],
+          "tileBays": 2,
+          "wall": {
+            "kind": "stone",
+            "colour": "#c9b48f",
+            "unit": [
+              1.2,
+              0.6
+            ],
+            "joint": "#b39d78"
+          },
+          "window": {
+            "shape": "none"
+          },
+          "ground": {
+            "kind": "same",
+            "base": "#a8946f"
+          },
+          "roof": {
+            "kind": "hip",
+            "material": "concrete",
+            "colour": "#c4ad86",
+            "pitchDeg": 51,
+            "eaveM": 0
+          }
+        }
+      ],
+      "rail": {
+        "style": "iron",
+        "colour": "#e8e4da"
+      },
+      "detailColours": {
+        "local_detail_dark": "#2e2b28",
+        "local_detail_light": "#e6e6e2",
+        "local_detail_accent": "#b8362c"
+      },
+      "why": "房卡 SCRATCH/house-cards/giza.md 与所附 Wikimedia 照片（Giza Governorate panoramio 27、Cairo suburb、A man travels on a motorcycle、Bajaj Auto Rickshaw、Mechet）：A 类纳兹莱特塞曼和开罗城区是 3–6 层红砖填充灰色混凝土框架的烂尾楼，层间一道灰色楼板边、窗少且小、屋顶露柱头、水箱和一片卫星锅；B 类狮身人面像门口那条街是米色抹灰的 3–5 层商店和“看金字塔”旅馆，白色栏杆阳台、招牌和条纹遮阳篷；C 类台地上地图标了高度的王后金字塔（G1a–c、G3a–c、肯特卡维斯）画成 51 度的石砌四棱锥，没有窗，不当房子画。"
+    },
+    "ruinZones": [
+      {
+        "lat": 29.9775,
+        "lon": 31.13,
+        "radiusM": 800,
+        "why": "吉萨台地：地图上标 building=yes、没有高度的小方块是马斯塔巴墓和残墙（房卡 giza.md 第 3 节的守则：台地上经度 31.1385 以西、纬度 29.966 以北），东缘停在纳兹莱特塞曼第一排房子以西"
+      }
+    ]
+  },
+  "levelAreas": [
+    {
+      "lat": 29.97528,
+      "lon": 31.13756,
+      "radiusM": 42,
+      "heightM": 20,
+      "rampM": 10,
+      "why": "狮身人面像是在基岩里往下凿出来的，四周是采石坑，坑底海拔约 20 米；高程数据太粗，只读出一道缓坡，坑沿把它整个挡住，从路上看不见。按坑底高度挖出来，坑壁短，过渡带离路还有约 20 米。"
+    }
+  ],
+  "vista": {
+    "density": 0.0,
+    "why": "房卡 giza.md 第 4 节要东边开罗的灰霾楼群，同时台地和西、南两面必须是空沙漠；远景填充目前只能按离赛道远近铺一整圈，从 300 米以内开始会把楼铺到金字塔之间，所以这条线先不铺，东边只留地图上的远处楼群"
+  }
+}

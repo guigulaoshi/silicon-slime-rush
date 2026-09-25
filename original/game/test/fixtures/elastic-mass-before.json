@@ -1,0 +1,12 @@
+{
+  "mass": 195.6048979591837,
+  "initialSpeed": 15,
+  "lowestSpeed": 10.028532028198242,
+  "speedLoss": 4.971467971801758,
+  "hitFrame": 17,
+  "hits": 1,
+  "vehicle": "sedan",
+  "radius": 1.2,
+  "measurementFramesAfterContact": 30,
+  "sourceCommit": "b845f63"
+}

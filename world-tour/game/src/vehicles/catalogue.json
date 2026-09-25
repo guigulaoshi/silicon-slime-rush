@@ -1,0 +1,3295 @@
+{
+  "version": 1,
+  "legacyDefaults": {
+    "sedan": "micro-hatch",
+    "hatch": "micro-hatch",
+    "super": "sports-car",
+    "convertible": "retro-van"
+  },
+  "fallback": "micro-hatch",
+  "vehicles": [
+    {
+      "id": "micro-hatch",
+      "tuning": "hatch",
+      "handling": {
+        "drive": "awd",
+        "mass": 900,
+        "engineForce": 3800,
+        "maxSpeed": 50.0,
+        "brakeForce": 7200.0,
+        "ramMultiplier": 1.2,
+        "slickGripMultiplier": 1.05,
+        "centreOfMass": [
+          0.0,
+          -0.369,
+          0.0
+        ],
+        "maxSteer": 0.55,
+        "steerRate": 0.9,
+        "gripFront": 6.2,
+        "gripRear": 6.2,
+        "gripLimit": 2.5,
+        "maxLateralAccel": 7,
+        "suspensionStiffness": 115000,
+        "suspensionDamping": 7000,
+        "downforce": 1,
+        "uprightRecoveryLimit": 1.15,
+        "uprightGround": 28,
+        "uprightAir": 8,
+        "enginePower": 95000,
+        "airResistance": 0.55,
+        "steerRateAtSpeed": 0.4,
+        "steerFalloffSpeed": 25,
+        "steerAtSpeed": 0.18,
+        "maxYawRate": 1.2,
+        "steerOverdrive": 0.2,
+        "linearDamping": 0.01
+      },
+      "size": [
+        1.41696,
+        1.107,
+        3.1734
+      ],
+      "chassisHalf": [
+        0.63468,
+        0.33948,
+        1.53504
+      ],
+      "wheelRadius": 0.26568,
+      "wheelWidth": 0.17712,
+      "axles": [
+        -0.9594,
+        0.9594
+      ],
+      "track": 1.1808,
+      "anchorY": -0.33948,
+      "suspensionRest": 0.33948,
+      "wheelLift": 0.05,
+      "detailScale": 1.476,
+      "lights": {
+        "headlights": [
+          {
+            "position": [
+              -0.43296,
+              -0.15621,
+              -1.51782
+            ],
+            "size": [
+              0.19803,
+              0.02214
+            ]
+          },
+          {
+            "position": [
+              0.43296,
+              -0.15621,
+              -1.51782
+            ],
+            "size": [
+              0.19803,
+              0.02214
+            ]
+          }
+        ],
+        "brakeLights": [
+          {
+            "position": [
+              -0.37146,
+              0.01968,
+              1.53258
+            ],
+            "size": [
+              0.26199,
+              0.03444
+            ]
+          },
+          {
+            "position": [
+              0.37146,
+              0.02091,
+              1.53258
+            ],
+            "size": [
+              0.26199,
+              0.03567
+            ]
+          }
+        ]
+      },
+      "headlightProfile": {
+        "colour": "#fff0cc",
+        "reach": 52,
+        "width": 5.0,
+        "power": 240
+      }
+    },
+    {
+      "id": "sports-car",
+      "tuning": "super",
+      "handling": {
+        "drive": "rwd",
+        "mass": 1180,
+        "engineForce": 8500,
+        "maxSpeed": 98.3488,
+        "brakeForce": 12390.0,
+        "ramMultiplier": 1,
+        "slickGripMultiplier": 0.65,
+        "centreOfMass": [
+          0.0,
+          -0.339,
+          0.0
+        ],
+        "gripFront": 7.2,
+        "gripRear": 6.7,
+        "gripLimit": 2.8,
+        "maxLateralAccel": 11,
+        "uprightRecoveryLimit": 1.3,
+        "uprightGround": 30,
+        "uprightAir": 8,
+        "enginePower": 750000,
+        "airResistance": 0.5,
+        "steerRate": 1.15,
+        "steerRateAtSpeed": 0.4,
+        "steerFalloffSpeed": 25,
+        "steerAtSpeed": 0.18,
+        "maxYawRate": 1.4,
+        "steerOverdrive": 0.2,
+        "linearDamping": 0.01
+      },
+      "size": [
+        1.41024,
+        0.84072,
+        3.06456
+      ],
+      "chassisHalf": [
+        0.65088,
+        0.2712,
+        1.4916
+      ],
+      "wheelRadius": 0.24408,
+      "wheelWidth": 0.2034,
+      "axles": [
+        -1.03056,
+        1.00344
+      ],
+      "track": 1.19328,
+      "anchorY": -0.28476,
+      "suspensionRest": 0.25764,
+      "wheelLift": 0.08,
+      "detailScale": 1.356,
+      "lights": {
+        "headlights": [
+          {
+            "position": [
+              -0.47234,
+              -0.15707,
+              -1.4351
+            ],
+            "size": [
+              0.1808,
+              0.09831
+            ]
+          },
+          {
+            "position": [
+              0.47234,
+              -0.15933,
+              -1.4351
+            ],
+            "size": [
+              0.1808,
+              0.1017
+            ]
+          }
+        ],
+        "brakeLights": [
+          {
+            "position": [
+              -0.36386,
+              -0.22713,
+              1.53793
+            ],
+            "size": [
+              0.51754,
+              0.0226
+            ]
+          },
+          {
+            "position": [
+              0.36386,
+              -0.22713,
+              1.53793
+            ],
+            "size": [
+              0.51754,
+              0.0226
+            ]
+          }
+        ]
+      },
+      "headlightProfile": {
+        "colour": "#dfedff",
+        "reach": 64,
+        "width": 4.6,
+        "power": 320
+      }
+    },
+    {
+      "id": "lightweight-sports",
+      "tuning": "super",
+      "handling": {
+        "drive": "rwd",
+        "mass": 920,
+        "engineForce": 7200,
+        "maxSpeed": 80.4672,
+        "brakeForce": 10120,
+        "ramMultiplier": 1.1,
+        "slickGripMultiplier": 0.72,
+        "centreOfMass": [
+          0.0,
+          -0.357,
+          0.0
+        ],
+        "maxSteer": 0.64,
+        "steerRate": 1.45,
+        "gripFront": 7.5,
+        "gripRear": 6.7,
+        "gripLimit": 2.9,
+        "maxLateralAccel": 12.5,
+        "suspensionStiffness": 102000,
+        "suspensionDamping": 6500,
+        "downforce": 0.9,
+        "uprightRecoveryLimit": 1.3,
+        "uprightGround": 30,
+        "uprightAir": 8,
+        "enginePower": 370000,
+        "airResistance": 0.46,
+        "steerRateAtSpeed": 0.48,
+        "steerFalloffSpeed": 27,
+        "steerAtSpeed": 0.22,
+        "maxYawRate": 1.65,
+        "steerOverdrive": 0.24,
+        "linearDamping": 0.01
+      },
+      "size": [
+        1.2852,
+        0.91392,
+        2.7846
+      ],
+      "chassisHalf": [
+        0.58548,
+        0.29988,
+        1.32804
+      ],
+      "wheelRadius": 0.24276,
+      "wheelWidth": 0.16422,
+      "axles": [
+        -0.84252,
+        0.82824
+      ],
+      "track": 1.071,
+      "anchorY": -0.29988,
+      "suspensionRest": 0.2856,
+      "wheelLift": 0.04,
+      "detailScale": 1.428,
+      "lights": {
+        "headlights": [
+          {
+            "position": [
+              -0.37961,
+              -0.21182,
+              -1.40182
+            ],
+            "size": [
+              0.20468,
+              0.12971
+            ]
+          },
+          {
+            "position": [
+              0.37961,
+              -0.21182,
+              -1.40182
+            ],
+            "size": [
+              0.20468,
+              0.12971
+            ]
+          }
+        ],
+        "brakeLights": [
+          {
+            "position": [
+              -0.43554,
+              -0.20468,
+              1.39349
+            ],
+            "size": [
+              0.09877,
+              0.09877
+            ]
+          },
+          {
+            "position": [
+              -0.30226,
+              -0.20468,
+              1.40182
+            ],
+            "size": [
+              0.09877,
+              0.09877
+            ]
+          },
+          {
+            "position": [
+              0.30226,
+              -0.20468,
+              1.40182
+            ],
+            "size": [
+              0.09877,
+              0.09877
+            ]
+          },
+          {
+            "position": [
+              0.43554,
+              -0.20468,
+              1.39349
+            ],
+            "size": [
+              0.09877,
+              0.09877
+            ]
+          }
+        ]
+      },
+      "headlightProfile": {
+        "colour": "#edfaff",
+        "reach": 58,
+        "width": 3.9,
+        "power": 280
+      }
+    },
+    {
+      "id": "jeep",
+      "tuning": "sedan",
+      "handling": {
+        "drive": "awd",
+        "mass": 1450,
+        "engineForce": 7500,
+        "maxSpeed": 50.0,
+        "brakeForce": 11600,
+        "ramMultiplier": 0.9,
+        "slickGripMultiplier": 1.1,
+        "centreOfMass": [
+          0.0,
+          -0.0678,
+          0.0
+        ],
+        "maxSteer": 0.6,
+        "steerRate": 0.75,
+        "gripFront": 6,
+        "gripRear": 5.8,
+        "gripLimit": 2.4,
+        "maxLateralAccel": 7.5,
+        "suspensionStiffness": 145000,
+        "suspensionDamping": 10500,
+        "downforce": 1.4,
+        "uprightRecoveryLimit": 0.95,
+        "uprightGround": 24,
+        "uprightAir": 7,
+        "enginePower": 150000,
+        "airResistance": 0.8,
+        "steerRateAtSpeed": 0.4,
+        "steerFalloffSpeed": 25,
+        "steerAtSpeed": 0.18,
+        "maxYawRate": 1.05,
+        "steerOverdrive": 0.2,
+        "linearDamping": 0.01
+      },
+      "size": [
+        1.32888,
+        1.41024,
+        2.7798
+      ],
+      "chassisHalf": [
+        0.59664,
+        0.46104,
+        1.30176
+      ],
+      "wheelRadius": 0.31188,
+      "wheelWidth": 0.24408,
+      "axles": [
+        -0.86784,
+        0.8136
+      ],
+      "track": 1.11192,
+      "anchorY": -0.36612,
+      "suspensionRest": 0.339,
+      "wheelLift": 0.1,
+      "detailScale": 1.356,
+      "lights": {
+        "headlights": [
+          {
+            "position": [
+              -0.3955,
+              0.0565,
+              -1.30176
+            ],
+            "size": [
+              0.15594,
+              0.13447
+            ]
+          },
+          {
+            "position": [
+              0.3955,
+              0.0565,
+              -1.30176
+            ],
+            "size": [
+              0.15594,
+              0.13447
+            ]
+          },
+          {
+            "position": [
+              -0.37209,
+              0.83063,
+              -0.26754
+            ],
+            "size": [
+              0.11056,
+              0.11056
+            ],
+            "mount": "roof"
+          },
+          {
+            "position": [
+              -0.18604,
+              0.83063,
+              -0.26754
+            ],
+            "size": [
+              0.11056,
+              0.11056
+            ],
+            "mount": "roof"
+          },
+          {
+            "position": [
+              0.0,
+              0.83063,
+              -0.26754
+            ],
+            "size": [
+              0.11056,
+              0.11056
+            ],
+            "mount": "roof"
+          },
+          {
+            "position": [
+              0.18604,
+              0.83063,
+              -0.26754
+            ],
+            "size": [
+              0.11056,
+              0.11056
+            ],
+            "mount": "roof"
+          },
+          {
+            "position": [
+              0.37209,
+              0.83063,
+              -0.26754
+            ],
+            "size": [
+              0.11056,
+              0.11056
+            ],
+            "mount": "roof"
+          }
+        ],
+        "brakeLights": [
+          {
+            "position": [
+              -0.45426,
+              -0.01356,
+              1.15373
+            ],
+            "size": [
+              0.14351,
+              0.17515
+            ]
+          },
+          {
+            "position": [
+              0.45426,
+              -0.01356,
+              1.15373
+            ],
+            "size": [
+              0.14351,
+              0.17515
+            ]
+          }
+        ]
+      },
+      "headlightProfile": {
+        "colour": "#f4f5e5",
+        "reach": 90,
+        "width": 6.0,
+        "power": 800
+      }
+    },
+    {
+      "id": "pickup-travel-trailer",
+      "tuning": "sedan",
+      "handling": {
+        "drive": "awd",
+        "mass": 1800,
+        "engineForce": 9800,
+        "maxSpeed": 44.72222222222222,
+        "brakeForce": 15300.0,
+        "ramMultiplier": 0.9,
+        "slickGripMultiplier": 1,
+        "centreOfMass": [
+          0.0,
+          -0.1404,
+          0.0
+        ],
+        "maxSteer": 0.58,
+        "steerRate": 0.55,
+        "gripFront": 6.1,
+        "gripRear": 6.1,
+        "gripLimit": 2.3,
+        "maxLateralAccel": 6.5,
+        "suspensionStiffness": 175000,
+        "suspensionDamping": 12500,
+        "downforce": 1.5,
+        "uprightRecoveryLimit": 1.0,
+        "uprightGround": 28,
+        "uprightAir": 8,
+        "enginePower": 140000,
+        "airResistance": 0.85,
+        "steerRateAtSpeed": 0.4,
+        "steerFalloffSpeed": 25,
+        "steerAtSpeed": 0.18,
+        "maxYawRate": 0.85,
+        "steerOverdrive": 0.2,
+        "linearDamping": 0.01
+      },
+      "size": [
+        1.46016,
+        1.36188,
+        3.861
+      ],
+      "chassisHalf": [
+        0.64584,
+        0.40716,
+        1.8252
+      ],
+      "wheelRadius": 0.2808,
+      "wheelWidth": 0.22464,
+      "axles": [
+        -1.27764,
+        1.23552
+      ],
+      "track": 1.20744,
+      "anchorY": -0.351,
+      "suspensionRest": 0.33696,
+      "wheelLift": 0.05,
+      "detailScale": 1.404,
+      "hitch": [
+        0.0,
+        -0.4212,
+        2.14812
+      ],
+      "trailer": {
+        "id": "travel-trailer",
+        "handling": {
+          "drive": "awd",
+          "mass": 700,
+          "centreOfMass": [
+            0.0,
+            -0.5904,
+            0.0
+          ],
+          "suspensionStiffness": 90000,
+          "suspensionDamping": 6500,
+          "brakeForce": 6500,
+          "angularDamping": 1.2,
+          "antiRoll": 11000,
+          "uprightRecoveryLimit": 1.1,
+          "airResistance": 2.2,
+          "linearDamping": 0.01
+        },
+        "size": [
+          1.66788,
+          2.03688,
+          3.6162
+        ],
+        "chassisHalf": [
+          0.79704,
+          0.78228,
+          1.65312
+        ],
+        "wheelRadius": 0.28044,
+        "wheelWidth": 0.20664,
+        "axles": [
+          0.35424
+        ],
+        "track": 1.43172,
+        "anchorY": -0.79704,
+        "suspensionRest": 0.30996,
+        "wheelLift": 0.1,
+        "detailScale": 1.476,
+        "hitch": [
+          0.0,
+          -0.79,
+          -2.24352
+        ],
+        "lights": {
+          "headlights": [],
+          "brakeLights": [
+            {
+              "position": [
+                -0.60024,
+                -0.67896,
+                1.78227
+              ],
+              "size": [
+                0.17712,
+                0.13161
+              ]
+            },
+            {
+              "position": [
+                0.60024,
+                -0.67896,
+                1.78227
+              ],
+              "size": [
+                0.17712,
+                0.13161
+              ]
+            }
+          ]
+        }
+      },
+      "lights": {
+        "headlights": [
+          {
+            "position": [
+              -0.53352,
+              -0.19071,
+              -1.8954
+            ],
+            "size": [
+              0.18135,
+              0.10062
+            ]
+          },
+          {
+            "position": [
+              -0.53352,
+              -0.04329,
+              -1.8954
+            ],
+            "size": [
+              0.18135,
+              0.10062
+            ]
+          },
+          {
+            "position": [
+              0.53352,
+              -0.19071,
+              -1.8954
+            ],
+            "size": [
+              0.18135,
+              0.10062
+            ]
+          },
+          {
+            "position": [
+              0.53352,
+              -0.04329,
+              -1.8954
+            ],
+            "size": [
+              0.18135,
+              0.10062
+            ]
+          }
+        ],
+        "brakeLights": [
+          {
+            "position": [
+              -0.62595,
+              -0.06201,
+              1.88721
+            ],
+            "size": [
+              0.08307,
+              0.32994
+            ]
+          },
+          {
+            "position": [
+              0.62595,
+              -0.06201,
+              1.88721
+            ],
+            "size": [
+              0.08307,
+              0.32994
+            ]
+          }
+        ]
+      },
+      "headlightProfile": {
+        "colour": "#fff2da",
+        "reach": 62,
+        "width": 5.8,
+        "power": 340
+      }
+    },
+    {
+      "id": "monster-truck",
+      "tuning": "sedan",
+      "handling": {
+        "drive": "awd",
+        "mass": 2800,
+        "engineForce": 14000,
+        "maxSpeed": 47.22222222222222,
+        "brakeForce": 21000,
+        "ramMultiplier": 0.7,
+        "slickGripMultiplier": 1.15,
+        "centreOfMass": [
+          0.0,
+          -0.4248,
+          0.0
+        ],
+        "maxSteer": 0.52,
+        "steerRate": 0.5,
+        "gripFront": 5.8,
+        "gripRear": 5.6,
+        "gripLimit": 2.35,
+        "maxLateralAccel": 6.0,
+        "suspensionTravel": 0.42,
+        "suspensionStiffness": 85000,
+        "suspensionDamping": 8000,
+        "downforce": 1.2,
+        "uprightRecoveryLimit": 1.0,
+        "uprightGround": 23,
+        "uprightAir": 6,
+        "antiRoll": 14000,
+        "enginePower": 250000,
+        "airResistance": 1.25,
+        "steerRateAtSpeed": 0.38,
+        "steerFalloffSpeed": 22,
+        "steerAtSpeed": 0.16,
+        "maxYawRate": 0.8,
+        "steerOverdrive": 0.16,
+        "linearDamping": 0.015
+      },
+      "size": [
+        2.664,
+        2.58,
+        3.84
+      ],
+      "chassisHalf": [
+        1.056,
+        0.636,
+        1.836
+      ],
+      "wheelRadius": 0.588,
+      "wheelWidth": 0.504,
+      "axles": [
+        -1.248,
+        1.236
+      ],
+      "track": 2.16,
+      "anchorY": -0.468,
+      "suspensionRest": 0.588,
+      "wheelLift": 0.1,
+      "detailScale": 1.2,
+      "lights": {
+        "headlights": [
+          {
+            "position": [
+              -0.86314,
+              0.38558,
+              -1.88244
+            ],
+            "size": [
+              0.235,
+              0.103
+            ]
+          },
+          {
+            "position": [
+              -0.86314,
+              0.52094,
+              -1.88244
+            ],
+            "size": [
+              0.235,
+              0.103
+            ]
+          },
+          {
+            "position": [
+              0.86314,
+              0.38558,
+              -1.88244
+            ],
+            "size": [
+              0.235,
+              0.103
+            ]
+          },
+          {
+            "position": [
+              0.86314,
+              0.52094,
+              -1.88244
+            ],
+            "size": [
+              0.235,
+              0.103
+            ]
+          },
+          {
+            "position": [
+              -0.83916,
+              1.40746,
+              -0.33526
+            ],
+            "size": [
+              0.188,
+              0.188
+            ],
+            "mount": "roof"
+          },
+          {
+            "position": [
+              -0.5994,
+              1.40746,
+              -0.33526
+            ],
+            "size": [
+              0.188,
+              0.188
+            ],
+            "mount": "roof"
+          },
+          {
+            "position": [
+              -0.35964,
+              1.40746,
+              -0.33526
+            ],
+            "size": [
+              0.188,
+              0.188
+            ],
+            "mount": "roof"
+          },
+          {
+            "position": [
+              -0.11988,
+              1.40746,
+              -0.33526
+            ],
+            "size": [
+              0.188,
+              0.188
+            ],
+            "mount": "roof"
+          },
+          {
+            "position": [
+              0.11988,
+              1.40746,
+              -0.33526
+            ],
+            "size": [
+              0.188,
+              0.188
+            ],
+            "mount": "roof"
+          },
+          {
+            "position": [
+              0.35964,
+              1.40746,
+              -0.33526
+            ],
+            "size": [
+              0.188,
+              0.188
+            ],
+            "mount": "roof"
+          },
+          {
+            "position": [
+              0.5994,
+              1.40746,
+              -0.33526
+            ],
+            "size": [
+              0.188,
+              0.188
+            ],
+            "mount": "roof"
+          },
+          {
+            "position": [
+              0.83916,
+              1.40746,
+              -0.33526
+            ],
+            "size": [
+              0.188,
+              0.188
+            ],
+            "mount": "roof"
+          }
+        ],
+        "brakeLights": [
+          {
+            "position": [
+              -0.89244,
+              0.4307,
+              1.95468
+            ],
+            "size": [
+              0.09,
+              0.277
+            ]
+          },
+          {
+            "position": [
+              0.89244,
+              0.4307,
+              1.95468
+            ],
+            "size": [
+              0.09,
+              0.277
+            ]
+          }
+        ]
+      },
+      "headlightProfile": {
+        "colour": "#e8f5ff",
+        "reach": 130,
+        "width": 8.0,
+        "power": 1600
+      }
+    },
+    {
+      "id": "school-bus",
+      "tuning": "sedan",
+      "handling": {
+        "drive": "rwd",
+        "mass": 4200,
+        "engineForce": 18500,
+        "maxSpeed": 35.7632,
+        "brakeForce": 27300.0,
+        "ramMultiplier": 0.75,
+        "slickGripMultiplier": 1,
+        "centreOfMass": [
+          0.0,
+          -0.1356,
+          0.0
+        ],
+        "maxSteer": 0.78,
+        "steerRate": 0.22,
+        "gripFront": 5.4,
+        "gripRear": 5.3,
+        "gripLimit": 2.1,
+        "maxLateralAccel": 5,
+        "suspensionStiffness": 320000,
+        "suspensionDamping": 21000,
+        "downforce": 2,
+        "uprightGround": 22,
+        "uprightAir": 7,
+        "uprightRecoveryLimit": 0.9,
+        "antiRoll": 40000,
+        "enginePower": 210000,
+        "airResistance": 2.8,
+        "steerRateAtSpeed": 0.4,
+        "steerFalloffSpeed": 25,
+        "steerAtSpeed": 0.18,
+        "maxYawRate": 0.65,
+        "steerOverdrive": 0.2,
+        "linearDamping": 0.01
+      },
+      "size": [
+        1.7628,
+        2.1696,
+        7.1868
+      ],
+      "chassisHalf": [
+        0.80004,
+        0.77292,
+        3.4578
+      ],
+      "wheelRadius": 0.35256,
+      "wheelWidth": 0.2712,
+      "axles": [
+        -2.33232,
+        2.1696
+      ],
+      "track": 1.43736,
+      "anchorY": -0.45,
+      "suspensionRest": 0.63516,
+      "wheelLift": 0.1,
+      "detailScale": 1.356,
+      "lights": {
+        "headlights": [
+          {
+            "position": [
+              -0.68026,
+              -0.37064,
+              -3.64425
+            ],
+            "size": [
+              0.17402,
+              0.13899
+            ]
+          },
+          {
+            "position": [
+              0.68026,
+              -0.37064,
+              -3.64425
+            ],
+            "size": [
+              0.17402,
+              0.13899
+            ]
+          }
+        ],
+        "brakeLights": [
+          {
+            "position": [
+              -0.62602,
+              -0.39098,
+              3.54707
+            ],
+            "size": [
+              0.14238,
+              0.1243
+            ]
+          },
+          {
+            "position": [
+              0.62602,
+              -0.39098,
+              3.54707
+            ],
+            "size": [
+              0.14238,
+              0.1243
+            ]
+          }
+        ]
+      },
+      "headlightProfile": {
+        "colour": "#ffe4ae",
+        "reach": 60,
+        "width": 6.6,
+        "power": 360
+      }
+    },
+    {
+      "id": "retro-van",
+      "tuning": "convertible",
+      "handling": {
+        "drive": "rwd",
+        "mass": 1350,
+        "engineForce": 6000,
+        "maxSpeed": 29.166666666666664,
+        "brakeForce": 9180.0,
+        "ramMultiplier": 1,
+        "slickGripMultiplier": 1,
+        "centreOfMass": [
+          0.0,
+          -0.02712,
+          0.0
+        ],
+        "maxSteer": 0.56,
+        "steerRate": 0.65,
+        "gripFront": 5.7,
+        "gripRear": 5.7,
+        "gripLimit": 2.2,
+        "maxLateralAccel": 6,
+        "suspensionStiffness": 145000,
+        "suspensionDamping": 9500,
+        "downforce": 1.2,
+        "uprightGround": 16,
+        "uprightAir": 5,
+        "uprightRecoveryLimit": 0.85,
+        "antiRoll": 12000,
+        "enginePower": 30000,
+        "airResistance": 0.6,
+        "steerRateAtSpeed": 0.4,
+        "steerFalloffSpeed": 25,
+        "steerAtSpeed": 0.18,
+        "maxYawRate": 1,
+        "steerOverdrive": 0.2,
+        "linearDamping": 0.01
+      },
+      "size": [
+        1.24752,
+        1.38312,
+        2.92896
+      ],
+      "chassisHalf": [
+        0.56952,
+        0.48816,
+        1.38312
+      ],
+      "wheelRadius": 0.24408,
+      "wheelWidth": 0.17628,
+      "axles": [
+        -0.9492,
+        0.89496
+      ],
+      "track": 1.03056,
+      "anchorY": -0.39324,
+      "suspensionRest": 0.31188,
+      "wheelLift": 0.1,
+      "detailScale": 1.356,
+      "lights": {
+        "headlights": [
+          {
+            "position": [
+              -0.37855,
+              -0.17289,
+              -1.43284
+            ],
+            "size": [
+              0.18758,
+              0.18758
+            ]
+          },
+          {
+            "position": [
+              0.37855,
+              -0.17289,
+              -1.43284
+            ],
+            "size": [
+              0.18758,
+              0.18758
+            ]
+          }
+        ],
+        "brakeLights": [
+          {
+            "position": [
+              -0.42714,
+              -0.2486,
+              1.4012
+            ],
+            "size": [
+              0.08588,
+              0.18645
+            ]
+          },
+          {
+            "position": [
+              0.42714,
+              -0.2486,
+              1.4012
+            ],
+            "size": [
+              0.08588,
+              0.18645
+            ]
+          }
+        ]
+      },
+      "headlightProfile": {
+        "colour": "#ffda96",
+        "reach": 54,
+        "width": 5.6,
+        "power": 260
+      }
+    },
+    {
+      "id": "city-pod",
+      "tuning": "hatch",
+      "handling": {
+        "drive": "fwd",
+        "mass": 650,
+        "engineForce": 3300,
+        "maxSpeed": 40.2336,
+        "brakeForce": 5720.000000000001,
+        "ramMultiplier": 1.45,
+        "slickGripMultiplier": 0.95,
+        "centreOfMass": [
+          0.0,
+          -0.2457,
+          0.0
+        ],
+        "maxSteer": 0.52,
+        "steerRate": 0.85,
+        "gripFront": 6.2,
+        "gripRear": 6.2,
+        "gripLimit": 2.5,
+        "maxLateralAccel": 7.5,
+        "suspensionStiffness": 65000,
+        "suspensionDamping": 6000,
+        "downforce": 1,
+        "uprightRecoveryLimit": 1.15,
+        "uprightGround": 28,
+        "uprightAir": 8,
+        "enginePower": 50000,
+        "airResistance": 0.5,
+        "steerRateAtSpeed": 0.4,
+        "steerFalloffSpeed": 25,
+        "steerAtSpeed": 0.18,
+        "maxYawRate": 1.2,
+        "steerOverdrive": 0.2,
+        "linearDamping": 0.01,
+        "yawAssist": 1.8,
+        "yawAssistBuild": 0.6
+      },
+      "size": [
+        1.1232,
+        1.1934,
+        1.755
+      ],
+      "chassisHalf": [
+        0.468,
+        0.3159,
+        0.7956
+      ],
+      "wheelRadius": 0.234,
+      "wheelWidth": 0.1638,
+      "axles": [
+        -0.5616,
+        0.5616
+      ],
+      "track": 0.936,
+      "anchorY": -0.3393,
+      "suspensionRest": 0.2808,
+      "wheelLift": 0.035,
+      "detailScale": 1.404,
+      "lights": {
+        "headlights": [
+          {
+            "position": [
+              -0.3159,
+              -0.0936,
+              -0.8892
+            ],
+            "size": [
+              0.1638,
+              0.1989
+            ]
+          },
+          {
+            "position": [
+              0.3159,
+              -0.0936,
+              -0.8892
+            ],
+            "size": [
+              0.1638,
+              0.1989
+            ]
+          }
+        ],
+        "brakeLights": [
+          {
+            "position": [
+              -0.33696,
+              -0.09828,
+              0.87516
+            ],
+            "size": [
+              0.10881,
+              0.1638
+            ]
+          },
+          {
+            "position": [
+              0.33696,
+              -0.09828,
+              0.87516
+            ],
+            "size": [
+              0.10881,
+              0.1638
+            ]
+          }
+        ]
+      },
+      "headlightProfile": {
+        "colour": "#cbf9ff",
+        "reach": 50,
+        "width": 4.3,
+        "power": 250
+      }
+    },
+    {
+      "id": "beijing-sightseeing-bus",
+      "homeTrack": "beijing",
+      "replaces": "school-bus",
+      "tuning": "sedan",
+      "handling": {
+        "drive": "rwd",
+        "mass": 5000,
+        "engineForce": 19000,
+        "maxSpeed": 32.0,
+        "brakeForce": 30000.0,
+        "ramMultiplier": 0.75,
+        "slickGripMultiplier": 1,
+        "centreOfMass": [
+          0.0,
+          -0.33,
+          0.0
+        ],
+        "maxSteer": 0.78,
+        "steerRate": 0.22,
+        "gripFront": 5.4,
+        "gripRear": 5.3,
+        "gripLimit": 2.1,
+        "maxLateralAccel": 4.6,
+        "suspensionStiffness": 360000,
+        "suspensionDamping": 24000,
+        "downforce": 2,
+        "uprightGround": 24,
+        "uprightAir": 7,
+        "uprightRecoveryLimit": 0.9,
+        "antiRoll": 52000,
+        "enginePower": 200000,
+        "airResistance": 3.2,
+        "steerRateAtSpeed": 0.4,
+        "steerFalloffSpeed": 25,
+        "steerAtSpeed": 0.18,
+        "maxYawRate": 0.62,
+        "steerOverdrive": 0.2,
+        "linearDamping": 0.01
+      },
+      "size": [
+        1.76,
+        2.8,
+        7.6
+      ],
+      "chassisHalf": [
+        0.8,
+        1.07,
+        3.66
+      ],
+      "wheelRadius": 0.36,
+      "wheelWidth": 0.26,
+      "axles": [
+        -2.5,
+        2.1
+      ],
+      "track": 1.4,
+      "anchorY": -0.747,
+      "suspensionRest": 0.635,
+      "wheelLift": 0.1,
+      "detailScale": 1.356,
+      "lights": {
+        "headlights": [
+          {
+            "position": [
+              -0.6,
+              -0.882,
+              -3.72436
+            ],
+            "size": [
+              0.2,
+              0.11
+            ]
+          },
+          {
+            "position": [
+              0.6,
+              -0.882,
+              -3.72436
+            ],
+            "size": [
+              0.2,
+              0.11
+            ]
+          }
+        ],
+        "brakeLights": [
+          {
+            "position": [
+              -0.7,
+              -0.632,
+              3.74227
+            ],
+            "size": [
+              0.1001,
+              0.3001
+            ]
+          },
+          {
+            "position": [
+              0.7,
+              -0.632,
+              3.74227
+            ],
+            "size": [
+              0.1001,
+              0.3001
+            ]
+          }
+        ]
+      },
+      "headlightProfile": {
+        "colour": "#ffe4ae",
+        "reach": 60,
+        "width": 6.6,
+        "power": 360
+      },
+      "engine": {
+        "base": "school-bus",
+        "idle": 24,
+        "redline": 70
+      },
+      "cabin": {
+        "layout": [
+          -0.455,
+          0.44,
+          0.345,
+          0.52,
+          0.36
+        ],
+        "footwell": [
+          -0.47,
+          0.46,
+          0.88
+        ],
+        "rows": 6
+      }
+    },
+    {
+      "id": "zhangjiajie-shuttle",
+      "homeTrack": "zhangjiajie",
+      "replaces": "school-bus",
+      "tuning": "sedan",
+      "handling": {
+        "drive": "rwd",
+        "mass": 3000,
+        "engineForce": 12500,
+        "maxSpeed": 32.0,
+        "brakeForce": 19500.0,
+        "ramMultiplier": 0.75,
+        "slickGripMultiplier": 1,
+        "centreOfMass": [
+          0.0,
+          -0.12,
+          0.0
+        ],
+        "maxSteer": 0.72,
+        "steerRate": 0.32,
+        "gripFront": 5.5,
+        "gripRear": 5.4,
+        "gripLimit": 2.1,
+        "maxLateralAccel": 5.3,
+        "suspensionStiffness": 230000,
+        "suspensionDamping": 15000,
+        "downforce": 2,
+        "uprightGround": 20,
+        "uprightAir": 7,
+        "uprightRecoveryLimit": 0.9,
+        "antiRoll": 26000,
+        "enginePower": 110000,
+        "airResistance": 1.9,
+        "steerRateAtSpeed": 0.4,
+        "steerFalloffSpeed": 25,
+        "steerAtSpeed": 0.18,
+        "maxYawRate": 0.8,
+        "steerOverdrive": 0.2,
+        "linearDamping": 0.01
+      },
+      "size": [
+        1.42,
+        1.85,
+        4.9
+      ],
+      "chassisHalf": [
+        0.66,
+        0.62,
+        2.36
+      ],
+      "wheelRadius": 0.26,
+      "wheelWidth": 0.17,
+      "axles": [
+        -1.68,
+        1.08
+      ],
+      "track": 1.16,
+      "anchorY": -0.42,
+      "suspensionRest": 0.45,
+      "wheelLift": 0.1,
+      "detailScale": 1.356,
+      "lights": {
+        "headlights": [
+          {
+            "position": [
+              -0.47,
+              -0.37,
+              -2.44598
+            ],
+            "size": [
+              0.22,
+              0.1
+            ]
+          },
+          {
+            "position": [
+              0.47,
+              -0.37,
+              -2.44595
+            ],
+            "size": [
+              0.22,
+              0.1
+            ]
+          }
+        ],
+        "brakeLights": [
+          {
+            "position": [
+              -0.599,
+              -0.25,
+              2.43887
+            ],
+            "size": [
+              0.08,
+              0.22
+            ]
+          },
+          {
+            "position": [
+              0.599,
+              -0.25,
+              2.43889
+            ],
+            "size": [
+              0.08,
+              0.22
+            ]
+          }
+        ]
+      },
+      "headlightProfile": {
+        "colour": "#fff0d8",
+        "reach": 56,
+        "width": 6.0,
+        "power": 300
+      },
+      "engine": {
+        "base": "school-bus",
+        "idle": 30,
+        "redline": 92,
+        "gain": 0.75
+      },
+      "cabin": {
+        "layout": [
+          -0.4,
+          0.44,
+          0.515,
+          0.86,
+          0.34
+        ],
+        "footwell": [
+          -0.43,
+          0.46,
+          0.86
+        ],
+        "rows": 5
+      }
+    },
+    {
+      "id": "giza-microbus",
+      "homeTrack": "giza",
+      "replaces": "retro-van",
+      "tuning": "convertible",
+      "handling": {
+        "drive": "rwd",
+        "mass": 1650,
+        "engineForce": 6200,
+        "maxSpeed": 28.5,
+        "brakeForce": 9800.0,
+        "ramMultiplier": 1,
+        "slickGripMultiplier": 1,
+        "centreOfMass": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maxSteer": 0.56,
+        "steerRate": 0.65,
+        "gripFront": 5.7,
+        "gripRear": 5.7,
+        "gripLimit": 2.2,
+        "maxLateralAccel": 5.6,
+        "suspensionStiffness": 145000,
+        "suspensionDamping": 9500,
+        "downforce": 1.2,
+        "uprightGround": 16,
+        "uprightAir": 5,
+        "uprightRecoveryLimit": 0.85,
+        "antiRoll": 11000,
+        "enginePower": 32000,
+        "airResistance": 0.6,
+        "steerRateAtSpeed": 0.4,
+        "steerFalloffSpeed": 25,
+        "steerAtSpeed": 0.18,
+        "maxYawRate": 0.95,
+        "steerOverdrive": 0.2,
+        "linearDamping": 0.01
+      },
+      "size": [
+        1.26,
+        1.46,
+        3.4
+      ],
+      "chassisHalf": [
+        0.58,
+        0.52,
+        1.6
+      ],
+      "wheelRadius": 0.235,
+      "wheelWidth": 0.17,
+      "axles": [
+        -1.03,
+        0.77
+      ],
+      "track": 1.04,
+      "anchorY": -0.425,
+      "suspensionRest": 0.312,
+      "wheelLift": 0.1,
+      "detailScale": 1.356,
+      "lights": {
+        "headlights": [
+          {
+            "position": [
+              -0.44,
+              -0.267,
+              -1.70535
+            ],
+            "size": [
+              0.17,
+              0.1
+            ]
+          },
+          {
+            "position": [
+              0.44,
+              -0.267,
+              -1.70537
+            ],
+            "size": [
+              0.17,
+              0.1
+            ]
+          }
+        ],
+        "brakeLights": [
+          {
+            "position": [
+              -0.55,
+              -0.217,
+              1.70129
+            ],
+            "size": [
+              0.07,
+              0.2001
+            ]
+          },
+          {
+            "position": [
+              0.55,
+              -0.217,
+              1.70128
+            ],
+            "size": [
+              0.07,
+              0.2001
+            ]
+          }
+        ]
+      },
+      "headlightProfile": {
+        "colour": "#ffdca0",
+        "reach": 52,
+        "width": 5.6,
+        "power": 250
+      },
+      "engine": {
+        "base": "retro-van",
+        "idle": 42,
+        "redline": 132
+      },
+      "cabin": {
+        "layout": [
+          -0.38,
+          0.44,
+          0.565,
+          0.8,
+          0.34
+        ],
+        "footwell": [
+          -0.41,
+          0.46,
+          0.84
+        ],
+        "rows": 4
+      }
+    },
+    {
+      "id": "istanbul-dolmus",
+      "homeTrack": "istanbul",
+      "replaces": "retro-van",
+      "tuning": "convertible",
+      "handling": {
+        "drive": "rwd",
+        "mass": 2000,
+        "engineForce": 7200,
+        "maxSpeed": 30.5,
+        "brakeForce": 11000.0,
+        "ramMultiplier": 1,
+        "slickGripMultiplier": 1,
+        "centreOfMass": [
+          0.0,
+          -0.02,
+          0.0
+        ],
+        "maxSteer": 0.54,
+        "steerRate": 0.65,
+        "gripFront": 5.5,
+        "gripRear": 5.5,
+        "gripLimit": 2.2,
+        "maxLateralAccel": 5.6,
+        "suspensionStiffness": 160000,
+        "suspensionDamping": 10500,
+        "downforce": 1.2,
+        "uprightGround": 16,
+        "uprightAir": 5,
+        "uprightRecoveryLimit": 0.85,
+        "antiRoll": 12500,
+        "enginePower": 40000,
+        "airResistance": 0.6,
+        "steerRateAtSpeed": 0.4,
+        "steerFalloffSpeed": 25,
+        "steerAtSpeed": 0.18,
+        "maxYawRate": 0.95,
+        "steerOverdrive": 0.2,
+        "linearDamping": 0.01
+      },
+      "size": [
+        1.42,
+        1.74,
+        3.9
+      ],
+      "chassisHalf": [
+        0.64,
+        0.6,
+        1.85
+      ],
+      "wheelRadius": 0.25,
+      "wheelWidth": 0.17,
+      "axles": [
+        -1.25,
+        0.95
+      ],
+      "track": 1.14,
+      "anchorY": -0.487,
+      "suspensionRest": 0.33,
+      "wheelLift": 0.1,
+      "detailScale": 1.356,
+      "lights": {
+        "headlights": [
+          {
+            "position": [
+              -0.5,
+              -0.257,
+              -1.95387
+            ],
+            "size": [
+              0.2,
+              0.1
+            ]
+          },
+          {
+            "position": [
+              0.5,
+              -0.257,
+              -1.95386
+            ],
+            "size": [
+              0.2,
+              0.1
+            ]
+          }
+        ],
+        "brakeLights": [
+          {
+            "position": [
+              -0.63,
+              -0.217,
+              1.94878
+            ],
+            "size": [
+              0.07,
+              0.3
+            ]
+          },
+          {
+            "position": [
+              0.63,
+              -0.217,
+              1.94879
+            ],
+            "size": [
+              0.07,
+              0.3
+            ]
+          }
+        ]
+      },
+      "headlightProfile": {
+        "colour": "#fff1d6",
+        "reach": 56,
+        "width": 6.0,
+        "power": 280
+      },
+      "engine": {
+        "base": "retro-van",
+        "idle": 36,
+        "redline": 118,
+        "gain": 0.6
+      },
+      "cabin": {
+        "layout": [
+          -0.3,
+          0.44,
+          0.555,
+          0.82,
+          0.34
+        ],
+        "footwell": [
+          -0.33,
+          0.46,
+          0.84
+        ],
+        "rows": 4
+      }
+    },
+    {
+      "id": "lhasa-plateau-suv",
+      "homeTrack": "lhasa",
+      "replaces": "jeep",
+      "tuning": "sedan",
+      "engine": {
+        "base": "jeep",
+        "idle": 40,
+        "redline": 132
+      },
+      "handling": {
+        "drive": "awd",
+        "mass": 1550,
+        "engineForce": 7800,
+        "maxSpeed": 48.0,
+        "brakeForce": 12000,
+        "ramMultiplier": 0.85,
+        "slickGripMultiplier": 1.1,
+        "centreOfMass": [
+          0.0,
+          -0.06,
+          0.0
+        ],
+        "maxSteer": 0.58,
+        "steerRate": 0.7,
+        "gripFront": 5.9,
+        "gripRear": 5.7,
+        "gripLimit": 2.35,
+        "maxLateralAccel": 7.2,
+        "suspensionStiffness": 150000,
+        "suspensionDamping": 11000,
+        "downforce": 1.4,
+        "uprightRecoveryLimit": 0.95,
+        "uprightGround": 24,
+        "uprightAir": 7,
+        "enginePower": 145000,
+        "airResistance": 0.85,
+        "maxYawRate": 1.0,
+        "steerRateAtSpeed": 0.4,
+        "steerFalloffSpeed": 25,
+        "steerAtSpeed": 0.18,
+        "steerOverdrive": 0.2,
+        "linearDamping": 0.01
+      },
+      "size": [
+        1.32,
+        1.32,
+        3.39
+      ],
+      "chassisHalf": [
+        0.6,
+        0.42,
+        1.6
+      ],
+      "wheelRadius": 0.275,
+      "wheelWidth": 0.2,
+      "axles": [
+        -1.095,
+        0.855
+      ],
+      "track": 1.1,
+      "anchorY": -0.33,
+      "suspensionRest": 0.33,
+      "wheelLift": 0.04,
+      "detailScale": 1.4,
+      "cabin": {
+        "layout": [
+          -0.17,
+          0.4,
+          0.645,
+          0.9,
+          0.34
+        ],
+        "footwell": [
+          -0.19,
+          0.44,
+          0.84
+        ],
+        "rows": 2
+      },
+      "lights": {
+        "headlights": [
+          {
+            "position": [
+              -0.462,
+              -0.264,
+              -1.74726
+            ],
+            "size": [
+              0.0793,
+              0.0331
+            ]
+          },
+          {
+            "position": [
+              -0.4422,
+              0,
+              -1.711
+            ],
+            "size": [
+              0.1848,
+              0.1056
+            ]
+          },
+          {
+            "position": [
+              0.4422,
+              0,
+              -1.711
+            ],
+            "size": [
+              0.1848,
+              0.1056
+            ]
+          },
+          {
+            "position": [
+              0.462,
+              -0.264,
+              -1.74726
+            ],
+            "size": [
+              0.0793,
+              0.0331
+            ]
+          }
+        ],
+        "brakeLights": [
+          {
+            "position": [
+              -0.59664,
+              0.0792,
+              1.69361
+            ],
+            "size": [
+              0.0168,
+              0.1981
+            ]
+          },
+          {
+            "position": [
+              -0.5676,
+              0.0792,
+              1.70083
+            ],
+            "size": [
+              0.0925,
+              0.2112
+            ]
+          },
+          {
+            "position": [
+              0.5676,
+              0.0792,
+              1.70083
+            ],
+            "size": [
+              0.0925,
+              0.2112
+            ]
+          },
+          {
+            "position": [
+              0.59664,
+              0.0792,
+              1.69361
+            ],
+            "size": [
+              0.0168,
+              0.1981
+            ]
+          }
+        ]
+      },
+      "headlightProfile": {
+        "colour": "#f4f5ea",
+        "reach": 75,
+        "width": 6.0,
+        "power": 560
+      }
+    },
+    {
+      "id": "amboseli-safari",
+      "homeTrack": "amboseli",
+      "replaces": "jeep",
+      "tuning": "sedan",
+      "engine": {
+        "base": "pickup-travel-trailer",
+        "idle": 34,
+        "redline": 118,
+        "gain": 0.85
+      },
+      "handling": {
+        "drive": "awd",
+        "mass": 1750,
+        "engineForce": 8200,
+        "maxSpeed": 44.0,
+        "brakeForce": 13500,
+        "ramMultiplier": 0.8,
+        "slickGripMultiplier": 1.1,
+        "centreOfMass": [
+          0.0,
+          -0.05,
+          0.0
+        ],
+        "maxSteer": 0.56,
+        "steerRate": 0.6,
+        "gripFront": 6.0,
+        "gripRear": 5.9,
+        "gripLimit": 2.3,
+        "maxLateralAccel": 6.6,
+        "suspensionStiffness": 160000,
+        "suspensionDamping": 12000,
+        "downforce": 1.4,
+        "uprightRecoveryLimit": 1.0,
+        "uprightGround": 28,
+        "uprightAir": 8,
+        "enginePower": 135000,
+        "airResistance": 0.95,
+        "maxYawRate": 0.9,
+        "steerRateAtSpeed": 0.4,
+        "steerFalloffSpeed": 25,
+        "steerAtSpeed": 0.18,
+        "steerOverdrive": 0.2,
+        "linearDamping": 0.01
+      },
+      "size": [
+        1.31,
+        1.72,
+        3.64
+      ],
+      "chassisHalf": [
+        0.6,
+        0.5,
+        1.72
+      ],
+      "wheelRadius": 0.28,
+      "wheelWidth": 0.185,
+      "axles": [
+        -1.16,
+        0.94
+      ],
+      "track": 1.08,
+      "anchorY": -0.42,
+      "suspensionRest": 0.34,
+      "wheelLift": 0.04,
+      "detailScale": 1.4,
+      "cabin": {
+        "layout": [
+          -0.25,
+          0.44,
+          0.49,
+          0.7,
+          0.36
+        ],
+        "footwell": [
+          -0.27,
+          0.46,
+          0.88
+        ],
+        "rows": 3
+      },
+      "lights": {
+        "headlights": [
+          {
+            "position": [
+              -0.4323,
+              -0.1236,
+              -1.8325
+            ],
+            "size": [
+              0.1703,
+              0.1703
+            ]
+          },
+          {
+            "position": [
+              0.4323,
+              -0.1236,
+              -1.8325
+            ],
+            "size": [
+              0.1703,
+              0.1703
+            ]
+          }
+        ],
+        "brakeLights": [
+          {
+            "position": [
+              -0.5633,
+              -0.2612,
+              1.82732
+            ],
+            "size": [
+              0.0786,
+              0.1721
+            ]
+          },
+          {
+            "position": [
+              0.5633,
+              -0.2612,
+              1.82732
+            ],
+            "size": [
+              0.0786,
+              0.1721
+            ]
+          }
+        ]
+      },
+      "headlightProfile": {
+        "colour": "#fff0cf",
+        "reach": 65,
+        "width": 5.6,
+        "power": 420
+      }
+    },
+    {
+      "id": "fuji-kei-truck",
+      "homeTrack": "fuji",
+      "replaces": "city-pod",
+      "tuning": "hatch",
+      "engine": {
+        "base": "retro-van",
+        "idle": 50,
+        "redline": 190,
+        "gain": 0.5
+      },
+      "handling": {
+        "drive": "rwd",
+        "mass": 680,
+        "engineForce": 3300,
+        "maxSpeed": 37.0,
+        "brakeForce": 5800,
+        "ramMultiplier": 1.4,
+        "slickGripMultiplier": 0.95,
+        "centreOfMass": [
+          0.0,
+          -0.2,
+          0.0
+        ],
+        "maxSteer": 0.54,
+        "steerRate": 0.85,
+        "gripFront": 6.2,
+        "gripRear": 5.9,
+        "gripLimit": 2.4,
+        "maxLateralAccel": 7.2,
+        "suspensionStiffness": 68000,
+        "suspensionDamping": 6200,
+        "downforce": 1,
+        "uprightRecoveryLimit": 1.1,
+        "uprightGround": 28,
+        "uprightAir": 8,
+        "enginePower": 48000,
+        "airResistance": 0.6,
+        "maxYawRate": 1.2,
+        "yawAssist": 1.6,
+        "yawAssistBuild": 0.6,
+        "steerRateAtSpeed": 0.4,
+        "steerFalloffSpeed": 25,
+        "steerAtSpeed": 0.18,
+        "steerOverdrive": 0.2,
+        "linearDamping": 0.01
+      },
+      "size": [
+        1.03,
+        1.25,
+        2.38
+      ],
+      "chassisHalf": [
+        0.46,
+        0.32,
+        1.12
+      ],
+      "wheelRadius": 0.19,
+      "wheelWidth": 0.115,
+      "axles": [
+        -0.76,
+        0.57
+      ],
+      "track": 0.87,
+      "anchorY": -0.24,
+      "suspensionRest": 0.26,
+      "wheelLift": 0.035,
+      "detailScale": 1.4,
+      "cabin": {
+        "layout": [
+          -0.46,
+          -0.27,
+          0.56,
+          0.88,
+          0.36
+        ],
+        "footwell": [
+          -0.47,
+          -0.22,
+          0.86
+        ],
+        "rows": 1
+      },
+      "lights": {
+        "headlights": [
+          {
+            "position": [
+              -0.34505,
+              -0.0375,
+              -1.206
+            ],
+            "size": [
+              0.1545,
+              0.1
+            ]
+          },
+          {
+            "position": [
+              0.34505,
+              -0.0375,
+              -1.206
+            ],
+            "size": [
+              0.1545,
+              0.1
+            ]
+          }
+        ],
+        "brakeLights": [
+          {
+            "position": [
+              -0.3914,
+              -0.15,
+              1.18206
+            ],
+            "size": [
+              0.1031,
+              0.0751
+            ]
+          },
+          {
+            "position": [
+              0.3914,
+              -0.15,
+              1.18206
+            ],
+            "size": [
+              0.1031,
+              0.0751
+            ]
+          }
+        ]
+      },
+      "headlightProfile": {
+        "colour": "#f2f0e2",
+        "reach": 50,
+        "width": 4.3,
+        "power": 250
+      }
+    },
+    {
+      "id": "dubai-supercar",
+      "homeTrack": "dubai",
+      "replaces": "sports-car",
+      "tuning": "super",
+      "engine": {
+        "base": "sports-car",
+        "idle": 56,
+        "redline": 214,
+        "gain": 1.04
+      },
+      "handling": {
+        "drive": "rwd",
+        "mass": 1260,
+        "engineForce": 8900,
+        "maxSpeed": 98.3488,
+        "brakeForce": 12900,
+        "ramMultiplier": 1,
+        "slickGripMultiplier": 0.63,
+        "centreOfMass": [
+          0.0,
+          -0.339,
+          0.0
+        ],
+        "gripFront": 7.3,
+        "gripRear": 6.45,
+        "gripLimit": 2.8,
+        "maxLateralAccel": 11.2,
+        "uprightRecoveryLimit": 1.3,
+        "uprightGround": 30,
+        "uprightAir": 8,
+        "enginePower": 800000,
+        "airResistance": 0.48,
+        "steerRate": 1.15,
+        "steerRateAtSpeed": 0.4,
+        "steerFalloffSpeed": 25,
+        "steerAtSpeed": 0.18,
+        "maxYawRate": 1.48,
+        "steerOverdrive": 0.2,
+        "linearDamping": 0.01
+      },
+      "size": [
+        1.37,
+        0.84,
+        3.22
+      ],
+      "chassisHalf": [
+        0.63,
+        0.27,
+        1.56
+      ],
+      "wheelRadius": 0.245,
+      "wheelWidth": 0.21,
+      "axles": [
+        -0.93,
+        0.925
+      ],
+      "track": 1.15,
+      "anchorY": -0.285,
+      "suspensionRest": 0.2576,
+      "wheelLift": 0.06,
+      "detailScale": 1.4,
+      "cabin": {
+        "layout": [
+          -0.17,
+          0.11,
+          0.56,
+          0.84,
+          0.25
+        ],
+        "footwell": [
+          -0.24,
+          0.19,
+          0.74
+        ],
+        "rows": 1
+      },
+      "lights": {
+        "headlights": [
+          {
+            "position": [
+              -0.45895,
+              -0.21182,
+              -1.55404
+            ],
+            "size": [
+              0.2877,
+              0.17405
+            ]
+          },
+          {
+            "position": [
+              -0.41924,
+              -0.28068,
+              -1.58624
+            ],
+            "size": [
+              0.0439,
+              0.0644
+            ]
+          },
+          {
+            "position": [
+              0.41924,
+              -0.28067,
+              -1.58624
+            ],
+            "size": [
+              0.0439,
+              0.0645
+            ]
+          },
+          {
+            "position": [
+              0.45895,
+              -0.21258,
+              -1.55404
+            ],
+            "size": [
+              0.2877,
+              0.17404
+            ]
+          }
+        ],
+        "brakeLights": [
+          {
+            "position": [
+              -0.548,
+              -0.1478,
+              1.6232
+            ],
+            "size": [
+              0.0384,
+              0.0672
+            ]
+          },
+          {
+            "position": [
+              -0.29455,
+              -0.11,
+              1.6232
+            ],
+            "size": [
+              0.548,
+              0.0236
+            ]
+          },
+          {
+            "position": [
+              0.29455,
+              -0.11,
+              1.6232
+            ],
+            "size": [
+              0.548,
+              0.0236
+            ]
+          },
+          {
+            "position": [
+              0.548,
+              -0.1478,
+              1.6232
+            ],
+            "size": [
+              0.0384,
+              0.0672
+            ]
+          }
+        ]
+      },
+      "headlightProfile": {
+        "colour": "#e4f0ff",
+        "reach": 66,
+        "width": 4.7,
+        "power": 330
+      }
+    },
+    {
+      "id": "rome-roadster",
+      "homeTrack": "rome",
+      "replaces": "lightweight-sports",
+      "tuning": "super",
+      "engine": {
+        "base": "lightweight-sports",
+        "idle": 74,
+        "redline": 236,
+        "gain": 0.76
+      },
+      "handling": {
+        "drive": "rwd",
+        "mass": 900,
+        "engineForce": 6600,
+        "maxSpeed": 68,
+        "brakeForce": 9800,
+        "ramMultiplier": 1.1,
+        "slickGripMultiplier": 0.72,
+        "centreOfMass": [
+          0.0,
+          -0.35,
+          0.0
+        ],
+        "maxSteer": 0.66,
+        "steerRate": 1.5,
+        "gripFront": 7.5,
+        "gripRear": 6.5,
+        "gripLimit": 2.9,
+        "maxLateralAccel": 12.3,
+        "suspensionStiffness": 98000,
+        "suspensionDamping": 6300,
+        "downforce": 0.6,
+        "uprightRecoveryLimit": 1.3,
+        "uprightGround": 30,
+        "uprightAir": 8,
+        "enginePower": 310000,
+        "airResistance": 0.5,
+        "steerRateAtSpeed": 0.5,
+        "steerFalloffSpeed": 27,
+        "steerAtSpeed": 0.23,
+        "maxYawRate": 1.75,
+        "steerOverdrive": 0.24,
+        "linearDamping": 0.01
+      },
+      "size": [
+        1.15,
+        0.87,
+        2.975
+      ],
+      "chassisHalf": [
+        0.53,
+        0.28,
+        1.4
+      ],
+      "wheelRadius": 0.215,
+      "wheelWidth": 0.14,
+      "axles": [
+        -0.8,
+        0.775
+      ],
+      "track": 0.93,
+      "anchorY": -0.3,
+      "suspensionRest": 0.27,
+      "wheelLift": 0.045,
+      "detailScale": 1.4,
+      "lights": {
+        "headlights": [
+          {
+            "position": [
+              -0.34415,
+              -0.15727,
+              -1.44503
+            ],
+            "size": [
+              0.1508,
+              0.0794
+            ]
+          },
+          {
+            "position": [
+              0.34414,
+              -0.15718,
+              -1.44466
+            ],
+            "size": [
+              0.15086,
+              0.0791
+            ]
+          }
+        ],
+        "brakeLights": [
+          {
+            "position": [
+              -0.4255,
+              -0.16129,
+              1.4979
+            ],
+            "size": [
+              0.08005,
+              0.0805
+            ]
+          },
+          {
+            "position": [
+              0.4255,
+              -0.16129,
+              1.4979
+            ],
+            "size": [
+              0.0801,
+              0.0805
+            ]
+          }
+        ]
+      },
+      "headlightProfile": {
+        "colour": "#fff1d6",
+        "reach": 54,
+        "width": 3.8,
+        "power": 250
+      }
+    },
+    {
+      "id": "sydney-ute",
+      "homeTrack": "sydney",
+      "replaces": "pickup-travel-trailer",
+      "tuning": "sedan",
+      "engine": {
+        "base": "sports-car",
+        "idle": 46,
+        "redline": 168,
+        "gain": 0.95
+      },
+      "handling": {
+        "drive": "rwd",
+        "mass": 1650,
+        "engineForce": 9000,
+        "maxSpeed": 47.0,
+        "brakeForce": 14500,
+        "ramMultiplier": 0.9,
+        "slickGripMultiplier": 1,
+        "centreOfMass": [
+          0.0,
+          -0.1,
+          0.0
+        ],
+        "maxSteer": 0.58,
+        "steerRate": 0.6,
+        "gripFront": 6.1,
+        "gripRear": 5.8,
+        "gripLimit": 2.35,
+        "maxLateralAccel": 7.0,
+        "suspensionStiffness": 160000,
+        "suspensionDamping": 12000,
+        "downforce": 1.5,
+        "uprightRecoveryLimit": 1.0,
+        "uprightGround": 28,
+        "uprightAir": 8,
+        "enginePower": 150000,
+        "airResistance": 0.8,
+        "maxYawRate": 0.95,
+        "steerRateAtSpeed": 0.4,
+        "steerFalloffSpeed": 25,
+        "steerAtSpeed": 0.18,
+        "steerOverdrive": 0.2,
+        "linearDamping": 0.01
+      },
+      "size": [
+        1.33,
+        1.03,
+        3.53
+      ],
+      "chassisHalf": [
+        0.6,
+        0.3,
+        1.66
+      ],
+      "wheelRadius": 0.24,
+      "wheelWidth": 0.19,
+      "axles": [
+        -1.1,
+        1.01
+      ],
+      "track": 1.1,
+      "anchorY": -0.17,
+      "suspensionRest": 0.28,
+      "wheelLift": 0.035,
+      "detailScale": 1.4,
+      "cabin": {
+        "layout": [
+          -0.13,
+          0.055,
+          0.66,
+          0.92,
+          0.34
+        ],
+        "footwell": [
+          -0.16,
+          0.08,
+          0.84
+        ],
+        "rows": 1
+      },
+      "lights": {
+        "headlights": [
+          {
+            "position": [
+              -0.4522,
+              -0.1822,
+              -1.76767
+            ],
+            "size": [
+              0.0931,
+              0.031
+            ]
+          },
+          {
+            "position": [
+              -0.41895,
+              -0.0174,
+              -1.77187
+            ],
+            "size": [
+              0.3325,
+              0.103
+            ]
+          },
+          {
+            "position": [
+              0.41895,
+              -0.0174,
+              -1.77187
+            ],
+            "size": [
+              0.3325,
+              0.103
+            ]
+          },
+          {
+            "position": [
+              0.4522,
+              -0.1822,
+              -1.76767
+            ],
+            "size": [
+              0.0931,
+              0.031
+            ]
+          }
+        ],
+        "brakeLights": [
+          {
+            "position": [
+              -0.56525,
+              0.10105,
+              1.78027
+            ],
+            "size": [
+              0.0998,
+              0.1545
+            ]
+          },
+          {
+            "position": [
+              0.56525,
+              0.10105,
+              1.78027
+            ],
+            "size": [
+              0.0998,
+              0.1545
+            ]
+          }
+        ]
+      },
+      "headlightProfile": {
+        "colour": "#f1f6ff",
+        "reach": 70,
+        "width": 5.8,
+        "power": 480
+      }
+    },
+    {
+      "id": "paris-tin-snail",
+      "tuning": "hatch",
+      "homeTrack": "paris",
+      "replaces": "city-pod",
+      "engine": {
+        "base": "retro-van",
+        "idle": 46,
+        "redline": 168,
+        "gain": 0.5
+      },
+      "cabin": {
+        "layout": [
+          -0.15,
+          0.23,
+          0.6,
+          0.87,
+          0.29
+        ],
+        "footwell": [
+          -0.18,
+          0.25,
+          0.7
+        ],
+        "rows": 2
+      },
+      "handling": {
+        "drive": "fwd",
+        "mass": 600,
+        "engineForce": 2700,
+        "maxSpeed": 34,
+        "brakeForce": 5200,
+        "ramMultiplier": 1.5,
+        "slickGripMultiplier": 0.95,
+        "centreOfMass": [
+          0,
+          -0.1,
+          0
+        ],
+        "maxSteer": 0.56,
+        "steerRate": 0.9,
+        "gripFront": 5.9,
+        "gripRear": 5.9,
+        "gripLimit": 2.35,
+        "maxLateralAccel": 7,
+        "suspensionStiffness": 34000,
+        "suspensionDamping": 3200,
+        "antiRoll": 1200,
+        "downforce": 1,
+        "uprightRecoveryLimit": 1.15,
+        "enginePower": 36000,
+        "airResistance": 0.55,
+        "maxYawRate": 1.2,
+        "yawAssist": 1.8,
+        "yawAssistBuild": 0.6,
+        "uprightGround": 26,
+        "uprightAir": 8,
+        "steerRateAtSpeed": 0.4,
+        "steerFalloffSpeed": 25,
+        "steerAtSpeed": 0.18,
+        "steerOverdrive": 0.2,
+        "linearDamping": 0.01
+      },
+      "size": [
+        1.036,
+        1.12,
+        2.681
+      ],
+      "chassisHalf": [
+        0.44,
+        0.3,
+        1.27
+      ],
+      "wheelRadius": 0.217,
+      "wheelWidth": 0.095,
+      "axles": [
+        -0.906,
+        0.774
+      ],
+      "track": 0.88,
+      "anchorY": -0.3,
+      "suspensionRest": 0.3,
+      "wheelLift": 0.04,
+      "detailScale": 1.4,
+      "lights": {
+        "headlights": [
+          {
+            "position": [
+              -0.34706,
+              0.044,
+              -1.10729
+            ],
+            "size": [
+              0.11433,
+              0.11433
+            ]
+          },
+          {
+            "position": [
+              0.34706,
+              0.044,
+              -1.10729
+            ],
+            "size": [
+              0.11433,
+              0.11433
+            ]
+          }
+        ],
+        "brakeLights": [
+          {
+            "position": [
+              -0.43512,
+              -0.2136,
+              1.28355
+            ],
+            "size": [
+              0.06308,
+              0.06308
+            ]
+          },
+          {
+            "position": [
+              0.43512,
+              -0.2136,
+              1.28355
+            ],
+            "size": [
+              0.06308,
+              0.06308
+            ]
+          }
+        ]
+      },
+      "headlightProfile": {
+        "colour": "#ffe9b8",
+        "reach": 52,
+        "width": 5.0,
+        "power": 240
+      }
+    },
+    {
+      "id": "shanghai-classic-sedan",
+      "tuning": "sedan",
+      "homeTrack": "shanghai",
+      "replaces": "jeep",
+      "engine": {
+        "base": "jeep",
+        "idle": 50,
+        "redline": 170,
+        "gain": 0.7
+      },
+      "cabin": {
+        "layout": [
+          -0.11,
+          0.22,
+          0.6,
+          0.87,
+          0.3
+        ],
+        "footwell": [
+          -0.16,
+          0.25,
+          0.76
+        ],
+        "rows": 2
+      },
+      "handling": {
+        "drive": "fwd",
+        "mass": 1100,
+        "engineForce": 4700,
+        "maxSpeed": 44,
+        "brakeForce": 8400,
+        "ramMultiplier": 1.05,
+        "slickGripMultiplier": 1,
+        "centreOfMass": [
+          0,
+          -0.18,
+          0
+        ],
+        "maxSteer": 0.56,
+        "steerRate": 0.7,
+        "gripFront": 5.9,
+        "gripRear": 6.0,
+        "gripLimit": 2.35,
+        "maxLateralAccel": 7,
+        "suspensionStiffness": 82000,
+        "suspensionDamping": 6800,
+        "antiRoll": 5000,
+        "downforce": 1.1,
+        "uprightRecoveryLimit": 1.1,
+        "enginePower": 85000,
+        "airResistance": 0.6,
+        "maxYawRate": 1.0,
+        "uprightGround": 26,
+        "uprightAir": 8,
+        "steerRateAtSpeed": 0.4,
+        "steerFalloffSpeed": 25,
+        "steerAtSpeed": 0.18,
+        "steerOverdrive": 0.2,
+        "linearDamping": 0.01
+      },
+      "size": [
+        1.197,
+        1.0,
+        3.182
+      ],
+      "chassisHalf": [
+        0.54,
+        0.27,
+        1.52
+      ],
+      "wheelRadius": 0.205,
+      "wheelWidth": 0.13,
+      "axles": [
+        -0.981,
+        0.803
+      ],
+      "track": 0.99,
+      "anchorY": -0.27,
+      "suspensionRest": 0.25,
+      "wheelLift": 0.04,
+      "detailScale": 1.36,
+      "lights": {
+        "headlights": [
+          {
+            "position": [
+              -0.37705,
+              -0.06,
+              -1.60048
+            ],
+            "size": [
+              0.2059,
+              0.0774
+            ]
+          },
+          {
+            "position": [
+              0.37705,
+              -0.06,
+              -1.60048
+            ],
+            "size": [
+              0.2059,
+              0.0774
+            ]
+          }
+        ],
+        "brakeLights": [
+          {
+            "position": [
+              -0.37706,
+              -0.03,
+              1.60048
+            ],
+            "size": [
+              0.3125,
+              0.0901
+            ]
+          },
+          {
+            "position": [
+              0.37706,
+              -0.03,
+              1.60048
+            ],
+            "size": [
+              0.3125,
+              0.0901
+            ]
+          }
+        ]
+      },
+      "headlightProfile": {
+        "colour": "#fff0cc",
+        "reach": 52,
+        "width": 5.0,
+        "power": 240
+      }
+    },
+    {
+      "id": "new-york-limo",
+      "tuning": "sedan",
+      "homeTrack": "new-york",
+      "replaces": "lightweight-sports",
+      "engine": {
+        "base": "pickup-travel-trailer",
+        "idle": 36,
+        "redline": 122,
+        "gain": 0.65
+      },
+      "cabin": {
+        "layout": [
+          -0.2,
+          0.3,
+          0.6,
+          0.86,
+          0.3
+        ],
+        "footwell": [
+          -0.23,
+          0.33,
+          0.76
+        ],
+        "rows": 3
+      },
+      "handling": {
+        "drive": "rwd",
+        "mass": 2500,
+        "engineForce": 11500,
+        "maxSpeed": 42,
+        "brakeForce": 17000,
+        "ramMultiplier": 0.8,
+        "slickGripMultiplier": 0.95,
+        "centreOfMass": [
+          0,
+          -0.17,
+          0
+        ],
+        "maxSteer": 0.7,
+        "steerRate": 0.55,
+        "gripFront": 5.7,
+        "gripRear": 5.5,
+        "gripLimit": 2.2,
+        "maxLateralAccel": 6.3,
+        "suspensionStiffness": 160000,
+        "suspensionDamping": 12000,
+        "antiRoll": 9000,
+        "downforce": 1.6,
+        "uprightRecoveryLimit": 0.95,
+        "enginePower": 190000,
+        "airResistance": 1.1,
+        "maxYawRate": 0.95,
+        "uprightGround": 26,
+        "uprightAir": 8,
+        "steerRateAtSpeed": 0.4,
+        "steerFalloffSpeed": 25,
+        "steerAtSpeed": 0.18,
+        "steerOverdrive": 0.2,
+        "linearDamping": 0.01
+      },
+      "size": [
+        1.4,
+        1.04,
+        5.95
+      ],
+      "chassisHalf": [
+        0.63,
+        0.28,
+        2.88
+      ],
+      "wheelRadius": 0.24,
+      "wheelWidth": 0.16,
+      "axles": [
+        -2.245,
+        1.955
+      ],
+      "track": 1.16,
+      "anchorY": -0.28,
+      "suspensionRest": 0.26,
+      "wheelLift": 0.05,
+      "detailScale": 1.36,
+      "lights": {
+        "headlights": [
+          {
+            "position": [
+              -0.483,
+              -0.072,
+              -2.98448
+            ],
+            "size": [
+              0.2957,
+              0.0733
+            ]
+          },
+          {
+            "position": [
+              0.483,
+              -0.072,
+              -2.98448
+            ],
+            "size": [
+              0.2957,
+              0.0733
+            ]
+          }
+        ],
+        "brakeLights": [
+          {
+            "position": [
+              -0.462,
+              -0.0278,
+              2.98448
+            ],
+            "size": [
+              0.336,
+              0.0849
+            ]
+          },
+          {
+            "position": [
+              0.462,
+              -0.0278,
+              2.98448
+            ],
+            "size": [
+              0.336,
+              0.0849
+            ]
+          }
+        ]
+      },
+      "headlightProfile": {
+        "colour": "#fff3d6",
+        "reach": 60,
+        "width": 6.0,
+        "power": 300
+      }
+    }
+  ],
+  "detailScale": 1.2,
+  "taxis": {
+    "vehicle": "micro-hatch",
+    "liveries": {
+      "beijing": {
+        "paint": "#f2b705",
+        "sign": "#fff3c4"
+      },
+      "shanghai": {
+        "paint": "#35a39b",
+        "sign": "#fff3c4"
+      },
+      "lhasa": {
+        "paint": "#2f8a57",
+        "sign": "#fff3c4"
+      },
+      "zhangjiajie": {
+        "paint": "#f0c419",
+        "sign": "#fff3c4"
+      },
+      "fuji": {
+        "paint": "#16181c",
+        "sign": "#ffcf6a"
+      },
+      "dubai": {
+        "paint": "#efe6cf",
+        "sign": "#ff5a4a"
+      },
+      "istanbul": {
+        "paint": "#f7d117",
+        "sign": "#fff3c4"
+      },
+      "rome": {
+        "paint": "#f4f4f0",
+        "sign": "#fff3c4"
+      },
+      "paris": {
+        "paint": "#17191c",
+        "sign": "#8fe38a"
+      },
+      "giza": {
+        "paint": "#f5f5f2",
+        "sign": "#fff3c4"
+      },
+      "new-york": {
+        "paint": "#f7b500",
+        "sign": "#fff3c4"
+      },
+      "sydney": {
+        "paint": "#f1f1ee",
+        "sign": "#fff3c4"
+      }
+    }
+  }
+}

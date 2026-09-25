@@ -1,0 +1,322 @@
+{
+  "id": "new-york",
+  "name": {
+    "zh": "曼哈顿下城",
+    "en": "Lower Manhattan"
+  },
+  "blurb": {
+    "zh": "从三一教堂前的百老汇出发，绕过世贸中心，一路冲到布鲁克林大桥桥头。",
+    "en": "From Broadway at Trinity Church, round the World Trade Center, finishing at the foot of the Brooklyn Bridge."
+  },
+  "category": "scenic",
+  "mode": "p2p",
+  "laps": 1,
+  "car": "sedan",
+  "timeOfDay": "night",
+  "editions": [
+    "web",
+    "full"
+  ],
+  "origin": {
+    "lat": 40.7033,
+    "lon": -74.0154
+  },
+  "padM": 450,
+  "backdropM": 4000,
+  "waypoints": [
+    [
+      40.7071648,
+      -74.0133619
+    ],
+    [
+      40.708,
+      -74.0122
+    ],
+    [
+      40.7098,
+      -74.0113
+    ],
+    [
+      40.7106,
+      -74.0122
+    ],
+    [
+      40.7112,
+      -74.0134
+    ],
+    [
+      40.7118,
+      -74.0148
+    ],
+    {
+      "road": "Vesey Street",
+      "pick": "nearest:40.7132,-74.0135"
+    },
+    {
+      "road": "Church Street",
+      "pick": "nearest:40.7128,-74.0107"
+    },
+    [
+      40.7135,
+      -74.007
+    ],
+    [
+      40.7106,
+      -74.001
+    ]
+  ],
+  "centreLine": "double_yellow",
+  "traffic": "right",
+  "flatCity": {
+    "windowM": 300,
+    "why": "the city centre is flat; the elevation data carries metres of noise, trees and roofs"
+  },
+  "groundCover": "terrain_paved",
+  "landmarks": [
+    "trinity-church",
+    "one-world-trade-center",
+    "statue-of-liberty",
+    "brooklyn-bridge"
+  ],
+  "noSlimes": [
+    {
+      "lat": 40.7116,
+      "lon": -74.0133,
+      "radiusM": 90,
+      "why": "9/11 Memorial north pool"
+    },
+    {
+      "lat": 40.7102,
+      "lon": -74.0132,
+      "radiusM": 90,
+      "why": "9/11 Memorial south pool"
+    },
+    {
+      "lat": 40.7081,
+      "lon": -74.0121,
+      "radiusM": 50,
+      "why": "Trinity Church churchyard"
+    }
+  ],
+  "architecture": {
+    "facades": {
+      "building_concrete": 0.45,
+      "building_stucco": 0.15,
+      "building_glass": 0.4
+    },
+    "why": "曼哈顿下城：红褐砖楼和玻璃塔楼（街景照片估计）",
+    "local": {
+      "types": [
+        {
+          "share": 1,
+          "when": {
+            "maxStoreys": 7.5
+          },
+          "storeyM": 3.4,
+          "groundM": 4.2,
+          "storeys": [
+            4,
+            6
+          ],
+          "tileBays": 4,
+          "wall": {
+            "kind": "brick",
+            "colour": "#8a4b3a",
+            "colours": [
+              "#7a4232",
+              "#9c5a44"
+            ],
+            "unit": [
+              0.203,
+              0.067
+            ],
+            "joint": "#b9b2a6",
+            "stain": 0.15,
+            "palette": [
+              "#8a4b3a",
+              "#e4ddd0",
+              "#c7b08a",
+              "#9c5a44"
+            ]
+          },
+          "window": {
+            "shape": "tall",
+            "w": 1.0,
+            "h": 2.0,
+            "bay": 1.9,
+            "sill": 0.8,
+            "frame": "#23262a",
+            "frameW": 0.06,
+            "glass": "#26303a",
+            "surround": {
+              "lintel": "#d8d4c8",
+              "lintelH": 0.25
+            }
+          },
+          "ground": {
+            "kind": "shops",
+            "shutterColour": "#8d9194",
+            "signs": [
+              "#6e2330",
+              "#2d4f3c",
+              "#1f2a44"
+            ],
+            "glass": "#3a4246"
+          },
+          "roof": {
+            "kind": "flat",
+            "material": "concrete",
+            "colour": "#4a4a48",
+            "corniceM": 0.6,
+            "corniceH": 0.8
+          },
+          "details": {
+            "waterTower": 0.2,
+            "fireEscape": 0.45,
+            "awnings": 0.1
+          },
+          "residential": true
+        },
+        {
+          "share": 0.62,
+          "when": {
+            "minStoreys": 7.5,
+            "maxStoreys": 40
+          },
+          "storeyM": 3.8,
+          "groundM": 5.5,
+          "storeys": [
+            12,
+            20
+          ],
+          "tileBays": 4,
+          "wall": {
+            "kind": "brick",
+            "colour": "#cfc0a8",
+            "colours": [
+              "#cbbca3",
+              "#d3c5ad"
+            ],
+            "unit": [
+              0.203,
+              0.067
+            ],
+            "joint": "#c9c1b2",
+            "stain": 0.2,
+            "palette": [
+              "#cfc0a8",
+              "#c8bfaf",
+              "#a7684f"
+            ]
+          },
+          "window": {
+            "shape": "tall",
+            "w": 1.1,
+            "h": 1.9,
+            "bay": 1.7,
+            "sill": 0.85,
+            "frame": "#e8e4da",
+            "frameW": 0.07,
+            "glass": "#26303a",
+            "surround": {
+              "lintel": "#d6d0c2",
+              "lintelH": 0.2
+            }
+          },
+          "band": {
+            "colour": "#c8bfaf",
+            "h": 0.18
+          },
+          "ground": {
+            "kind": "shops",
+            "wall": {
+              "kind": "stone",
+              "colour": "#c8bfaf",
+              "unit": [
+                1.3,
+                0.6
+              ],
+              "joint": "#a9a193"
+            },
+            "glass": "#3a4246",
+            "shutter": false,
+            "signs": [
+              "#3b342c",
+              "#2a2d30",
+              "#3b342c"
+            ]
+          },
+          "roof": {
+            "kind": "flat",
+            "material": "concrete",
+            "colour": "#4a4a48",
+            "corniceM": 1.2,
+            "corniceH": 1.3
+          },
+          "details": {
+            "waterTower": 0.45
+          },
+          "residential": false
+        },
+        {
+          "share": 0.38,
+          "when": {
+            "minStoreys": 7.5
+          },
+          "storeyM": 4.0,
+          "groundM": 7.0,
+          "storeys": [
+            15,
+            45
+          ],
+          "tileBays": 2,
+          "wall": {
+            "kind": "concrete",
+            "colour": "#aaa59c"
+          },
+          "window": {
+            "shape": "ribbon",
+            "h": 2.2,
+            "sill": 0.9,
+            "frame": "#9aa3a8",
+            "glass": "#2f4050"
+          },
+          "ground": {
+            "kind": "shops",
+            "glass": "#3a4246",
+            "shutter": false,
+            "signs": [
+              "#2a2d30",
+              "#3a3f44",
+              "#2a2d30"
+            ]
+          },
+          "roof": {
+            "kind": "flat",
+            "material": "concrete",
+            "colour": "#6b6b68"
+          },
+          "residential": false
+        }
+      ],
+      "rail": {
+        "style": "iron",
+        "colour": "#1e1f22"
+      },
+      "detailColours": {
+        "local_detail_dark": "#2b2724",
+        "local_detail_light": "#6a6058",
+        "local_detail_accent": "#6e2330"
+      },
+      "why": "曼哈顿下城三类楼：红砖五六层老公寓和铸铁楼（正面黑色消防梯、底层店面和雨篷、屋顶木水塔）、战前石材和浅黄砖写字楼（石头底座、大檐口、水塔）、战后带状窗塔楼；照片见 house-cards/new-york.md（Wikimedia Commons：23-25 Park Place、33 Warren St、Park Row、Barclay St 等）"
+    }
+  },
+  "vista": {
+    "spacingM": 100,
+    "density": 0.75,
+    "heightM": [
+      15,
+      35
+    ]
+  }
+}

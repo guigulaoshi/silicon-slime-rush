@@ -1,0 +1,608 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://silicon-rush.local/track.schema.json",
+ "title": "Silicon Slime Rush track.json",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "attribution",
+  "blurb",
+  "car",
+  "category",
+  "checkpoints",
+  "editions",
+  "id",
+  "laps",
+  "mode",
+  "name",
+  "origin",
+  "spline",
+  "start",
+  "tiles",
+  "timeOfDay",
+  "version"
+ ],
+ "properties": {
+  "id": {
+   "type": "string",
+   "pattern": "^[a-z0-9][a-z0-9-]*$"
+  },
+  "version": {
+   "type": "integer",
+   "minimum": 1
+  },
+  "editions": {
+   "type": "array",
+   "minItems": 1,
+   "uniqueItems": true,
+   "items": {
+    "enum": [
+     "web",
+     "full"
+    ]
+   }
+  },
+  "category": {
+   "enum": [
+    "race",
+    "scenic",
+    "campus",
+    "mission"
+   ]
+  },
+  "mode": {
+   "enum": [
+    "loop",
+    "p2p",
+    "multistop"
+   ]
+  },
+  "laps": {
+   "type": "integer",
+   "minimum": 1
+  },
+  "name": {
+   "$ref": "#/$defs/text"
+  },
+  "blurb": {
+   "$ref": "#/$defs/text"
+  },
+  "story": {
+   "$ref": "#/$defs/text"
+  },
+  "origin": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "lat",
+    "lon"
+   ],
+   "properties": {
+    "lat": {
+     "type": "number",
+     "minimum": -90,
+     "maximum": 90
+    },
+    "lon": {
+     "type": "number",
+     "minimum": -180,
+     "maximum": 180
+    }
+   }
+  },
+  "timeOfDay": {
+   "enum": [
+    "day",
+    "night"
+   ]
+  },
+  "car": {
+   "enum": [
+    "sedan",
+    "super",
+    "convertible",
+    "hatch"
+   ]
+  },
+  "camera": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "heightM"
+   ],
+   "properties": {
+    "heightM": {
+     "type": "number",
+     "minimum": 1.0,
+     "maximum": 6.0,
+     "description": "Route-specific chase-camera height above the car, in metres. Use only when elevation is part of the route's view and the default angle hides it."
+    }
+   }
+  },
+  "spline": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "points",
+    "closed",
+    "length",
+    "halfWidth"
+   ],
+   "properties": {
+    "points": {
+     "type": "array",
+     "minItems": 2,
+     "items": {
+      "$ref": "#/$defs/vec3"
+     }
+    },
+    "halfWidth": {
+     "type": "array",
+     "minItems": 2,
+     "items": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     }
+    },
+    "s": {
+     "type": "array",
+     "minItems": 2,
+     "items": {
+      "type": "number",
+      "minimum": 0
+     }
+    },
+    "curvature": {
+     "type": "array",
+     "items": {
+      "type": "number"
+     }
+    },
+    "closed": {
+     "type": "boolean"
+    },
+    "length": {
+     "type": "number",
+     "exclusiveMinimum": 0
+    }
+   }
+  },
+  "start": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "pos",
+    "yaw"
+   ],
+   "properties": {
+    "pos": {
+     "$ref": "#/$defs/vec3"
+    },
+    "yaw": {
+     "type": "number"
+    }
+   }
+  },
+  "checkpoints": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "s",
+     "pos",
+     "dir",
+     "halfWidth"
+    ],
+    "properties": {
+     "s": {
+      "type": "number",
+      "minimum": 0
+     },
+     "pos": {
+      "$ref": "#/$defs/vec3"
+     },
+     "dir": {
+      "$ref": "#/$defs/vec3"
+     },
+     "halfWidth": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "label": {
+      "$ref": "#/$defs/text"
+     },
+     "stop": {
+      "type": "boolean"
+     }
+    }
+   }
+  },
+  "tiles": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "name",
+     "sRanges",
+     "bounds"
+    ],
+    "properties": {
+     "name": {
+      "type": "string",
+      "pattern": "^t_-?[0-9]+_-?[0-9]+$",
+      "description": "The tile's grid name. It is the file name under tiles/ in what the pipeline writes, and the entry's label inside tilePack.file in what the web build ships."
+     },
+     "offset": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Where this tile's GLB starts inside tilePack.file. Present only in the packed shape the web build writes into dist/; the pipeline writes loose tiles/<name>.glb and no offsets."
+     },
+     "length": {
+      "type": "integer",
+      "minimum": 1
+     },
+     "sRanges": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+       "type": "array",
+       "minItems": 2,
+       "maxItems": 2,
+       "items": {
+        "type": "number"
+       }
+      },
+      "description": "Arc-length intervals over which this tile is within one tile width of the spline. Empty means the tile is off-route scenery: load it by distance from the car instead."
+     },
+     "bounds": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+       "$ref": "#/$defs/vec3"
+      }
+     }
+    }
+   }
+  },
+  "map": {
+   "description": "Street network for the map panels; see sr/streetmap.py",
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "file"
+   ],
+   "properties": {
+    "file": {
+     "type": "string"
+    }
+   }
+  },
+  "backdrop": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "file",
+    "radiusM"
+   ],
+   "properties": {
+    "file": {
+     "type": "string"
+    },
+    "radiusM": {
+     "type": "number",
+     "exclusiveMinimum": 0
+    },
+    "horizonRadiusM": {
+     "type": "number",
+     "exclusiveMinimum": 0
+    }
+   }
+  },
+  "landmarks": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "id",
+     "file",
+     "pos",
+     "yaw",
+     "loadRadius"
+    ],
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "file": {
+      "type": "string"
+     },
+     "pos": {
+      "$ref": "#/$defs/vec3"
+     },
+     "yaw": {
+      "type": "number"
+     },
+     "loadRadius": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "collision": {
+      "type": "boolean"
+     }
+    }
+   }
+  },
+  "traffic": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "density",
+    "lanes",
+    "speedKmh",
+    "oncoming"
+   ],
+   "properties": {
+    "density": {
+     "type": "number",
+     "minimum": 0,
+     "maximum": 1
+    },
+    "lanes": {
+     "type": "array",
+     "minItems": 1,
+     "items": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "offset",
+       "dir"
+      ],
+      "properties": {
+       "offset": {
+        "type": "number"
+       },
+       "dir": {
+        "enum": [
+         1,
+         -1
+        ]
+       }
+      }
+     }
+    },
+    "speedKmh": {
+     "type": "array",
+     "minItems": 2,
+     "maxItems": 2,
+     "items": {
+      "type": "number",
+      "minimum": 0
+     }
+    },
+    "oncoming": {
+     "type": "boolean"
+    }
+   }
+  },
+  "items": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "file"
+   ],
+   "properties": {
+    "file": {
+     "type": "string"
+    }
+   }
+  },
+  "rival": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "paceKmh"
+   ],
+   "properties": {
+    "paceKmh": {
+     "type": "number",
+     "exclusiveMinimum": 0
+    }
+   }
+  },
+  "wind": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "sRange",
+    "gustN",
+    "periodS"
+   ],
+   "properties": {
+    "sRange": {
+     "type": "array",
+     "minItems": 2,
+     "maxItems": 2,
+     "items": {
+      "type": "number"
+     }
+    },
+    "gustN": {
+     "type": "number",
+     "minimum": 0
+    },
+    "periodS": {
+     "type": "number",
+     "exclusiveMinimum": 0
+    }
+   }
+  },
+  "countdown": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "seconds"
+   ],
+   "properties": {
+    "seconds": {
+     "type": "number",
+     "exclusiveMinimum": 0
+    }
+   }
+  },
+  "attribution": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "tilePack": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "file",
+    "bytes"
+   ],
+   "properties": {
+    "file": {
+     "type": "string",
+     "pattern": "^[a-z0-9._-]+$"
+    },
+    "bytes": {
+     "type": "integer",
+     "minimum": 0
+    }
+   },
+   "description": "Every tile of this track, written end to end into one file. **Only in dist/**: itch.io counts files and a thousand is the limit, so `npm run build` packs the loose tiles the pipeline writes and adds this. Absent means the tiles are at tiles/<name>.glb beside this file."
+  },
+  "endRoads": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "start",
+    "finish"
+   ],
+   "properties": {
+    "start": {
+     "$ref": "#/properties/spline"
+    },
+    "finish": {
+     "$ref": "#/properties/spline"
+    }
+   }
+  }
+ },
+ "allOf": [
+  {
+   "if": {
+    "properties": {
+     "category": {
+      "const": "mission"
+     }
+    }
+   },
+   "then": {
+    "required": [
+     "countdown",
+     "story"
+    ]
+   }
+  },
+  {
+   "if": {
+    "properties": {
+     "category": {
+      "const": "race"
+     }
+    }
+   },
+   "then": {
+    "not": {
+     "anyOf": [
+      {
+       "required": [
+        "countdown"
+       ]
+      },
+      {
+       "required": [
+        "story"
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "if": {
+    "properties": {
+     "mode": {
+      "const": "loop"
+     }
+    }
+   },
+   "then": {
+    "properties": {
+     "spline": {
+      "properties": {
+       "closed": {
+        "const": true
+       }
+      }
+     }
+    }
+   }
+  },
+  {
+   "if": {
+    "properties": {
+     "mode": {
+      "enum": [
+       "p2p",
+       "multistop"
+      ]
+     }
+    }
+   },
+   "then": {
+    "properties": {
+     "laps": {
+      "const": 1
+     }
+    }
+   }
+  }
+ ],
+ "$defs": {
+  "vec3": {
+   "type": "array",
+   "minItems": 3,
+   "maxItems": 3,
+   "items": {
+    "type": "number"
+   }
+  },
+  "text": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "zh",
+    "en"
+   ],
+   "properties": {
+    "zh": {
+     "type": "string",
+     "minLength": 1
+    },
+    "en": {
+     "type": "string",
+     "minLength": 1
+    }
+   }
+  }
+ }
+}

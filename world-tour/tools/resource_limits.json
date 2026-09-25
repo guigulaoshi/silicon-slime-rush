@@ -1,0 +1,27 @@
+{
+  "web_total_mb": 450,
+  "shipping_files": 1000,
+  "single_file_mb": 200,
+  "path_length_chars": 240,
+  "textures_vram_mb": 1536,
+  "first_drive_bytes": 150000000,
+  "garage_assets_bytes": 100000000,
+  "max_triangles": 5000000,
+  "max_draw_calls": 5000,
+  "max_loaded_tiles": 240,
+  "desktop_min_fps": 30,
+  "desktop_max_p95_ms": 50,
+  "phone_min_fps": 18,
+  "phone_max_p95_ms": 80,
+  "startup_fcp_ms": 5000,
+  "slime_emit_ms": 1000,
+  "splash_query_ms": 500,
+  "itch_html_limits": {
+    "_source": "https://itch.io/docs/creators/html5",
+    "_checked": "",
+    "extracted_mb": 500,
+    "files": 1000,
+    "single_file_mb": 200,
+    "path_chars": 240
+  }
+}

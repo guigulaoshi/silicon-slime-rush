@@ -1,0 +1,427 @@
+{
+  "id": "lhasa",
+  "name": {
+    "zh": "布达拉宫",
+    "en": "Potala Palace"
+  },
+  "blurb": {
+    "zh": "迎着布达拉宫开，过白塔门，穿过宫前广场正对宫开，再从宫东一路绕到宫后。",
+    "en": "Straight at the Potala Palace, through the white stupa gate, across the palace square facing it, then round its east side and back."
+  },
+  "category": "scenic",
+  "mode": "p2p",
+  "laps": 1,
+  "car": "hatch",
+  "timeOfDay": "day",
+  "editions": [
+    "web",
+    "full"
+  ],
+  "origin": {
+    "lat": 29.655153,
+    "lon": 91.1220671
+  },
+  "padM": 450,
+  "backdropM": 4000,
+  "waypoints": [
+    {
+      "way": 282847732,
+      "pick": "nearest:29.6538,91.1060"
+    },
+    {
+      "way": 4839402,
+      "pick": "nearest:29.655243,91.108255"
+    },
+    {
+      "way": 4839396,
+      "pick": "nearest:29.655243,91.112771"
+    },
+    {
+      "way": 127552518,
+      "pick": "nearest:29.654153,91.115183"
+    },
+    {
+      "way": 61818449,
+      "pick": "nearest:29.653911,91.116291"
+    },
+    {
+      "way": 61818449,
+      "pick": "nearest:29.654890,91.116291"
+    },
+    {
+      "way": 1386167472,
+      "pick": "nearest:29.655162,91.119937"
+    },
+    {
+      "way": 4839403,
+      "pick": "nearest:29.657052,91.119668"
+    },
+    {
+      "way": 135295246,
+      "pick": "nearest:29.658274,91.120764"
+    },
+    {
+      "way": 4839404,
+      "pick": "nearest:29.659585,91.121952"
+    },
+    {
+      "way": 226048898,
+      "pick": "nearest:29.661304,91.118386"
+    },
+    {
+      "way": 226048898,
+      "pick": "westmost"
+    }
+  ],
+  "centreLine": "yellow",
+  "traffic": "right",
+  "groundCover": "terrain_scrub",
+  "landmarks": [
+    "potala-palace",
+    "pargo-kaling"
+  ],
+  "sky": {
+    "zenithColor": "#1f5fb8",
+    "skyColor": "#7fa9d8",
+    "fogColor": "#9cb7d4"
+  },
+  "architecture": {
+    "facades": {
+      "building_stucco": 1.0
+    },
+    "tint": {
+      "building_stucco": "#ebe8e0"
+    },
+    "why": "拉萨：刷白的藏式平顶楼（街景照片估计）",
+    "facadesForAll": true,
+    "local": {
+      "types": [
+        {
+          "share": 0.35,
+          "when": {
+            "outside": [
+              {
+                "lat": 29.6567,
+                "lon": 91.1177,
+                "radiusM": 170
+              },
+              {
+                "lat": 29.6543,
+                "lon": 91.1168,
+                "radiusM": 90
+              }
+            ]
+          },
+          "storeys": [
+            3,
+            5
+          ],
+          "storeyM": 3.3,
+          "groundM": 4.2,
+          "tileBays": 2,
+          "wall": {
+            "kind": "render",
+            "colour": "#ebe8e0",
+            "stain": 0.35,
+            "palette": [
+              "#ebe8e0",
+              "#f1efe9",
+              "#e2ddd2"
+            ]
+          },
+          "window": {
+            "shape": "rect",
+            "w": 1.35,
+            "h": 1.6,
+            "bay": 3.4,
+            "sill": 0.9,
+            "frame": "#ecebe6",
+            "frameW": 0.05,
+            "glass": "#2b3136",
+            "surround": {
+              "kind": "trapezoid",
+              "colour": "#171413",
+              "w": 0.22,
+              "below": 0.3,
+              "lintel": "#7a2a1e",
+              "lintelH": 0.2
+            },
+            "curtain": [
+              "#ecebe6",
+              "#d6d4ce"
+            ],
+            "curtainShare": 0.4
+          },
+          "band": {
+            "colour": "#4a2622",
+            "h": 0.7,
+            "where": "roof"
+          },
+          "ground": {
+            "kind": "shops",
+            "signs": [
+              "#9e2a22",
+              "#2c4f8a",
+              "#c89b2c",
+              "#8a1f1c"
+            ],
+            "shutterColour": "#b8b8b8",
+            "glass": "#353d42"
+          },
+          "roof": {
+            "kind": "flat",
+            "material": "concrete",
+            "colour": "#b9aea0"
+          },
+          "details": {
+            "solarHeater": 0.5,
+            "prayerFlags": 0.3
+          }
+        },
+        {
+          "share": 0.65,
+          "when": {
+            "outside": [
+              {
+                "lat": 29.6567,
+                "lon": 91.1177,
+                "radiusM": 170
+              },
+              {
+                "lat": 29.6543,
+                "lon": 91.1168,
+                "radiusM": 90
+              }
+            ],
+            "maxArea": 400
+          },
+          "storeys": [
+            2,
+            3
+          ],
+          "storeyM": 3.0,
+          "groundM": 3.2,
+          "tileBays": 3,
+          "wall": {
+            "kind": "stone",
+            "colour": "#bdb9ae",
+            "colours": [
+              "#aaa69c",
+              "#cac6bb"
+            ],
+            "unit": [
+              0.36,
+              0.2
+            ],
+            "joint": "#d8d4ca",
+            "stain": 0.2
+          },
+          "window": {
+            "shape": "rect",
+            "w": 1.1,
+            "h": 1.3,
+            "bay": 2.6,
+            "sill": 0.9,
+            "frame": "#5a1e1e",
+            "frameW": 0.06,
+            "glass": "#2a2f33",
+            "surround": {
+              "kind": "trapezoid",
+              "colour": "#141414",
+              "w": 0.17,
+              "below": 0.25,
+              "lintel": "#7a2a1e",
+              "lintelH": 0.22
+            },
+            "curtain": [
+              "#ecebe6",
+              "#d6d4ce"
+            ],
+            "curtainShare": 0.7
+          },
+          "band": {
+            "colour": "#4a2622",
+            "h": 0.35,
+            "where": "roof"
+          },
+          "ground": {
+            "kind": "door",
+            "door": "#6b1a14",
+            "doorFrame": "#141414"
+          },
+          "roof": {
+            "kind": "flat",
+            "material": "concrete",
+            "colour": "#c4b8ac"
+          },
+          "details": {
+            "solarHeater": 0.4,
+            "prayerFlags": 0.8
+          }
+        },
+        {
+          "share": 1.0,
+          "when": {
+            "within": [
+              {
+                "lat": 29.6567,
+                "lon": 91.1177,
+                "radiusM": 170
+              },
+              {
+                "lat": 29.6543,
+                "lon": 91.1168,
+                "radiusM": 90
+              }
+            ]
+          },
+          "storeys": [
+            2,
+            3
+          ],
+          "storeyM": 3.2,
+          "groundM": 3.2,
+          "tileBays": 3,
+          "wall": {
+            "kind": "stone",
+            "colour": "#e9e6de",
+            "colours": [
+              "#e2ded5",
+              "#efece5"
+            ],
+            "unit": [
+              0.4,
+              0.22
+            ],
+            "joint": "#d3cec3",
+            "stain": 0.15
+          },
+          "window": {
+            "shape": "rect",
+            "w": 0.9,
+            "h": 1.2,
+            "bay": 3.0,
+            "sill": 1.0,
+            "frame": "#391419",
+            "frameW": 0.07,
+            "glass": "#2a2224",
+            "surround": {
+              "kind": "trapezoid",
+              "colour": "#141414",
+              "w": 0.22,
+              "below": 0.3,
+              "lintel": "#7a2a1e",
+              "lintelH": 0.2
+            },
+            "curtain": [
+              "#ecebe6",
+              "#d6d4ce"
+            ],
+            "curtainShare": 1.0
+          },
+          "band": {
+            "colour": "#3a201f",
+            "h": 1.0,
+            "where": "roof"
+          },
+          "ground": {
+            "kind": "door",
+            "door": "#6b1a14",
+            "doorFrame": "#141414"
+          },
+          "roof": {
+            "kind": "flat",
+            "material": "concrete",
+            "colour": "#c4b8ac"
+          },
+          "details": {
+            "prayerFlags": 0.8
+          }
+        }
+      ],
+      "rail": {
+        "style": "iron",
+        "colour": "#7a1f1a"
+      },
+      "detailColours": {
+        "local_detail_dark": "#3a3a3c",
+        "local_detail_light": "#d9dbdc",
+        "local_detail_accent": "#4a2622"
+      },
+      "why": "house-cards/lhasa.md (Wikimedia Commons street photos: bj-36, nr-70, pf-yak18, pf-yak20, g-xuecheng, st-buildings): white render blocks and grey granite houses, black trapezoid window surrounds, painted lintels over white valances, dark red-brown band under flat roofs, solar heaters and prayer-flag poles on the roofs; the whitewashed Shol houses below the palace"
+    }
+  },
+  "raceWays": [
+    61818449,
+    127552518,
+    259889274,
+    259889282
+  ],
+  "raceWayLinkM": 80,
+  "prayerFlagFields": [
+    {
+      "lat": 29.6532,
+      "lon": 91.1116,
+      "radiusM": 28,
+      "lines": 32,
+      "poleM": 8,
+      "why": "Chakpori's east flank facing the Pargo Kaling gap (house-cards/lhasa.md 3b, Commons 'Flags over road between Potala and Chagpori', 1993): strings fanning from tall poles down the spur; placed on the spur's DEM slope clear of OSM buildings and roads, 120-290 m from the race line"
+    },
+    {
+      "lat": 29.6531,
+      "lon": 91.1123,
+      "radiusM": 18,
+      "lines": 20,
+      "poleM": 6,
+      "why": "Chakpori's east flank facing the Pargo Kaling gap (house-cards/lhasa.md 3b, Commons 'Flags over road between Potala and Chagpori', 1993): strings fanning from tall poles down the spur; placed on the spur's DEM slope clear of OSM buildings and roads, 120-290 m from the race line"
+    },
+    {
+      "lat": 29.65365,
+      "lon": 91.1118,
+      "radiusM": 12,
+      "lines": 16,
+      "poleM": 5,
+      "why": "Chakpori's east flank facing the Pargo Kaling gap (house-cards/lhasa.md 3b, Commons 'Flags over road between Potala and Chagpori', 1993): strings fanning from tall poles down the spur; placed on the spur's DEM slope clear of OSM buildings and roads, 120-290 m from the race line"
+    },
+    {
+      "lat": 29.6541,
+      "lon": 91.1131,
+      "radiusM": 14,
+      "lines": 18,
+      "poleM": 8,
+      "why": "the foot of Chakpori's spur beside the Pargo Kaling gate, 50 m south-west of the stupa and clear of its bell lines, 119 m from the race line (house-cards/lhasa.md 3b)"
+    },
+    {
+      "lat": 29.6579,
+      "lon": 91.1195,
+      "radiusM": 10,
+      "lines": 14,
+      "poleM": 10,
+      "why": "a darchor at the Potala's east foot by the mani stones and prayer wheels on 康昂多北路 (house-cards/lhasa.md 3b, g-mani.jpg): 25-37 m from the race line, the whole circle off the road"
+    },
+    {
+      "lat": 29.6573,
+      "lon": 91.1195,
+      "radiusM": 9,
+      "lines": 12,
+      "poleM": 9,
+      "why": "a darchor at the Potala's east foot by the mani stones and prayer wheels on 康昂多北路 (house-cards/lhasa.md 3b, g-mani.jpg): 25-37 m from the race line, the whole circle off the road"
+    }
+  ],
+  "vista": {
+    "heightM": [
+      9,
+      20
+    ],
+    "farRoofs": {
+      "flat": 0.95,
+      "gable": 0.05
+    },
+    "nearRoofs": {
+      "flat": 0.92,
+      "gable": 0.04,
+      "hip": 0.04
+    },
+    "why": "house-cards/lhasa.md 4: low 3-6 storey flat-roofed white and pale-grey blocks, almost no pitched roofs (a few coloured-steel ones on institutions)"
+  }
+}

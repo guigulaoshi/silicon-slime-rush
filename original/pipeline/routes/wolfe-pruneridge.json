@@ -1,0 +1,69 @@
+{
+  "id": "wolfe-pruneridge",
+  "name": {
+    "zh": "大厂楼顶",
+    "en": "Big Tech Rooftop"
+  },
+  "category": "campus",
+  "slimeDensity": 1.0,
+  "slimeCount": 58,
+  "mode": "loop",
+  "laps": 3,
+  "car": "super",
+  "timeOfDay": "day",
+  "editions": [
+    "web",
+    "full"
+  ],
+  "origin": {
+    "lat": 37.3349,
+    "lon": -122.009
+  },
+  "padM": 500,
+  "terrainPadM": 800,
+  "backdropM": 3000,
+  "halfWidthDefault": 8.0,
+  "roofLoop": {
+    "osmRelation": 5281838,
+    "outerInsetM": 30.0
+  },
+  "camera": {
+    "heightM": 5.2
+  },
+  "waypoints": [
+    [
+      37.3349,
+      -122.0063
+    ],
+    [
+      37.337,
+      -122.009
+    ],
+    [
+      37.3349,
+      -122.0117
+    ]
+  ],
+  "bboxPoints": [
+    [
+      37.3326,
+      -122.0118
+    ],
+    [
+      37.3371,
+      -122.0062
+    ]
+  ],
+  "mustPass": [
+    {
+      "name": "the 460 metre circular office roof",
+      "lat": 37.3349,
+      "lon": -122.009,
+      "maxDistM": 250
+    }
+  ],
+  "blurb": {
+    "zh": "沿着四百六十米圆环楼顶跑三圈，内侧是整片庭院。",
+    "en": "Three laps around a 460-metre roof ring, with the whole courtyard inside."
+  }
+}

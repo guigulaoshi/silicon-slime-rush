@@ -1,0 +1,34 @@
+<!doctype html>
+<!--
+  A stand-in for the itch.io project page, for testing the release package before it is uploaded.
+  itch serves the game from another origin inside an iframe, and its page scrolls; both matter
+  (clipboard permission, touch gestures stolen by page scrolling on iPad). The allow list is the one
+  read off the live project page. ?game=<url> picks the build; by default the package
+  served on port 27800 of the same host (the release-package preview).
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>itch-like host</title>
+<style>
+  body { margin: 0; background: #1b1b1b; color: #ccc; font: 16px/1.5 system-ui, sans-serif; }
+  header { height: 110px; display: flex; align-items: center; padding: 0 20px; background: #262626; }
+  .wrap { max-width: 960px; margin: 0 auto; }
+  iframe { display: block; width: 960px; max-width: 100%; aspect-ratio: 16 / 9; border: 0; background: #070a0e; }
+  .long { height: 2400px; padding: 20px; }
+</style>
+</head>
+<body>
+<header>itch-like host · the game below runs cross-origin, like on itch.io</header>
+<div class="wrap">
+  <iframe id="game" allowfullscreen
+    allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share"></iframe>
+  <div class="long">Long description, screenshots and comments stand here so the page scrolls, as on itch.io.</div>
+</div>
+<script>
+  const game = new URLSearchParams(location.search).get('game') || `${location.protocol}//${location.hostname}:27800/index.html`;
+  document.getElementById('game').src = game;
+</script>
+</body>
+</html>

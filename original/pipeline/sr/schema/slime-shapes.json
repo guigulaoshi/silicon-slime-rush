@@ -1,0 +1,10 @@
+{
+  "popper": {"radius": [0.5, 4.0], "aspect": [1.0, 1.0]},
+  "slick": {"radius": [0.75, 1.75], "aspect": [1.0, 1.0]},
+  "burst": {"radius": [0.5, 4.0], "aspect": [1.0, 1.0]},
+  "boost": {"radius": [0.5, 4.0], "aspect": [1.0, 1.0]},
+  "colossus": {"radius": [9.9, 21.6], "aspect": [1.0, 1.0]},
+  "heightRatio": [0.82, 1.04],
+  "ordinaryHeightRatio": 0.82,
+  "colossusGroundFraction": 0.7
+}

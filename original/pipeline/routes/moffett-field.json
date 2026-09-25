@@ -1,0 +1,397 @@
+{
+  "id": "moffett-field",
+  "name": {
+    "zh": "研究中心",
+    "en": "Research Center"
+  },
+  "category": "campus",
+  "slimeDensity": 0.62,
+  "slimeCount": 136,
+  "mode": "loop",
+  "laps": 1,
+  "car": "super",
+  "timeOfDay": "day",
+  "editions": [
+    "web",
+    "full"
+  ],
+  "origin": {
+    "lat": 37.413,
+    "lon": -122.052
+  },
+  "padM": 450,
+  "backdropM": 3500,
+  "terrainPadM": 360,
+  "halfWidthDefault": 7.0,
+  "guardrails": true,
+  "guardrailHeightM": 0.5,
+  "landmarks": [
+    "hangar-one",
+    "moffett-fighter",
+    "moffett-f22-raptor",
+    "moffett-f16-falcon",
+    "moffett-rescue-helicopter",
+    "moffett-ah64-apache",
+    "moffett-v22-osprey",
+    "moffett-rescue-transport"
+  ],
+  "mustPass": [
+    {
+      "name": "Hangar One",
+      "lat": 37.41295,
+      "lon": -122.054,
+      "maxDistM": 150
+    },
+    {
+      "name": "Runway 14R/32L",
+      "lat": 37.4125,
+      "lon": -122.04849,
+      "maxDistM": 50
+    }
+  ],
+  "aircraftDisplays": [
+    {
+      "name": "runway",
+      "section": 0,
+      "rangeM": [
+        100,
+        1270
+      ],
+      "count": 20,
+      "side": -1,
+      "clearanceM": 15,
+      "bayWidthM": 44,
+      "bayLengthM": 30,
+      "models": [
+        "moffett-rescue-transport",
+        "moffett-v22-osprey",
+        "moffett-rescue-helicopter"
+      ]
+    },
+    {
+      "name": "hangar",
+      "section": 2,
+      "rangeM": [
+        285,
+        585
+      ],
+      "count": 12,
+      "side": -1,
+      "clearanceM": 15,
+      "bayWidthM": 20,
+      "bayLengthM": 20,
+      "models": [
+        "moffett-f22-raptor",
+        "moffett-f16-falcon",
+        "moffett-fighter",
+        "moffett-ah64-apache"
+      ]
+    },
+    {
+      "name": "south",
+      "section": 3,
+      "rangeM": [
+        35,
+        220
+      ],
+      "count": 4,
+      "side": -1,
+      "clearanceM": 15,
+      "bayWidthM": 20,
+      "bayLengthM": 20,
+      "models": [
+        "moffett-ah64-apache",
+        "moffett-fighter",
+        "moffett-f16-falcon",
+        "moffett-f22-raptor"
+      ]
+    }
+  ],
+  "airportVehicles": [
+    {
+      "kind": "tug",
+      "lat": 37.41225,
+      "lon": -122.05155,
+      "yawDeg": 35.2
+    },
+    {
+      "kind": "tug",
+      "lat": 37.41185,
+      "lon": -122.05135,
+      "yawDeg": 35.2
+    },
+    {
+      "kind": "truck",
+      "lat": 37.4107,
+      "lon": -122.05015,
+      "yawDeg": 125.2
+    },
+    {
+      "kind": "truck",
+      "lat": 37.40995,
+      "lon": -122.04935,
+      "yawDeg": 35.2
+    }
+  ],
+  "airfieldCircuit": {
+    "source": "OpenStreetMap ways 8141139, 4338528, 4334869, 841622622, 8930160, 182577502, 841622624, 617042233, 8967438, 8933866, 8937632, 8951721 and 8969281; checked against FAA NUQ airport diagram",
+    "sections": [
+      {
+        "surface": "runway",
+        "widthM": 61,
+        "points": [
+          [
+            37.4061116,
+            -122.0452018
+          ],
+          [
+            37.4062178,
+            -122.0452564
+          ],
+          [
+            37.41011,
+            -122.0472569
+          ],
+          [
+            37.4178698,
+            -122.0512618
+          ]
+        ]
+      },
+      {
+        "surface": "taxiway",
+        "widthM": 24,
+        "points": [
+          [
+            37.4178698,
+            -122.0512618
+          ],
+          [
+            37.4175576,
+            -122.0522167
+          ],
+          [
+            37.4172724,
+            -122.0530941
+          ],
+          [
+            37.4168639,
+            -122.0543474
+          ]
+        ]
+      },
+      {
+        "surface": "road",
+        "widthM": 14,
+        "points": [
+          [
+            37.4168639,
+            -122.0543474
+          ],
+          [
+            37.4165244,
+            -122.054307
+          ],
+          [
+            37.4159405,
+            -122.0542799
+          ],
+          [
+            37.415162,
+            -122.0543338
+          ],
+          [
+            37.4148762,
+            -122.0544228
+          ],
+          [
+            37.4148061,
+            -122.0544956
+          ],
+          [
+            37.4146148,
+            -122.0540811
+          ],
+          [
+            37.4139,
+            -122.0537089
+          ],
+          [
+            37.4129,
+            -122.0531875
+          ],
+          [
+            37.4118236,
+            -122.0526263
+          ]
+        ]
+      },
+      {
+        "surface": "taxiway",
+        "widthM": 18,
+        "points": [
+          [
+            37.4118236,
+            -122.0526263
+          ],
+          [
+            37.4111,
+            -122.0522
+          ],
+          [
+            37.41055,
+            -122.05275
+          ],
+          [
+            37.4109969,
+            -122.0537124
+          ]
+        ]
+      },
+      {
+        "surface": "road",
+        "widthM": 14,
+        "points": [
+          [
+            37.4109969,
+            -122.0537124
+          ],
+          [
+            37.4116623,
+            -122.0545
+          ],
+          [
+            37.4124456,
+            -122.0548
+          ],
+          [
+            37.4130123,
+            -122.0551
+          ],
+          [
+            37.4139122,
+            -122.05555
+          ],
+          [
+            37.4142819,
+            -122.0560196
+          ],
+          [
+            37.4139765,
+            -122.0569959
+          ],
+          [
+            37.4135772,
+            -122.0581826
+          ],
+          [
+            37.4126514,
+            -122.0577146
+          ],
+          [
+            37.4121314,
+            -122.0574454
+          ],
+          [
+            37.411578,
+            -122.0571651
+          ],
+          [
+            37.410718,
+            -122.0567293
+          ],
+          [
+            37.4101234,
+            -122.0564281
+          ],
+          [
+            37.4095102,
+            -122.0560966
+          ],
+          [
+            37.4089704,
+            -122.0551144
+          ],
+          [
+            37.4086896,
+            -122.0538197
+          ],
+          [
+            37.4084637,
+            -122.0519636
+          ],
+          [
+            37.407988,
+            -122.0517181
+          ],
+          [
+            37.4073041,
+            -122.0512809
+          ],
+          [
+            37.406633,
+            -122.0505701
+          ],
+          [
+            37.4062217,
+            -122.0500008
+          ],
+          [
+            37.4057441,
+            -122.0493385
+          ],
+          [
+            37.4053648,
+            -122.0486931
+          ],
+          [
+            37.4048849,
+            -122.0481048
+          ]
+        ]
+      },
+      {
+        "surface": "taxiway",
+        "widthM": 18,
+        "points": [
+          [
+            37.4048849,
+            -122.0481048
+          ],
+          [
+            37.4061116,
+            -122.0452018
+          ]
+        ]
+      }
+    ]
+  },
+  "waypoints": [
+    [
+      37.4061116,
+      -122.0452018
+    ],
+    [
+      37.4178698,
+      -122.0512618
+    ],
+    [
+      37.4130123,
+      -122.0551
+    ]
+  ],
+  "bboxPoints": [
+    [
+      37.4042,
+      -122.0582
+    ],
+    [
+      37.4179,
+      -122.0449
+    ]
+  ],
+  "blurb": {
+    "zh": "冲上主跑道，经 C 滑行道绕过一号机库，在七型机群旁完成一圈。",
+    "en": "Charge up the main runway, take Taxiway C around Hangar One, and loop past the seven-type aircraft fleet."
+  }
+}

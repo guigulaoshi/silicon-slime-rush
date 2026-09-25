@@ -1,0 +1,10 @@
+:root { --loading-bar-width:min(420px,80vw); }
+.loading-bar { position:relative; width:var(--loading-bar-width); height:14px; flex-shrink:0; overflow:hidden;
+  border-radius:999px; background:rgba(199,249,133,.12); border:1px solid rgba(199,249,133,.38); }
+.loading-bar-fill { position:absolute; top:0; bottom:0; left:0; width:0;
+  border-radius:inherit; background:#c7f985; transition:width .3s ease-out; }
+.loading-bar[data-complete=true] .loading-bar-fill { width:100%!important; transition:width 90ms ease-out!important; }
+@media (prefers-reduced-motion:reduce) {
+  .loading-bar-fill { animation:none!important; transition:none; }
+}
+html[data-reduced-motion=true] .loading-bar-fill { animation:none!important; transition:none; }

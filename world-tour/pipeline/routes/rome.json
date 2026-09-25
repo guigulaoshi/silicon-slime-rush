@@ -1,0 +1,405 @@
+{
+  "id": "rome",
+  "name": {
+    "zh": "斗兽场",
+    "en": "Colosseum"
+  },
+  "blurb": {
+    "zh": "从马克西穆斯竞技场出发，正对着君士坦丁凯旋门冲过去，绕过斗兽场，顺着帝国广场大道直奔威尼斯广场的祖国祭坛。",
+    "en": "From the Circus Maximus straight at the Arch of Constantine, round the Colosseum and down the Imperial Forums to the Vittoriano."
+  },
+  "category": "scenic",
+  "mode": "p2p",
+  "laps": 1,
+  "car": "convertible",
+  "timeOfDay": "day",
+  "editions": [
+    "web",
+    "full"
+  ],
+  "origin": {
+    "lat": 41.8955,
+    "lon": 12.4825
+  },
+  "padM": 450,
+  "backdropM": 4000,
+  "waypoints": [
+    {
+      "way": 106205317,
+      "pick": "nearest:41.8867,12.4830"
+    },
+    {
+      "way": 215801331,
+      "pick": "nearest:41.8889,12.4915"
+    },
+    {
+      "way": 232183084,
+      "pick": "nearest:41.8897,12.4936"
+    },
+    {
+      "way": 203150440,
+      "pick": "eastmost"
+    },
+    {
+      "way": 245210493,
+      "pick": "nearest:41.8910,12.4925"
+    },
+    {
+      "way": 1410563621,
+      "pick": "nearest:41.8926,12.4882"
+    },
+    {
+      "way": 203150441,
+      "pick": "northmost"
+    }
+  ],
+  "centreLine": "white",
+  "traffic": "right",
+  "snapExclude": [],
+  "groundCover": "terrain_wood",
+  "landmarks": [
+    "colosseum",
+    "arch-of-constantine",
+    "vittoriano",
+    "trajans-column"
+  ],
+  "architecture": {
+    "facades": {
+      "building_stucco": 0.9,
+      "building_concrete": 0.1
+    },
+    "pitched": {
+      "maxStoreys": 6,
+      "share": 0.75,
+      "kind": "hip",
+      "roofMaterial": "house_roof_tile"
+    },
+    "tint": {
+      "building_stucco": "#e4d8c3",
+      "building_concrete": "#dcd3c2",
+      "house_roof_tile": "#b0603d"
+    },
+    "why": "罗马：赭黄抹灰墙、红陶瓦（街景照片估计）",
+    "facadesForAll": true,
+    "local": {
+      "why": "照片和尺寸来自 house-cards/rome.md（维基共享资源：拉比卡纳路 2024 两张、尼古拉·萨尔维路、蛇街 29 号、维托里亚诺向南看的屋顶）。A 翁贝托时代五六层赭黄抹灰楼、绿百叶窗、石色窗套和层间线条、带状粗琢石底层开店挂棕红遮阳篷、深挑檐；B 同一时代的庞贝红楼、棕百叶窗、屋顶是平台；C 蒙蒂老街三到五层的鲑鱼粉窄房、灰蓝百叶窗、拱门。三类各一种颜色，因为一类只能有一种墙色",
+      "types": [
+        {
+          "name": "umbertine-ochre",
+          "share": 0.4,
+          "when": {
+            "minArea": 150,
+            "tags": [
+              "yes",
+              "apartments",
+              "residential",
+              "hotel",
+              "office",
+              "retail",
+              "commercial",
+              "house",
+              "terrace"
+            ],
+            "outside": [
+              {
+                "lat": 41.8858,
+                "lon": 12.4875,
+                "radiusM": 380
+              }
+            ]
+          },
+          "storeys": [
+            5,
+            6
+          ],
+          "storeyM": 3.8,
+          "groundM": 4.8,
+          "tileBays": 3,
+          "wall": {
+            "kind": "render",
+            "colour": "#e8a86a",
+            "stain": 0.4,
+            "palette": [
+              "#e8a86a",
+              "#f3e9e1",
+              "#d9a992",
+              "#e2b27a"
+            ]
+          },
+          "window": {
+            "shape": "rect",
+            "w": 1.2,
+            "h": 2.3,
+            "bay": 3.7,
+            "sill": 0.9,
+            "frame": "#efe9df",
+            "frameW": 0.08,
+            "glass": "#2b3035",
+            "surround": {
+              "kind": "architrave",
+              "colour": "#d3c2a6",
+              "w": 0.22,
+              "lintel": "#c6b59c",
+              "lintelH": 0.22
+            },
+            "shutters": {
+              "colour": "#374842"
+            }
+          },
+          "band": {
+            "colour": "#cdbca2",
+            "h": 0.3
+          },
+          "ground": {
+            "kind": "shops",
+            "wall": {
+              "kind": "stone",
+              "colour": "#c6b59c",
+              "unit": [
+                3.0,
+                0.38
+              ],
+              "joint": "#9c8b73"
+            },
+            "glass": "#353c40",
+            "shutterColour": "#8d9194",
+            "signs": [
+              "#6b2a22",
+              "#2f3d33",
+              "#3a3a3a"
+            ],
+            "base": "#6f655a"
+          },
+          "roof": {
+            "kind": "hip",
+            "material": "tile",
+            "colour": "#b8907a",
+            "pitchDeg": 20,
+            "eaveM": 0.2,
+            "corniceM": 0.85,
+            "corniceH": 0.8
+          },
+          "details": {
+            "chimneys": 0.5,
+            "awnings": 0.5
+          }
+        },
+        {
+          "name": "umbertine-red",
+          "share": 0.3,
+          "when": {
+            "minArea": 150,
+            "tags": [
+              "yes",
+              "apartments",
+              "residential",
+              "hotel",
+              "office",
+              "retail",
+              "commercial",
+              "house",
+              "terrace"
+            ],
+            "outside": [
+              {
+                "lat": 41.8858,
+                "lon": 12.4875,
+                "radiusM": 380
+              }
+            ]
+          },
+          "storeys": [
+            5,
+            6
+          ],
+          "storeyM": 3.7,
+          "groundM": 4.6,
+          "tileBays": 3,
+          "wall": {
+            "kind": "render",
+            "colour": "#b36856",
+            "stain": 0.35
+          },
+          "window": {
+            "shape": "rect",
+            "w": 1.2,
+            "h": 2.2,
+            "bay": 3.6,
+            "sill": 0.9,
+            "frame": "#efe9df",
+            "frameW": 0.08,
+            "glass": "#2b3035",
+            "surround": {
+              "kind": "architrave",
+              "colour": "#e9e0d2",
+              "w": 0.22,
+              "lintel": "#ded3c1",
+              "lintelH": 0.2
+            },
+            "shutters": {
+              "colour": "#664c48"
+            }
+          },
+          "band": {
+            "colour": "#e3d9c8",
+            "h": 0.28
+          },
+          "ground": {
+            "kind": "shops",
+            "wall": {
+              "kind": "stone",
+              "colour": "#d8cfbd",
+              "unit": [
+                3.0,
+                0.38
+              ],
+              "joint": "#a8987f"
+            },
+            "glass": "#353c40",
+            "shutterColour": "#8d9194",
+            "signs": [
+              "#2f3d33",
+              "#6b2a22",
+              "#1f2a3a"
+            ],
+            "base": "#6f655a"
+          },
+          "roof": {
+            "kind": "flat",
+            "material": "tile",
+            "colour": "#b8907a",
+            "corniceM": 0.85,
+            "corniceH": 0.8
+          },
+          "details": {
+            "dishes": 0.3,
+            "dishCount": 2,
+            "awnings": 0.45
+          }
+        },
+        {
+          "name": "monti-casa",
+          "share": 0.3,
+          "when": {
+            "minArea": 25,
+            "maxArea": 1500,
+            "tags": [
+              "yes",
+              "apartments",
+              "residential",
+              "house",
+              "terrace",
+              "retail",
+              "commercial"
+            ]
+          },
+          "storeys": [
+            3,
+            5
+          ],
+          "storeyM": 3.3,
+          "groundM": 3.8,
+          "tileBays": 3,
+          "wall": {
+            "kind": "render",
+            "colour": "#d9a992",
+            "stain": 0.45,
+            "palette": [
+              "#d9a992",
+              "#f3e9e1",
+              "#e8a86a"
+            ]
+          },
+          "window": {
+            "shape": "rect",
+            "w": 1.0,
+            "h": 1.7,
+            "bay": 2.8,
+            "sill": 0.9,
+            "frame": "#ece6dc",
+            "frameW": 0.07,
+            "glass": "#2b3035",
+            "surround": {
+              "kind": "architrave",
+              "colour": "#e6dfd2",
+              "w": 0.17
+            },
+            "shutters": {
+              "colour": "#6f8189"
+            }
+          },
+          "band": {
+            "colour": "#e2d6c3",
+            "h": 0.14
+          },
+          "ground": {
+            "kind": "door",
+            "wall": {
+              "kind": "stone",
+              "colour": "#c9b99f",
+              "unit": [
+                0.9,
+                0.42
+              ],
+              "joint": "#a29077"
+            },
+            "door": "#3d3129",
+            "doorFrame": "#a9a398",
+            "doorArched": true,
+            "base": "#6f655a"
+          },
+          "roof": {
+            "kind": "hip",
+            "material": "tile",
+            "colour": "#b58c74",
+            "pitchDeg": 20,
+            "eaveM": 0.4,
+            "corniceM": 0.3,
+            "corniceH": 0.4
+          },
+          "details": {
+            "chimneys": 0.4,
+            "awnings": 0.2
+          }
+        }
+      ],
+      "rail": {
+        "style": "iron",
+        "colour": "#26272a"
+      },
+      "detailColours": {
+        "local_detail_dark": "#2d2c2a",
+        "local_detail_light": "#d7cbb6",
+        "local_detail_accent": "#8a5c4a"
+      }
+    }
+  },
+  "lampStyle": "lantern",
+  "levelAreas": [
+    {
+      "lat": 41.8958088,
+      "lon": 12.4842733,
+      "radiusM": 20.0,
+      "heightM": 25.3,
+      "rampM": 4.0,
+      "why": "图拉真纪功柱立在比街面低约 5 米的发掘出来的广场里（照片：街边栏杆和柱座檐口一样高）；高程数据看不出这个坑"
+    }
+  ],
+  "vista": {
+    "spacingM": 90,
+    "density": 0.55,
+    "heightM": [
+      15,
+      24
+    ],
+    "farRoofs": {
+      "hip": 0.6,
+      "flat": 0.4
+    },
+    "nearRoofs": {
+      "hip": 0.6,
+      "flat": 0.4
+    },
+    "why": "house-cards/rome.md 第 4 节：远处是连成一片的五到七层楼，18–25 米，赭黄、奶油、鲑鱼粉，平台和筒瓦屋顶各半，没有高楼（r13）"
+  }
+}

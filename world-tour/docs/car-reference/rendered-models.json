@@ -1,0 +1,157 @@
+{
+  "amboseli-safari": {
+    "imageSha256": "5045026e956c5b7a47e17bef81e65c9dfce5315397a45ef025d736b7d826a9d1",
+    "models": {
+      "amboseli-safari.glb": "a640a7c7eb7f193e3029b2e486e84e5b6fe0c12d9782a5f555615b7bf7e92eb7"
+    },
+    "thumbnailSha256": "ea2245a9437d221f71b5bb50726ac4487779eaa9d0c60a9af2b7855a4d072be7"
+  },
+  "beijing-sightseeing-bus": {
+    "imageSha256": "461ceb93af557863150881e8f1c827aa1beb476eb6f07cc05b870c85f63af9c3",
+    "models": {
+      "beijing-sightseeing-bus.glb": "2a1af1bc801b7250519b18adcae1cda9074b1ff6b4f8913e29a051c88837919c"
+    },
+    "thumbnailSha256": "eb17abb58a48fedffcb91f60e88b3677ca15c0ead8a646591ba1c4f931400547"
+  },
+  "city-pod": {
+    "imageSha256": "49dcebd7759ad7c92ba2dd1d89412f4b04fc4ea74397b01a57d5395a1adead78",
+    "models": {
+      "city-pod.glb": "65b77037bf03fe2adc0098a4d73eb6bd89ab13276a029c2dda0e4beb125ed5c3"
+    },
+    "thumbnailSha256": "2aac025c277ca67124e3d13874d2ca1cd18978ef2e22dcc53b968a12f50e9013"
+  },
+  "dubai-supercar": {
+    "imageSha256": "4f03510adc005d7800faa19c25710320d58a69903f3934f9ca370acede6d982f",
+    "models": {
+      "dubai-supercar.glb": "c098b8f9897b83a4de13a1d2f6007fc52ff2e88ab4426f54c87415398f53c6f6"
+    },
+    "thumbnailSha256": "e73bd0216f1ede4b7ac327f8d7cac8b461a5dacf349d45b9edb6e3e7111f9f45"
+  },
+  "fuji-kei-truck": {
+    "imageSha256": "c55aecc1f0169c4e58a92b244f1619e39ee5ea18c214ad6daced52c21c9180e3",
+    "models": {
+      "fuji-kei-truck.glb": "05145190011c98f983ce0da9bbe1bb93fac129ea1f204a772c83da004e656dc4"
+    },
+    "thumbnailSha256": "ae095f9e8877ba54b82de2d0ff597452c5e995f7509799e3852e1d717bfb1b65"
+  },
+  "giza-microbus": {
+    "imageSha256": "2b09948e4ef4a2338d90db288f4343839fcf456904790e6edfe2466cd4f6dbed",
+    "models": {
+      "giza-microbus.glb": "8267e6c554b6973b0824ebcf9513434d4bfef9c051b1490f30fcc659e84cb291"
+    },
+    "thumbnailSha256": "346b5d75fe41e79f1e1b62f3b8cf7e3c90e90d7752da701d7a316cea87eaea84"
+  },
+  "istanbul-dolmus": {
+    "imageSha256": "b303892f8b50daeeadc9e98461c564b07750ee4a9355de6f21137be152c52e2a",
+    "models": {
+      "istanbul-dolmus.glb": "55813484a6f8c12e472f3d6a19c58c20008fd3762c6e505eda8adb8e22ccddf2"
+    },
+    "thumbnailSha256": "aa3d0590c43bcc920304b1172557a83e2406bc8e498b46e7409b080f532cc476"
+  },
+  "jeep": {
+    "imageSha256": "d35744376beab811f070440eb64fa7243477d4239b1c7eac42090123a7409d0f",
+    "models": {
+      "jeep.glb": "695f2cf50b95f219a30d5e100412cc78a22e12db0ed51ef05bbb64d30761c974"
+    },
+    "thumbnailSha256": "e26032cbb09dde9888579c74985afdad6a09211a9e774df8b9e8e74de9b7d6f3"
+  },
+  "lhasa-plateau-suv": {
+    "imageSha256": "e8f0b321802a175f8ca763be9860aae8a51e38d8cf7984011bd984620723bd21",
+    "models": {
+      "lhasa-plateau-suv.glb": "47405d9f116a5db5c6c93f344f1a268a18cdc677c40aa3bbd8ab1c692f89c349"
+    },
+    "thumbnailSha256": "54a27a3c9e40eb980b631c291fbb724adb88eef4359b34d729e92ad5f8210bd5"
+  },
+  "lightweight-sports": {
+    "imageSha256": "a9a68692b5a405d61b63afd2564ef2d9a1328f208f43fb1ce837079cec02b21b",
+    "models": {
+      "lightweight-sports.glb": "ce8e4a565a7401d09f772cdced9cb1a140ef0520059aca774da8048c020ecd9e"
+    },
+    "thumbnailSha256": "dac77878a7972833f157953c97a7cd9953181afdb9bba379c186797e095c9c22"
+  },
+  "micro-hatch": {
+    "imageSha256": "3b83850edd9c3927ae789a228633be8d6bd9d3af5c0a964e54d84bb8b4a12d58",
+    "models": {
+      "micro-hatch.glb": "98a4ce97be073c153fb4cba604481595942a71ec539a45b44a7c1c5a7a7f7548"
+    },
+    "thumbnailSha256": "1937e823b261c0c7e7cd4abc3122b7813576b47212daaaf410c538ec5703e41d"
+  },
+  "monster-truck": {
+    "imageSha256": "2f5d33fe88e9a8721f94843c4885bc286010805a530098bd7e43268a5569ef6a",
+    "models": {
+      "monster-truck.glb": "fd17a92c3fa4ddce208abaad167647cd40fe7b647c32e76ffa629fa4764a185a"
+    },
+    "thumbnailSha256": "5832b1601cf63d9505c3576c8c0ea1616c2f1fd160d0bd1bd6bc240c295d395c"
+  },
+  "new-york-limo": {
+    "imageSha256": "088c224a2048801d1a3266179300149e76de13cb21df85231c6e329041afb00d",
+    "models": {
+      "new-york-limo.glb": "8076395adbae0b3c460eaae0faa4e31ba048d9a062fc5f77079305a97c9f83cf"
+    },
+    "thumbnailSha256": "47d60a4ab8a8891f312e325a6a0a89dff6b8baeb4cbd27b68d462c01cf8d2ea4"
+  },
+  "paris-tin-snail": {
+    "imageSha256": "166a927e228fc9e388186512c4024c8c6f221eb5541fd651b6b215a552f4c4a6",
+    "models": {
+      "paris-tin-snail.glb": "0b3d81ad2d0b589deb9fc3c10acb681fc67948e963c545f99b84541368116f4b"
+    },
+    "thumbnailSha256": "97e784ff274927ec8798ab584730fc938a6d2153d8d1d2c7db660eeedf482d21"
+  },
+  "pickup-travel-trailer": {
+    "imageSha256": "f086f5d56b6143bb440f3f129ec0984b54204e7e64c6aa8e05fdd424e85aaa10",
+    "models": {
+      "pickup-travel-trailer.glb": "2a6887d9dbce03c03b54cdea70f2d248798ed199ec77bd51077f0e896cc00c88",
+      "travel-trailer.glb": "bdac2a9605ebe99ee0352450cf6ada89894691b3555d7e03f88d775553e4977a"
+    },
+    "thumbnailSha256": "de69a59567eb1960cc732444109307ea3ee3005a4ab959c72bcbb57397ed4e64"
+  },
+  "retro-van": {
+    "imageSha256": "f31dd80206a814a7287190bf1ebaebff07718bedf5cc8db2d1ab7505cb525cc2",
+    "models": {
+      "retro-van.glb": "df65f84e53ed80e0dfce7cd733050a48919bae7caa6138035d5f0c215a04228b"
+    },
+    "thumbnailSha256": "967dc0d3dd3ea4ac730d5906915cbed0d8a4d27429b0a4819d36ffc1fbba979e"
+  },
+  "rome-roadster": {
+    "imageSha256": "222081f296c949908dc2a11747fef35dc6f4df93598a471e60b4f6857f2049ec",
+    "models": {
+      "rome-roadster.glb": "39ffba2ccf199ce197e5f48527b81e9faf251804740f43756fac0aa52f5e2a11"
+    },
+    "thumbnailSha256": "33a734abe40985436685bbe6ba400076b8f08c1bb18df45bdfd82781aff6377a"
+  },
+  "school-bus": {
+    "imageSha256": "932c7050717110aa224691a2c4782f15200d1af91d96b210ca246f1fbedf3a0f",
+    "models": {
+      "school-bus.glb": "a123dc56c3a14691bd21e33cdaf3ebf0b464da59aa3065a82ace4754ac25332d"
+    },
+    "thumbnailSha256": "b762ea183bb86c54ae99f3401092b186f3ba5a901cea96c4f014c5d2f1c7cc30"
+  },
+  "shanghai-classic-sedan": {
+    "imageSha256": "d6ac551af67a407def28e5304e00636620dae37c6087613f7a43030ce3ba95ed",
+    "models": {
+      "shanghai-classic-sedan.glb": "8faa94c2a48dda8d896fc5f26b9fbe6e5d53a4c689b99822d8f599a441fde027"
+    },
+    "thumbnailSha256": "92b7502af9b2fab0c849857435de758f71b4dee16ecf9132e1d3e4be56d41359"
+  },
+  "sports-car": {
+    "imageSha256": "32f7275f76df6f0c9b7f5f1a7c009be43af04cce8642552a751f1219c2d45ca3",
+    "models": {
+      "sports-car.glb": "f6647bc13eb48f541cc0df91174bd0a42ddeb2a5b1858beccf293cecbf9a5bb2"
+    },
+    "thumbnailSha256": "2a4ecad9f0132f23c26ed45155d6a6f16098d5bdc094f652661e428f69cfc067"
+  },
+  "sydney-ute": {
+    "imageSha256": "f54b317e5c37aeadc30a314e9396bf5b87097239184c4abf98015738a13307fb",
+    "models": {
+      "sydney-ute.glb": "65cf6fd9a790c924da3c44f2bb01da9ab08a0967e2705f7547557efcec7a9d65"
+    },
+    "thumbnailSha256": "b73cc93d639c8bd2b0e25b7322415fa0b8c13e84c4796f6827f45de579a2ffbd"
+  },
+  "zhangjiajie-shuttle": {
+    "imageSha256": "93f795b6f9fda0ffcca297625c1cdfe36730ec8fcc5d3defa13c34e3503db9c5",
+    "models": {
+      "zhangjiajie-shuttle.glb": "6671185b44f0c24e321e940c3a73dd2fdb6704667d4191b458337378fd34998c"
+    },
+    "thumbnailSha256": "734eb9e2a15a0d5ff7850bac1dc9c5130bc7bd99c72c374340bd367f0434cc9f"
+  }
+}

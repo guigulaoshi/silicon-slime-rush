@@ -1,0 +1,63 @@
+{
+  "id": "lombard",
+  "name": {
+    "zh": "九曲花街",
+    "en": "Lombard Street"
+  },
+  "category": "scenic",
+  "slimeDensity": 0.5,
+  "slimeCount": 52,
+  "mode": "p2p",
+  "laps": 1,
+  "car": "hatch",
+  "timeOfDay": "day",
+  "editions": [
+    "web",
+    "full"
+  ],
+  "origin": {
+    "lat": 37.802,
+    "lon": -122.418
+  },
+  "padM": 250,
+  "backdropM": 5000,
+  "halfWidthDefault": 6.0,
+  "waypoints": [
+    [
+      37.802,
+      -122.4312
+    ],
+    [
+      37.802,
+      -122.41963
+    ],
+    [
+      37.80222,
+      -122.41799
+    ],
+    [
+      37.8053,
+      -122.4105
+    ]
+  ],
+  "bboxPoints": [
+    [
+      37.802,
+      -122.4312
+    ],
+    [
+      37.802,
+      -122.4187
+    ],
+    [
+      37.8053,
+      -122.4105
+    ]
+  ],
+  "bridgeDeckM": 0,
+  "bridgeMinLengthM": 200,
+  "blurb": {
+    "zh": "一个街区八个发夹弯，然后一路下到海湾。",
+    "en": "Eight hairpins in one block, then down to the bay."
+  }
+}

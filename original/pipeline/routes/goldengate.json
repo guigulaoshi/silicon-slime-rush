@@ -1,0 +1,106 @@
+{
+  "id": "goldengate",
+  "name": {
+    "zh": "金门",
+    "en": "Golden Gate"
+  },
+  "category": "scenic",
+  "slimeDensity": 0.5,
+  "slimeCount": 116,
+  "mode": "p2p",
+  "laps": 1,
+  "car": "convertible",
+  "timeOfDay": "night",
+  "editions": [
+    "web",
+    "full"
+  ],
+  "origin": {
+    "lat": 37.8199,
+    "lon": -122.4783
+  },
+  "padM": 300,
+  "backdropM": 6000,
+  "landmarks": [
+    "alcatraz",
+    "sutro-tower"
+  ],
+  "halfWidthDefault": 4.5,
+  "waypoints": [
+    [
+      37.80566,
+      -122.46997
+    ],
+    {
+      "road": "Lincoln Boulevard",
+      "pick": "northmost"
+    },
+    {
+      "road": "Golden Gate Bridge",
+      "pick": "northmost"
+    },
+    {
+      "junction": [
+        "Conzelman Road",
+        "Alexander Avenue"
+      ]
+    },
+    [
+      37.83125,
+      -122.48725
+    ]
+  ],
+  "bboxPoints": [
+    [
+      37.8018,
+      -122.4478
+    ],
+    [
+      37.793,
+      -122.4809
+    ],
+    [
+      37.8069,
+      -122.4725
+    ],
+    [
+      37.8199,
+      -122.4783
+    ],
+    [
+      37.8345,
+      -122.4835
+    ],
+    [
+      37.8256,
+      -122.4998
+    ]
+  ],
+  "bridgeDeckM": 67,
+  "bridgeMinLengthM": 200,
+  "suspension": {
+    "towers": [
+      [
+        37.81249,
+        -122.47506
+      ],
+      [
+        37.8243,
+        -122.47767
+      ]
+    ],
+    "towerAboveDeckM": 160.0,
+    "midCableAboveDeckM": 3.0,
+    "anchorAboveDeckM": 0.8,
+    "suspenderStepM": 15.0,
+    "trussDepthM": 7.6,
+    "sideSpanM": 343.0,
+    "pierStepM": 60.0
+  },
+  "blurb": {
+    "zh": "上金门大桥，爬 Conzelman 的发夹弯回望。五公里。",
+    "en": "Across the Golden Gate, up the Conzelman hairpins to look back. 5 km."
+  },
+  "groundCover": "terrain_grass",
+  "sharedDeckOnBridges": true
+}

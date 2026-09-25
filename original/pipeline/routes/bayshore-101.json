@@ -1,0 +1,76 @@
+{
+  "id": "bayshore-101",
+  "name": {
+    "zh": "机库到湾边",
+    "en": "Hangar to Bayfront"
+  },
+  "blurb": {
+    "zh": "在莫菲特机场的巨型机库旁沿101号高速北上，穿过山景城、帕罗奥图和门洛帕克的园区一带，在Marsh Road下高速。",
+    "en": "Head north on US 101 beside Moffett Field's giant hangar, pass the Mountain View, Palo Alto and Menlo Park campuses, and exit at Marsh Road."
+  },
+  "category": "scenic",
+  "slimeCount": 333,
+  "mode": "p2p",
+  "laps": 1,
+  "car": "sedan",
+  "timeOfDay": "day",
+  "origin": {
+    "lat": 37.44,
+    "lon": -122.11
+  },
+  "padM": 160,
+  "backdropM": 3000,
+  "corridorFetch": true,
+  "halfWidthDefault": 7,
+  "waypoints": [
+    {
+      "ref": "US 101",
+      "pick": "nearest:37.4006634,-122.0351701"
+    },
+    {
+      "ref": "US 101",
+      "pick": "nearest:37.4118229,-122.0773266"
+    },
+    {
+      "ref": "US 101",
+      "pick": "nearest:37.4370348,-122.1104251"
+    },
+    {
+      "ref": "US 101",
+      "pick": "nearest:37.4578759,-122.1363265"
+    },
+    {
+      "ref": "US 101",
+      "pick": "nearest:37.4754703,-122.1662712"
+    },
+    [
+      37.4819548,
+      -122.177346
+    ],
+    [
+      37.4832304,
+      -122.1790782
+    ]
+  ],
+  "mustPass": [
+    {
+      "name": "Northbound US 101 before Moffett Field",
+      "lat": 37.4006634,
+      "lon": -122.0351701,
+      "maxDistM": 25
+    },
+    {
+      "name": "Marsh Road off-ramp",
+      "lat": 37.4832304,
+      "lon": -122.1790782,
+      "maxDistM": 25
+    }
+  ],
+  "landmarks": [
+    "hangar-one",
+    "charleston-canopy"
+  ],
+  "maxSnapM": 25,
+  "terrainPadM": 160,
+  "respectOneway": true
+}
