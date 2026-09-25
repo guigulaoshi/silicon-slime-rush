@@ -1,0 +1,436 @@
+{
+  "version": 1,
+  "textures": [
+    {
+      "material": "building_glass",
+      "map": "building_glass.webp",
+      "px": 512,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 4532,
+      "facadePanes": [
+        2.0,
+        1.0,
+        0.1
+      ]
+    },
+    {
+      "material": "building_stucco",
+      "map": "building_stucco.webp",
+      "px": 512,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 8536,
+      "facadePanes": [
+        1.0,
+        1.0,
+        0.34
+      ]
+    },
+    {
+      "material": "building_concrete",
+      "map": "building_concrete.webp",
+      "px": 512,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 13028
+    },
+    {
+      "material": "building_metal",
+      "map": "building_metal.webp",
+      "px": 512,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 7886
+    },
+    {
+      "material": "building_parking",
+      "map": "building_parking.webp",
+      "px": 512,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 6570
+    },
+    {
+      "material": "building_landmark_glass",
+      "map": "building_landmark_glass.webp",
+      "px": 1024,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "later",
+      "bytes": 11050,
+      "facadePanes": [
+        3.0,
+        1.0,
+        0.08
+      ]
+    },
+    {
+      "material": "building_landmark_pale",
+      "map": "building_landmark_pale.webp",
+      "px": 512,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "later",
+      "bytes": 12048
+    },
+    {
+      "material": "building_landmark_solar",
+      "map": "building_landmark_solar.webp",
+      "px": 1024,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "later",
+      "bytes": 13288
+    },
+    {
+      "material": "building_landmark_metal",
+      "map": "building_landmark_metal.webp",
+      "px": 1024,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "later",
+      "bytes": 27184
+    },
+    {
+      "material": "building_landmark_roof",
+      "map": "building_landmark_roof.webp",
+      "px": 512,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "later",
+      "bytes": 8394
+    },
+    {
+      "material": "ruin_stone",
+      "map": "ruin_stone.webp",
+      "px": 512,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "later",
+      "bytes": 22256
+    },
+    {
+      "material": "road",
+      "map": "road.webp",
+      "px": 1024,
+      "metres": 4.04,
+      "repeat": [
+        0.9901,
+        0.9901
+      ],
+      "tier": "core",
+      "bytes": 802952,
+      "roughnessMap": "road_rough.webp",
+      "roughPx": 512,
+      "normalMap": "road_normal.webp",
+      "mapping": "uv",
+      "source": "Poly Haven asphalt_04 (CC0)"
+    },
+    {
+      "material": "bridge",
+      "map": "bridge.webp",
+      "px": 1024,
+      "metres": 3.0,
+      "repeat": [
+        1.3333,
+        1.3333
+      ],
+      "tier": "core",
+      "bytes": 1100960,
+      "roughnessMap": "bridge_rough.webp",
+      "roughPx": 512,
+      "normalMap": "bridge_normal.webp",
+      "mapping": "uv",
+      "source": "Poly Haven asphalt_02 (CC0)"
+    },
+    {
+      "material": "sidewalk",
+      "map": "sidewalk.webp",
+      "px": 1024,
+      "metres": 2.0,
+      "repeat": [
+        2.0,
+        2.0
+      ],
+      "tier": "core",
+      "bytes": 411236,
+      "roughnessMap": "sidewalk_rough.webp",
+      "roughPx": 512,
+      "normalMap": "sidewalk_normal.webp",
+      "mapping": "uv",
+      "source": "Poly Haven concrete_pavers_02 (CC0)"
+    },
+    {
+      "material": "terrain",
+      "map": "terrain.webp",
+      "px": 1024,
+      "metres": 2.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 972494,
+      "roughnessMap": "terrain_rough.webp",
+      "roughPx": 512,
+      "normalMap": "terrain_normal.webp",
+      "mapping": "world",
+      "source": "Poly Haven sparse_grass (CC0)"
+    },
+    {
+      "material": "terrain_grass",
+      "map": "terrain_grass.webp",
+      "px": 1024,
+      "metres": 1.4,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 1016698,
+      "roughnessMap": "terrain_grass_rough.webp",
+      "roughPx": 512,
+      "normalMap": "terrain_grass_normal.webp",
+      "mapping": "world",
+      "source": "ambientCG Grass001 (CC0)"
+    },
+    {
+      "material": "terrain_scrub",
+      "map": "terrain_scrub.webp",
+      "px": 1024,
+      "metres": 20.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 660812,
+      "roughnessMap": "terrain_scrub_rough.webp",
+      "roughPx": 512,
+      "normalMap": "terrain_scrub_normal.webp",
+      "mapping": "world",
+      "source": "Poly Haven aerial_ground_rock (CC0)"
+    },
+    {
+      "material": "terrain_wood",
+      "map": "terrain_wood.webp",
+      "px": 1024,
+      "metres": 2.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 1099302,
+      "roughnessMap": "terrain_wood_rough.webp",
+      "roughPx": 512,
+      "normalMap": "terrain_wood_normal.webp",
+      "mapping": "world",
+      "source": "Poly Haven forrest_ground_01 (CC0)"
+    },
+    {
+      "material": "terrain_sand",
+      "map": "terrain_sand.webp",
+      "px": 1024,
+      "metres": 15.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 528128,
+      "roughnessMap": "terrain_sand_rough.webp",
+      "roughPx": 512,
+      "normalMap": "terrain_sand_normal.webp",
+      "mapping": "world",
+      "source": "Poly Haven aerial_sand (CC0)"
+    },
+    {
+      "material": "terrain_rock",
+      "map": "terrain_rock.webp",
+      "px": 1024,
+      "metres": 50.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 977778,
+      "roughnessMap": "terrain_rock_rough.webp",
+      "roughPx": 512,
+      "normalMap": "terrain_rock_normal.webp",
+      "mapping": "world",
+      "source": "Poly Haven aerial_rocks_02 (CC0)"
+    },
+    {
+      "material": "terrain_paved",
+      "map": "terrain_paved.webp",
+      "px": 1024,
+      "metres": 2.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 920798,
+      "roughnessMap": "terrain_paved_rough.webp",
+      "roughPx": 512,
+      "normalMap": "terrain_paved_normal.webp",
+      "mapping": "world",
+      "source": "Poly Haven concrete_floor_01 (CC0)"
+    },
+    {
+      "material": "rock_sandstone",
+      "map": "rock_sandstone.webp",
+      "px": 1024,
+      "metres": 10.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "later",
+      "bytes": 640436,
+      "roughnessMap": "rock_sandstone_rough.webp",
+      "roughPx": 512,
+      "normalMap": "rock_sandstone_normal.webp",
+      "mapping": "triplanar",
+      "source": "Poly Haven marble_cliff_03 (CC0)"
+    },
+    {
+      "material": "trunk",
+      "map": "trunk.webp",
+      "px": 512,
+      "metres": 1.2,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 255618,
+      "roughnessMap": "trunk_rough.webp",
+      "roughPx": 256,
+      "normalMap": "trunk_normal.webp",
+      "mapping": "triplanar",
+      "source": "Poly Haven bark_brown_02 (CC0)"
+    },
+    {
+      "material": "foliage",
+      "map": "foliage.webp",
+      "px": 1024,
+      "metres": 1.6,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 421002,
+      "normalMap": "foliage_normal.webp",
+      "mapping": "triplanar",
+      "cutout": 0.5,
+      "source": "composed from ambientCG LeafSet024 (CC0)"
+    },
+    {
+      "material": "foliage_dark",
+      "map": "foliage_dark.webp",
+      "px": 1024,
+      "metres": 1.2,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 400778,
+      "normalMap": "foliage_dark_normal.webp",
+      "mapping": "triplanar",
+      "cutout": 0.5,
+      "source": "composed from ambientCG LeafSet024 (CC0)"
+    },
+    {
+      "material": "foliage_orchard",
+      "map": "foliage_orchard.webp",
+      "px": 1024,
+      "metres": 1.6,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 432160,
+      "normalMap": "foliage_orchard_normal.webp",
+      "mapping": "triplanar",
+      "cutout": 0.5,
+      "source": "composed from ambientCG LeafSet024 (CC0)"
+    },
+    {
+      "material": "foliage_scrub",
+      "map": "foliage_scrub.webp",
+      "px": 1024,
+      "metres": 1.2,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 436866,
+      "normalMap": "foliage_scrub_normal.webp",
+      "mapping": "triplanar",
+      "cutout": 0.5,
+      "source": "composed from ambientCG LeafSet024 (CC0)"
+    },
+    {
+      "material": "foliage_acacia",
+      "map": "foliage_acacia.webp",
+      "px": 1024,
+      "metres": 1.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 415246,
+      "normalMap": "foliage_acacia_normal.webp",
+      "mapping": "triplanar",
+      "cutout": 0.5,
+      "source": "composed from ambientCG LeafSet024 (CC0)"
+    }
+  ]
+}

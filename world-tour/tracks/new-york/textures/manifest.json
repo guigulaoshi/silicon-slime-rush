@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "textures": [
+    {
+      "material": "building_local_wall_a",
+      "map": "building_local_wall_a.webp",
+      "px": 512,
+      "metres": 7.6,
+      "repeat": [
+        0.3947,
+        0.8824
+      ],
+      "tier": "core",
+      "bytes": 27490,
+      "facadePanes": [
+        4,
+        1,
+        0.474
+      ],
+      "palette": [
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.6522,
+          2.9467,
+          3.5862
+        ],
+        [
+          1.442,
+          2.3467,
+          2.3793
+        ],
+        [
+          1.1304,
+          1.2,
+          1.1724
+        ]
+      ]
+    },
+    {
+      "material": "building_local_ground_a",
+      "map": "building_local_ground_a.webp",
+      "px": 512,
+      "metres": 7.6,
+      "repeat": [
+        0.3947,
+        0.7143
+      ],
+      "tier": "core",
+      "bytes": 16202,
+      "facadePanes": [
+        4,
+        1,
+        0.15
+      ],
+      "palette": [
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.6522,
+          2.9467,
+          3.5862
+        ],
+        [
+          1.442,
+          2.3467,
+          2.3793
+        ],
+        [
+          1.1304,
+          1.2,
+          1.1724
+        ]
+      ]
+    },
+    {
+      "material": "local_roof_a",
+      "map": "local_roof_a.webp",
+      "px": 256,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 554
+    },
+    {
+      "material": "building_local_wall_b",
+      "map": "building_local_wall_b.webp",
+      "px": 512,
+      "metres": 6.8,
+      "repeat": [
+        0.4412,
+        0.7895
+      ],
+      "tier": "core",
+      "bytes": 10742,
+      "facadePanes": [
+        4,
+        1,
+        0.5
+      ],
+      "palette": [
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.9662,
+          0.9948,
+          1.0417
+        ],
+        [
+          0.8068,
+          0.5417,
+          0.4702
+        ]
+      ]
+    },
+    {
+      "material": "building_local_ground_b",
+      "map": "building_local_ground_b.webp",
+      "px": 512,
+      "metres": 6.8,
+      "repeat": [
+        0.4412,
+        0.5455
+      ],
+      "tier": "core",
+      "bytes": 5318,
+      "facadePanes": [
+        4,
+        1,
+        0.15
+      ],
+      "palette": [
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.9662,
+          0.9948,
+          1.0417
+        ],
+        [
+          0.8068,
+          0.5417,
+          0.4702
+        ]
+      ]
+    },
+    {
+      "material": "local_roof_b",
+      "map": "local_roof_b.webp",
+      "px": 256,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 516
+    },
+    {
+      "material": "building_local_wall_c",
+      "map": "building_local_wall_c.webp",
+      "px": 512,
+      "metres": 6.0,
+      "repeat": [
+        0.5,
+        0.75
+      ],
+      "tier": "core",
+      "bytes": 2526,
+      "facadePanes": [
+        2,
+        1,
+        0.45
+      ]
+    },
+    {
+      "material": "building_local_ground_c",
+      "map": "building_local_ground_c.webp",
+      "px": 512,
+      "metres": 6.0,
+      "repeat": [
+        0.5,
+        0.4286
+      ],
+      "tier": "core",
+      "bytes": 3228,
+      "facadePanes": [
+        2,
+        1,
+        0.15
+      ]
+    },
+    {
+      "material": "local_roof_c",
+      "map": "local_roof_c.webp",
+      "px": 256,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 726
+    },
+    {
+      "material": "local_rail",
+      "map": "local_rail.webp",
+      "px": 256,
+      "metres": 1.2,
+      "repeat": [
+        2.5,
+        3.0
+      ],
+      "tier": "core",
+      "bytes": 1456,
+      "cutout": 0.5
+    }
+  ]
+}

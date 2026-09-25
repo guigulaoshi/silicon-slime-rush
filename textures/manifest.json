@@ -1,0 +1,180 @@
+{
+  "version": 1,
+  "textures": [
+    {
+      "material": "road",
+      "map": "road.webp",
+      "px": 1024,
+      "metres": 4.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 91154,
+      "roughnessMap": "road_rough.webp",
+      "roughPx": 512
+    },
+    {
+      "material": "bridge",
+      "map": "bridge.webp",
+      "px": 1024,
+      "metres": 4.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 100002,
+      "roughnessMap": "bridge_rough.webp",
+      "roughPx": 512
+    },
+    {
+      "material": "sidewalk",
+      "map": "sidewalk.webp",
+      "px": 512,
+      "metres": 2.0,
+      "repeat": [
+        2.0,
+        2.0
+      ],
+      "tier": "core",
+      "bytes": 7886
+    },
+    {
+      "material": "building_glass",
+      "map": "building_glass.webp",
+      "px": 512,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 4532,
+      "facadePanes": [
+        2.0,
+        1.0,
+        0.1
+      ]
+    },
+    {
+      "material": "building_stucco",
+      "map": "building_stucco.webp",
+      "px": 512,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 8536,
+      "facadePanes": [
+        1.0,
+        1.0,
+        0.34
+      ]
+    },
+    {
+      "material": "building_concrete",
+      "map": "building_concrete.webp",
+      "px": 512,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 13028
+    },
+    {
+      "material": "building_metal",
+      "map": "building_metal.webp",
+      "px": 512,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 7886
+    },
+    {
+      "material": "building_parking",
+      "map": "building_parking.webp",
+      "px": 512,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 6570
+    },
+    {
+      "material": "building_landmark_glass",
+      "map": "building_landmark_glass.webp",
+      "px": 1024,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "later",
+      "bytes": 11050,
+      "facadePanes": [
+        3.0,
+        1.0,
+        0.08
+      ]
+    },
+    {
+      "material": "building_landmark_pale",
+      "map": "building_landmark_pale.webp",
+      "px": 512,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "later",
+      "bytes": 12048
+    },
+    {
+      "material": "building_landmark_solar",
+      "map": "building_landmark_solar.webp",
+      "px": 1024,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "later",
+      "bytes": 13288
+    },
+    {
+      "material": "building_landmark_metal",
+      "map": "building_landmark_metal.webp",
+      "px": 1024,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "later",
+      "bytes": 27184
+    },
+    {
+      "material": "building_landmark_roof",
+      "map": "building_landmark_roof.webp",
+      "px": 512,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "later",
+      "bytes": 8394
+    }
+  ]
+}

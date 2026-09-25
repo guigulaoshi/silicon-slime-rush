@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <link rel="icon" type="image/png" sizes="64x64" href="./brand/slime-race-mark-64.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./brand/slime-race-mark-180.png">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Silicon Slime Rush</title>
+    <meta name="description" content="开上真实的湾区公路，撞穿史莱姆，闯过末日第一天的早高峰。Race real Bay Area roads through the slime apocalypse. Free in your browser.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Silicon Slime Rush">
+    <meta property="og:title" content="Silicon Slime Rush · 史莱姆赛车：硅谷">
+    <meta property="og:description" content="开上真实的湾区公路，撞穿史莱姆，闯过末日第一天的早高峰。Race real Bay Area roads through the slime apocalypse. Free in your browser.">
+    <meta property="og:url" content="https://guigulaoshi.itch.io/silicon-slime-rush">
+    <meta property="og:image" content="./brand/og-1200x630.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Silicon Slime Rush · 史莱姆赛车：硅谷">
+    <meta name="twitter:description" content="开上真实的湾区公路，撞穿史莱姆，闯过末日第一天的早高峰。Race real Bay Area roads through the slime apocalypse. Free in your browser.">
+    <meta name="twitter:image" content="./brand/og-1200x630.jpg">
+
+    <script type="module" crossorigin src="./assets/index-Bjd-fpL9.js"></script>
+  </head>
+  <body>
+    <style>:root { --loading-bar-width:min(420px,80vw); }
+.loading-bar { position:relative; width:var(--loading-bar-width); height:14px; flex-shrink:0; overflow:hidden;
+  border-radius:999px; background:rgba(199,249,133,.12); border:1px solid rgba(199,249,133,.38); }
+.loading-bar-fill { position:absolute; top:0; bottom:0; left:0; width:0;
+  border-radius:inherit; background:#c7f985; transition:width .3s ease-out; }
+.loading-bar[data-complete=true] .loading-bar-fill { width:100%!important; transition:width 90ms ease-out!important; }
+@media (prefers-reduced-motion:reduce) {
+  .loading-bar-fill { animation:none!important; transition:none; }
+}
+html[data-reduced-motion=true] .loading-bar-fill { animation:none!important; transition:none; }
+
+          #startup { position:fixed; inset:0; z-index:200; display:flex; flex-direction:column;
+            align-items:center; justify-content:center; gap:20px; padding:24px; text-align:center;
+            color:#eef3f8; background:#080f17; font:16px/1.5 system-ui,sans-serif; overflow:auto; }
+          #startup h1 { display:flex; flex-direction:column; align-items:center; gap:10px;
+            font-size:clamp(26px,5vw,48px); margin:0; }
+          #startup h1 img { width:96px; height:96px; object-fit:contain; }
+          #startup p { margin:0; max-width:36em; }
+          #startup button { border:1px solid #ff8a3d; padding:12px 24px; border-radius:12px;
+            font:inherit; color:inherit; background:#18212a; cursor:pointer; }
+          #startup .startup-language { position:absolute; top:12px; right:12px; padding:8px 12px; }
+          #startup [hidden] { display:none!important; }
+        </style><section id="startup" aria-busy="true">
+          <h1><img src="./brand/slime-race-mark-180.png" alt=""><span>Silicon Slime Rush</span></h1><p role="status"></p>
+          <div class="loading-bar" aria-hidden="true"><div class="loading-bar-fill"></div></div>
+          <button hidden type="button"></button>
+        </section><script>(function mountStartup(copy, saveKey, readSave, preference, browserLanguage) {
+	const root = document.getElementById("startup");
+	let storage = null;
+	try {
+		storage = localStorage;
+	} catch {}
+	let language = preference(readSave(storage, saveKey).language) ?? browserLanguage();
+	let text = copy[language];
+	let stageKey = "boot.download";
+	let preparing = false;
+	document.documentElement.dataset.reducedMotion = String(readSave(storage, saveKey).reducedMotion === true);
+	document.documentElement.lang = language;
+	const heading = root.querySelector("h1");
+	const title = heading.querySelector("span") ?? heading;
+	const status = root.querySelector("[role=\"status\"]");
+	const retry = root.querySelector("button");
+	const languageButton = document.createElement("button");
+	languageButton.className = "startup-language";
+	root.append(languageButton);
+	const render = () => {
+		document.documentElement.lang = language;
+		title.textContent = text["app.title"];
+		retry.textContent = text["boot.retry"];
+		status.textContent = text[stageKey] ?? stageKey;
+		languageButton.textContent = language === "zh" ? "English" : "中文";
+	};
+	languageButton.onclick = () => {
+		language = language === "zh" ? "en" : "zh";
+		text = copy[language];
+		try {
+			storage?.setItem(saveKey, JSON.stringify({
+				...readSave(storage, saveKey),
+				language
+			}));
+		} catch {}
+		render();
+	};
+	render();
+	const DOWNLOAD_SHARE = .2;
+	const barFill = root.querySelector(".loading-bar-fill");
+	let shown = 0;
+	const fillTo = (fraction, seconds) => {
+		if (!barFill || fraction <= shown) return;
+		shown = fraction;
+		barFill.style.transition = `width ${seconds}s ${seconds > 1 ? "cubic-bezier(.2,.7,.3,1)" : "ease-out"}`;
+		barFill.style.width = `${Math.round(fraction * 1e3) / 10}%`;
+	};
+	let closed = false;
+	let failed = false;
+	const cleanup = () => {
+		clearTimeout(timeout);
+		window.removeEventListener("error", scriptError, true);
+		window.removeEventListener("offline", offline);
+	};
+	const fail = (reason) => {
+		if (closed || failed) return;
+		failed = true;
+		cleanup();
+		root.dataset.failed = "true";
+		root.dataset.failure = reason;
+		root.setAttribute("aria-busy", "false");
+		root.querySelector(".loading-bar").hidden = true;
+		stageKey = `boot.error.${reason}`;
+		render();
+		retry.hidden = false;
+	};
+	const offline = () => fail("network");
+	const scriptError = (event) => {
+		if (event.target instanceof HTMLScriptElement) fail("network");
+	};
+	let timeout = window.setTimeout(() => fail("network"), 12e4);
+	retry.onclick = () => {
+		retry.disabled = true;
+		location.reload();
+	};
+	window.addEventListener("error", scriptError, true);
+	window.addEventListener("offline", offline);
+	window.startup = {
+		get language() {
+			return language;
+		},
+		stage(key) {
+			if (closed || failed) return;
+			if (!preparing && key !== "boot.download") {
+				preparing = true;
+				clearTimeout(timeout);
+				timeout = window.setTimeout(() => fail("startup"), 3e5);
+			}
+			stageKey = key;
+			render();
+			if (key !== "boot.download") fillTo(DOWNLOAD_SHARE, .3);
+		},
+		progress(fraction) {
+			if (closed || failed) return;
+			fillTo(DOWNLOAD_SHARE + .8 * Math.min(1, Math.max(0, fraction)), .3);
+		},
+		complete() {
+			if (closed || failed || root.dataset.complete === "true") return false;
+			clearTimeout(timeout);
+			root.dataset.complete = "true";
+			root.setAttribute("aria-busy", "false");
+			const bar = root.querySelector(".loading-bar");
+			bar.dataset.complete = "true";
+			bar.querySelector(".loading-bar-fill").style.width = "100%";
+			return true;
+		},
+		fail,
+		done() {
+			if (closed) return;
+			closed = true;
+			cleanup();
+			root.remove();
+		}
+	};
+	window.startup.stage("boot.download");
+	barFill?.offsetWidth;
+	fillTo(DOWNLOAD_SHARE * .9, 12);
+	if (!navigator.onLine) offline();
+})({"en":{"app.title":"Silicon Slime Rush","boot.start":"Click to start","boot.loading":"Loading {track}","boot.download":"Downloading the game…","boot.prepare":"Preparing the game…","boot.vehicle.download":"Loading vehicles…","boot.vehicle.decode":"Decoding vehicle models…","boot.scene":"Preparing the road and scenery…","boot.retry":"Reload and try again","boot.error.network":"The download stopped. Check your connection, then try again.","boot.error.graphics":"This browser could not start 3D graphics. If the game worked a moment ago, the browser has switched 3D off for this site: close the browser completely (swipe it away from recent apps) and open it again. Otherwise, turn on hardware acceleration or try another browser.","boot.error.startup":"The game could not start. Reload to download a fresh copy and try again."},"zh":{"app.title":"史莱姆赛车：硅谷","boot.start":"点击开始","boot.loading":"正在载入 {track}","boot.download":"正在下载游戏…","boot.prepare":"正在准备游戏…","boot.vehicle.download":"正在加载车辆…","boot.vehicle.decode":"正在解析车辆模型…","boot.scene":"正在准备道路和沿途景物…","boot.retry":"重新加载并重试","boot.error.network":"下载中断了。请检查网络，然后重试。","boot.error.graphics":"浏览器无法启动 3D 图形。如果刚才还能玩，是浏览器暂时关掉了这个网站的 3D：请彻底关闭浏览器（从最近使用的应用里划掉）再重新打开。否则请开启硬件加速，或换一个浏览器。","boot.error.startup":"游戏未能启动。请重新加载，下载新副本后重试。"}},"silicon-rush.save.v1",function readSavedData(storage, key) {
+	try {
+		const value = JSON.parse(storage?.getItem(key) ?? "null");
+		return value && typeof value === "object" ? value : {};
+	} catch {
+		return {};
+	}
+},function languagePreference(value) {
+	return value === "zh" || value === "en" ? value : null;
+},function detectLanguage(nav = navigator) {
+	const tag = nav.languages?.[0] ?? nav.language ?? "en";
+	return /^zh(?:-|$)/i.test(tag) ? "zh" : "en";
+});</script>
+    <div id="app"></div>
+    <div id="ui"></div>
+  </body>
+</html>

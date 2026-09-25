@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "textures": [
+    {
+      "material": "building_local_wall_a",
+      "map": "building_local_wall_a.webp",
+      "px": 512,
+      "metres": 15.0,
+      "repeat": [
+        0.2,
+        0.9375
+      ],
+      "tier": "core",
+      "bytes": 26868,
+      "facadePanes": [
+        2,
+        1,
+        0.92
+      ]
+    },
+    {
+      "material": "building_local_ground_a",
+      "map": "building_local_ground_a.webp",
+      "px": 512,
+      "metres": 15.0,
+      "repeat": [
+        0.2,
+        0.9375
+      ],
+      "tier": "core",
+      "bytes": 18052,
+      "facadePanes": [
+        2,
+        1,
+        0.15
+      ]
+    },
+    {
+      "material": "local_roof_a",
+      "map": "local_roof_a.webp",
+      "px": 256,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 1562
+    },
+    {
+      "material": "building_local_wall_b",
+      "map": "building_local_wall_b.webp",
+      "px": 512,
+      "metres": 6.0,
+      "repeat": [
+        0.5,
+        0.75
+      ],
+      "tier": "core",
+      "bytes": 22320,
+      "facadePanes": [
+        2,
+        1,
+        0.633
+      ]
+    },
+    {
+      "material": "building_local_ground_b",
+      "map": "building_local_ground_b.webp",
+      "px": 512,
+      "metres": 6.0,
+      "repeat": [
+        0.5,
+        0.7143
+      ],
+      "tier": "core",
+      "bytes": 12520,
+      "facadePanes": [
+        2,
+        1,
+        0.15
+      ]
+    },
+    {
+      "material": "local_roof_b",
+      "map": "local_roof_b.webp",
+      "px": 256,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 2516
+    },
+    {
+      "material": "building_local_wall_c",
+      "map": "building_local_wall_c.webp",
+      "px": 512,
+      "metres": 6.6,
+      "repeat": [
+        0.4545,
+        0.9091
+      ],
+      "tier": "core",
+      "bytes": 3910,
+      "facadePanes": [
+        2,
+        1,
+        0.485
+      ]
+    },
+    {
+      "material": "building_local_ground_c",
+      "map": "building_local_ground_c.webp",
+      "px": 512,
+      "metres": 6.6,
+      "repeat": [
+        0.4545,
+        0.6667
+      ],
+      "tier": "core",
+      "bytes": 4788,
+      "facadePanes": [
+        2,
+        1,
+        0.15
+      ]
+    },
+    {
+      "material": "local_roof_c",
+      "map": "local_roof_c.webp",
+      "px": 256,
+      "metres": 3.0,
+      "repeat": [
+        1.0,
+        1.0
+      ],
+      "tier": "core",
+      "bytes": 2386
+    },
+    {
+      "material": "local_rail",
+      "map": "local_rail.webp",
+      "px": 256,
+      "metres": 1.2,
+      "repeat": [
+        2.5,
+        3.0
+      ],
+      "tier": "core",
+      "bytes": 1076,
+      "cutout": 0.5
+    }
+  ]
+}
